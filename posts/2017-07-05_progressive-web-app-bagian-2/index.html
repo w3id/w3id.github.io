@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en-ID">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Progressive Web App — Bagian 2 - Modern Web Community Indonesia</title>
+    
+    <meta name="description" content="Hijack Request, Cache Storage, App Manifest, App Shell, Notify Updates Untuk membuat Web App kita menjadi sebuah Progressive Web App ada beberapa checklist yang harus dipenuhi, teman-teman bisa melihat checklist nya pada link ini.
+Saatnya kita mulai dengan membuat project sederhana. Teman-teman bisa clone project ini dari github. Kita akan fokus pada service worker saja. Jadi kita tidak akan membahas hal diluar SW dulu ya. git clone [https://github.com/alfrcr/tutorial-pwa-bahasa-indonesia.git](https://github.com/alfrcr/tutorial-pwa-bahasa-indonesia.git)
+ catatan: teman-teman perlu menginstall NodeJS untuk menjalankan project diatas.">
+    <meta name="author" content="Putu Alfred Crosby">
+    
+    <link href="https://wwwid.org/an-old-hope.min.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/style.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/featured.css" rel="stylesheet">
+    <meta name="color-scheme" content="dark light">
+    
+    <link rel="apple-touch-icon" href="https://wwwid.org/apple-touch-icon.png">
+    <link rel="icon" href="https://wwwid.org/favicon.ico">
+    
+    <meta name="generator" content="Hugo 0.62.2" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://wwwid.org/index.xml" title="Modern Web Community Indonesia">
+    
+    
+    
+    <meta property="og:title" content="Progressive Web App — Bagian 2" />
+<meta property="og:description" content="Hijack Request, Cache Storage, App Manifest, App Shell, Notify Updates Untuk membuat Web App kita menjadi sebuah Progressive Web App ada beberapa checklist yang harus dipenuhi, teman-teman bisa melihat checklist nya pada link ini.
+Saatnya kita mulai dengan membuat project sederhana. Teman-teman bisa clone project ini dari github. Kita akan fokus pada service worker saja. Jadi kita tidak akan membahas hal diluar SW dulu ya. git clone [https://github.com/alfrcr/tutorial-pwa-bahasa-indonesia.git](https://github.com/alfrcr/tutorial-pwa-bahasa-indonesia.git)
+ catatan: teman-teman perlu menginstall NodeJS untuk menjalankan project diatas." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-2/" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-2/images/1.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-2/images/2.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-2/images/3.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-2/images/4.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-2/images/5.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-2/images/6.png" />
+<meta property="article:published_time" content="2017-07-05T17:15:44+00:00" />
+<meta property="article:modified_time" content="2019-05-21T11:21:49+07:00" />
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118693499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-118693499-2');
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MXRJCWB');</script>
+  
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  
+  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+  
+    
+        <script>
+    if("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/sw.js").then(swReg => {}).catch(err => {
+                console.error('Service Worker Error', err);
+            });
+        });
+    }
+  </script>
+    
+  </head>
+  <body class="single">
+    <header class="header">
+      <nav class="nav">
+        
+        <p class="logo"><a href="https://wwwid.org/">
+          <img class="logo light" 
+          srcset="https://wwwid.org/images/logo-light-bg@2x.png 2x,
+          https://wwwid.org/images/logo-light-bg.png"
+          src="https://wwwid.org/images/logo-light-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/> 
+          <img class="logo dark" 
+          srcset="https://wwwid.org/images/logo-dark-bg@2x.png 2x,
+          https://wwwid.org/images/logo-dark-bg.png"
+          src="https://wwwid.org/images/logo-dark-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/>
+        
+        </a></p>
+        
+        
+        <ul class="menu">
+          
+          <li>
+            <a href="/pages/tentang-kami/">Tentang Kami</a>
+          </li>
+          
+        </ul>
+        
+      </nav>
+    </header>
+    <main class="main">
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": "https:\/\/wwwid.org\/posts\/2017-07-05_progressive-web-app-bagian-2\/",
+  "headline": "Progressive Web App — Bagian 2",
+  "datePublished": "2017-07-05",
+  "dateModified": "2019-05-21",
+  "description": "Hijack Request, Cache Storage, App Manifest, App Shell, Notify Updates Untuk membuat Web App kita menjadi sebuah Progressive Web App ada beberapa checklist yang harus dipenuhi, teman-teman bisa melihat checklist nya pada link ini.\nSaatnya kita mulai dengan membuat project sederhana. Teman-teman bisa clone project ini dari github. Kita akan fokus pada service worker saja. Jadi kita tidak akan membahas hal diluar SW dulu ya. git clone [https:\/\/github.com\/alfrcr\/tutorial-pwa-bahasa-indonesia.git](https:\/\/github.com\/alfrcr\/tutorial-pwa-bahasa-indonesia.git)\n catatan: teman-teman perlu menginstall NodeJS untuk menjalankan project diatas.","author": {
+    "@type": "Person",
+    "name": "Putu Alfred Crosby"
+  },
+  
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "WWWID",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https:\/\/wwwid.org\//images/wwwid-logogram.png",
+      "width": 388,
+      "height": 388
+    }
+  },
+  
+  "image": {
+    "@type": "ImageObject",
+    "url": "\/posts\/2017-07-05_progressive-web-app-bagian-2\/images\/1.png"
+  }
+   
+  
+  }
+  </script>
+<article class="post-single">
+  <header class="post-header">
+   
+    <h1 class="post-title">Progressive Web App — Bagian 2</h1>
+    
+    <div class="post-meta">Putu Alfred Crosby · 5 Jul 2017</div>
+  </header><div class="post-featured-image">
+    <img src="/posts/2017-07-05_progressive-web-app-bagian-2/images/1.png" alt="feature image for Progressive Web App — Bagian 2"/>
+  </div>
+  
+  <div class="post-content"><h4 id="hijack-request-cache-storage-app-manifest-app-shell-notify-updates">Hijack Request, Cache Storage, App Manifest, App Shell, Notify Updates</h4>
+<p>Untuk membuat Web App kita menjadi sebuah Progressive Web App ada beberapa checklist yang harus dipenuhi, teman-teman bisa melihat checklist nya pada link <a href="https://developers.google.com/web/progressive-web-apps/checklist">ini</a>.</p>
+<p>Saatnya kita mulai dengan membuat project sederhana. Teman-teman bisa clone project ini dari github. Kita akan fokus pada service worker saja. Jadi kita tidak akan membahas hal diluar SW dulu ya.
+<code>git clone [https://github.com/alfrcr/tutorial-pwa-bahasa-indonesia.git](https://github.com/alfrcr/tutorial-pwa-bahasa-indonesia.git)</code></p>
+<ul>
+<li><em>catatan: teman-teman perlu menginstall NodeJS untuk menjalankan project diatas. Kalau ada yg belum memasang NodeJS silakan di-install dulu.</em></li>
+<li><em>link project</em> <a href="https://github.com/alfrcr/tutorial-pwa-bahasa-indonesia"><em>disini</em></a></li>
+</ul>
+<p>Kalau sudah di-clone silakan install dulu dependency project tersebut dengan menjalankan perintah.</p>
+<p><code>npm install</code> atau <code>yarn install</code></p>
+<p>Setelah itu, silakan jalankan perintah <code>npm start</code> atau <code>yarn start</code></p>
+<p>Kemudian silakan buka browser dan masukkan alamat <code>http://localhost:5000</code></p>
+<p><img src="/posts/2017-07-05_progressive-web-app-bagian-2/images/1.png" alt="image"></p>
+<p>Akan muncul halaman list seperti di atas 😁</p>
+<p>Kalau sudah muncul halamannya, sekarang saatnya kita mulai. Pertama-tama kita belajar untuk menambahkan SW ke dalam project.</p>
+<h3 id="menambahkan-service-worker-ke-dalam-project">Menambahkan Service Worker ke dalam Project</h3>
+<p>Di dalam folder project, silakan teman-teman buka file <code>/js/sw-controller.js</code>. Disana kita akan menambahkan script untuk mendaftarkan SW kita. Silakan teman-teman tambahkan code dibawah ini. (Lihat comment di dalam file)</p>
+<p>Yang kita lakukan barusan adalah:</p>
+<ol>
+<li>Pertama kita cek apakah browser support dengan SW. Jika tidak support kita akan lewati.</li>
+<li>Jika support maka kita akan register dengan menambahkan path file sw kita yaitu <code>/sw.js</code></li>
+</ol>
+<p>Kalau sudah coba di cek hasilnya, pada Console browser akan menampilkan pesan seperti ini.</p>
+<p><img src="/posts/2017-07-05_progressive-web-app-bagian-2/images/2.png" alt="image"></p>
+<p>Muncul pesan registrasi SW berhasil pada browser console</p>
+<h3 id="hijack-request">Hijack Request</h3>
+<p>Salah satu kekuatan utama SW yaitu bisa meng-hijack sebuah request. Bagaimana caranya menghijack sebuah request? Teman-teman silakan buka file **<em>sw.js</em> **lalu tambahkan code dibawah ini:</p>
+<p>_*tips: teman-teman bisa menggunakan_<code>console.log(event.request)</code> <em>untuk melihat semua request yang terjadi ketika halaman di-reload</em></p>
+<p>Jadi, pada kode diatas, pertama kita <em>mendengarkan(listen)</em> event **<em>fetch.</em> **Lalu setiap request dari user akan kita merespon request tersebut dengan event.respondWith(). Perlu diingat <code>.respondWith()</code> tersebut membutuhkan sebuah argument berupa <strong>Promise.</strong> Dan pada kode diatas kita menggunakan new Response() untuk memberikan hasil request kepada client. Jika kita refresh(bukan hard-refresh), harusnya HALAMAN akan menampilkan <strong>Hello Indonesia,</strong> tapi kenapa halaman tetap seperti semula? Tidak itu saja tetapi ada hal lain yang terjadi…</p>
+<p><img src="/posts/2017-07-05_progressive-web-app-bagian-2/images/3.png" alt="image"></p>
+<p>Service worker memiliki sebuah antrian</p>
+<p>Kalau kita perhatikan gambar diatas, pada Tab Application pada Chrome Dev Tools dan pada bagian Service Workers, disana kita bisa lihat ada sebuah antrian. Apa artinya?</p>
+<p>Ternyata perubahan pada SW tidak bisa langsung diaplikasikan ke halaman, disana SW akan mengantri seperti yang kita lihat, jadi browser benar-benar memastikan hanya ada <em>SATU</em> <em>VERSI SW SAJA YANG BOLEH AKTIF</em>, sama seperti perilaku(cara kerja) Native Apps.</p>
+<p>Untuk mengetahui kapan kita mendapatkan perubahan terbaru dari SW kita, maka pertama kita perlu membahas <strong>LIFECYCLE</strong> dari SW.</p>
+<h4 id="sw-lifecycle">SW Lifecycle</h4>
+<p>Kenapa halaman tidak berubah? Ternyata perubahan yang kita lakukan masih dalam antrian. Lalu teman-teman mungkin bertanya lagi, “Bagaimana kita mendapatkan perubahan yang terbaru?”</p>
+<p>Ada banyak cara untuk mendapatkan perubahan terbaru dari, jawabannya kita akan bahas sekaligus Lifecycle pada SW:</p>
+<ol>
+<li>Ketika kita mendaftarkan SW pertama kali, browser akan menyimpan dan menginstall versi pertama SW milik kita.</li>
+<li>Kemudian ketika kita melakukan perubahan, pada request berikutnya SW akan mengecek apakah ada perubahan, jika ada maka SW versi berikutnya akan masuk antrian terlebih dahulu sampai versi yang sedang aktif sekarang hilang atau tidak digunakan lagi.</li>
+<li>Service Worker akan digantikan ke versi baru ketika versi sekarang sudah tidak digunakan lagi oleh browser. Me-refresh halaman tidak akan mengubah SW ke versi yang terbaru. Jadi kapan SW tidak digunakan lagi? Yaitu ketika halaman ditutup, atau ketika user berpindah ke halaman yang tidak menggunakan SW tersebut.</li>
+</ol>
+<p>Jadi untuk mendapatkan perubahan terbaru, teman-teman harus menutup window halaman kita terlebih dahulu kemudian kita membukanya lagi atau bisa dengan pergi ke halaman lain, contoh: URL sekarang adalah <code>[http://localhost:5000](http://localhost:5000)</code> kemudian kita pindah ke <code>https://www.google.com</code> setelah itu kembali lagi ke localhost. Maka SW secara otomatis akan menggunakan versi yang terbaru.</p>
+<p>TAPI…</p>
+<p>untuk development itu sangatlah merepotkan, syukurnya pada Chrome Dev Tools tersedia pilihan Update on Reload pada Tab Application.</p>
+<p><img src="/posts/2017-07-05_progressive-web-app-bagian-2/images/4.png" alt="image"></p>
+<p>Cukup centang Update on reload maka SW akan selalu update ketika development</p>
+<p>Mungkin untuk sekarang terdengar aneh user hanya akan mendapatkan updates ketika user berpindah halaman atau ketika user menutup window app kita. Nanti pada artikel ini kita akan gunakan pemberitahuan untuk memberitahu user ketika kita mempunyai perubahan pada app kita.</p>
+<p>Kembali pada HIJACKING REQUEST</p>
+<p>Pastikan teman-teman mendapatkan versi SW terbaru, kemudian coba refresh halaman. Dan….</p>
+<p><img src="/posts/2017-07-05_progressive-web-app-bagian-2/images/5.png" alt="image"></p>
+<p>Browser sudah menggunakan SW versi terbaru!!</p>
+<p>Apa yang dapat kita pelajari? Hijacking Request adalah fitur yang sangat powerful namun sangat berbahaya karena itu seperti yang sudah saya katakan pada artikel sebelumnya, SW hanya dapat digunakan pada protocol HTTPS dan pada localhost ketika development.</p>
+<p>Lalu apa manfaat dari Hijacking Request?</p>
+<p>Kita akan menggunakan fitur ini untuk mengecek semua request. Lalu setiap request kita cocokkan dengan semua file-file asset(HTML, CSS &amp; JS) yang sudah kita simpan di dalam Cache Storage.</p>
+<p>Mari kembali ke text editor dan kita ubah file SW kita menjadi seperti ini:</p>
+<p>Apa saja yang kita lakukan pada kode diatas?</p>
+<p>Line 1: Penamaan cache di Cache Storage.</p>
+<p>Line 3: List dari file yang akan kita cache. <code>/</code> merupakan <code>index.html</code> jadi disana kita juga meng-cache file index.html kita yang akan menjadi App Shell (kerangka halaman).</p>
+<p>Line 20: Ketika SW diinstal, <code>waitUntil()</code> kita gunakan untuk menunggu proses populasi file di Cache Storage. <code>waitUntil()</code> berfungsi untuk menjalankan sebuah proses secara async, dan memberitahu browser untuk tidak memberhentikan proses install SW sampai proses yang kita kerjakan selesai. Dengan kata lain status SW tidak akan berubah menjadi <strong>installed</strong> sampai semua cache berhasil dikumpulkan pada Cache Storage.</p>
+<p>Line 29: Ketika user mempunyai sebuah request (dalam arti simple user me-reload halaman), semua request akan di-cek terlebih dahulu pada Cache Storage (line 33) dan jika file yang di-request sudah tersedia pada Cache Storage, kita akan gunakan file tersebut. <strong>TAPI</strong> jika request tersebut tidak ada di dalam storage <em>(kita hanya meng-cache asset, jadi dengan kata lain adalah request selain asset)</em>, maka browser akan mendownloadnya dari server.</p>
+<p>Ketika teman-teman me-refresh halaman, tidak ada banyak yang berubah bukan?</p>
+<p>Tapi coba teman-teman centang Offline pada Tab Network atau Tab Application pada Chrome Dev Tools.</p>
+<p>TADAAAA…</p>
+<p><img src="/posts/2017-07-05_progressive-web-app-bagian-2/images/6.png" alt="image"></p>
+<p>Web App kita sudah berjalan Offline</p>
+<p>Dan teman-teman bisa cek di Cache Storage pada Tab Application</p>
+<p><img src="/posts/2017-07-05_progressive-web-app-bagian-2/images/7.png" alt="image"></p>
+<p>File-file yang berhasil kita cache</p>
+<p>Keren banget kan? 😄</p>
+<h3 id="web-app-manifest">Web App Manifest</h3>
+<p>Karena di dalam App kita sudah tersedia file <code>manifest.json</code> maka jika teman-teman buka melalui handphone teman-teman lalu Add to Homescreen (Android secara otomatis akan menampilkan popup jika <code>manifest.json</code> sudah ditambahkan), maka web app kita terasa seperti Native Apps, yaitu mempunyai icon dan dapat langsung diakses melalui Homescreen. Tidak hanya itu, app kita sudah bisa berjalan secara Offline. Itu berarti dengan PWA experience-nya sudah benar-benar mendekati Native Apps.</p>
+<p>Untuk membuat Web App Manifest, teman-teman bisa generate dari web ini: <a href="https://tomitm.github.io/appmanifest/">https://tomitm.github.io/appmanifest/</a> dan sisanya tinggal copy manifest dan meta tag dari halaman tersebut ke dalam project kita. (Project kita sudah ada semuanya jadi tidak perlu ditambahkan lagi 😉)</p>
+<p>Tapi offline-mode ini belum bisa dinikmati oleh <a href="http://blog.ionic.io/what-is-a-progressive-web-app/">pengguna iOS.</a></p>
+<h3 id="new-updates-available">New updates available</h3>
+<p>Hal terakhir yang akan dibahas pada bagian 2 di series PWA adalah menambahkan pesan bahwa kita memiliki sebuah perubahan baru pada file web kita. Misalkan kita menambahkan sebuah fungsi baru yang berkilauan pada file JS kita atau merubah tampilan style kita menjadi warna lain atau bisa juga kita merubah ukuran font pada app kita.</p>
+<p>User tidak akan mendapatkan semua perubahan itu sampai SW yang baru diaktifkan. Nah, kita sudah sampai sejauh ini, kita sudah siap mental untuk meninggalkan <strong>Force on reload.</strong> Sekarang kita akan buka file <code>styles.css</code> dan ubah pada <code>.custom-theme</code></p>
+<p><img src="/posts/2017-07-05_progressive-web-app-bagian-2/images/8.png" alt="image"></p>
+<p>Silakan pilih salah satu, dan comment yang lainnya</p>
+<p>Pilih salah satu background-color lalu comment property css lainnya. Jika teman-teman refresh warna akan berubah seperti ekspektasi kita.</p>
+<p>Nah, sekarang kita akan menonaktifkan “Force on reload” untuk mengetahui bagaimana user berinteraksi langsung dengan app kita.</p>
+<p>Pada video kedua kita lihat Hard Reload bisa mem-bypass SW namun ketika kita coba Reload normal, tampilan kembali ke warna sebelumnya.</p>
+<p>Dan jika kita perhatikan ketika kita mengubah file assets, <strong>TIDAK ADA ANTRIAN</strong> baru pada Service Worker. Itu artinya user tidak akan pernah mendapatkan perubahan terbaru walaupun user menutup dan membuka kembali window web app kita atau mengarahkan navigasi ke web lain seperti yang saya jelaskan pada lifecycle SW diatas, kecuali user melakukan <strong>UNREGISTER SW</strong>.</p>
+<p>Cara yang akan kita gunakan untuk mendapatkan perubahan terbaru ketika kita mengubah file assets kita yaitu dengan memanfaatkan lifecycle dari SW itu sendiri. Namun harus kita pahami dulu bahwa ketika kita merubah file assets, kita juga perlu mengubah file SW supaya browser tahu bahwa ada kita memiliki versi terbaru dari app kita. Karena kita lihat tadi ketika kita mengubah warna header, SW baru tidak ada di dalam antrian.</p>
+<p><img src="/posts/2017-07-05_progressive-web-app-bagian-2/images/9.png" alt="image"></p>
+<p>Mengubah nama cache untuk mendapatkan update terbaru</p>
+<p>Sebenarnya bukan hanya mengubah nama cache, apapun bisa kita ubah agar browser tahu bahwa ada perubahan terbaru pada SW (termasuk memberikan /* comment */). Namun dalam kasus ini (project artikel ini) hal yang paling masuk akal untuk diubah menurut saya, karena tidak mengganggu fungsi lainnya. (opini pribadi)</p>
+<p>Namun idealnya ketika kita sudah menggunakan asset bundler seperti Webpack, kita bisa mengkonfigurasi nama assets agar memiliki hash seperti <code>app.sd76sdf876a.js</code> jadi ketika kita memperbarui assets, mau tidak mau kita harus mengubah nama file yang akan di-cache. Jadi ada banyak alasan yang bisa kita gunakan untuk memperbarui SW.</p>
+<p>Kembali ke file SW, sekarang kita tambahkan script pada bagian paling bawah:</p>
+<p>Yang kita lakukan diatas adalah:</p>
+<ol>
+<li><code>caches.keys()</code> mendapatkan semua cache pada Cache Storage. (Line 13)</li>
+<li>Setelah mendapatkan semua cache, kita akan hapus semua cache selain versi terbaru. Dalam kasus kita kali ini, kita akan hapus semua cache selain <code>v2-pwa-dasar</code></li>
+</ol>
+<p>Kemudian teman-teman bisa tutup window atau arahkan navigasi ke alamat lain kemudian buka kembali <code>http://localhost:5000</code> maka kita akan mendapatkan versi terbaru dari app kita.</p>
+<h4 id="menambahkan-ux-untuk-proses-update-sw">Menambahkan UX untuk proses update SW</h4>
+<p>Idealnya kita perlu memberitahu user bahwa ada perubahan terbaru pada aplikasi tanpa mengganggu kegiatan user dan tentunya dengan cara yang lembut 😅 dan bukan cara yang terlalu teknis seperti cara diatas.</p>
+<p>Di dalam file <code>/js/sw-controller.js</code> sudah saya siapkan beberapa method untuk memunculkan <strong>Toast</strong> pemberitahuan update yang imut 😄</p>
+<p><img src="/posts/2017-07-05_progressive-web-app-bagian-2/images/10.png" alt="image"></p>
+<p>Pemberitahuan bahwa ada Service Worker versi terbaru.</p>
+<h4 id="menampilkan-pemberitahuan-update">Menampilkan Pemberitahuan Update</h4>
+<p>Seperti yang kita tahu, ketika kita membuat perubahan pada Service Worker, versi terbaru SW akan berada di dalam antrian. Simpelnya, kita akan mengecek jika ada antrian pada SW, dan jika ada maka akan kita tampilkan pemberitahuan.</p>
+<p>Ada beberapa API yang bisa kita gunakan di dalam callback ketika kita mendaftarkan SW. Berikut adalah listnya:
+<code>navigator.serviceWorker.register(&amp;#39;/sw.js&amp;#39;)   .then(function(reg) {   // reg.waiting;   // reg.installing;   // reg.active;   // reg.update();   // reg.unregister();``    // reg.addEventListener(&amp;#39;updatefound&amp;#39;, function() { ... });   })</code></p>
+<p>Kita akan memanfaatkan beberapa API tersebut untuk menampilkan pemberitahuan update. Silakan teman-teman perhatikan kode berikut:</p>
+<p>Kita mengubah semua kode di dalam method <code>.registerSW()</code> . Berikut adalah penjelasannya:</p>
+<ol>
+<li>Line 8: Tidak perlu dijelaskan teman-teman harus sudah paham penggunaan keyword <code>this</code></li>
+<li>Line 14: Kita menambahkan <code>if(!navigator.serviceWorker.controller)</code> fungsi kode ini adalah untuk mengecek apakah halaman kita diload menggunakan SW, karena ketika kita membuka halaman app kita pertama kali, SW controller masih <code>null</code> karena pada saat itu halaman masih di serve oleh server, bukan oleh SW. Jadi jika halaman bukan di serve oleh SW kita akan langsung <em>exit.</em></li>
+<li>Line 16: Disana kita melakukan cek jika sudah terdapat antrian dan sudah terinstall namun SW belum diaktifkan. Maka kita akan menampilkan pemberitahuan. Silakan lihat method <code>updateReady()</code> pada line 60.</li>
+<li>Line 21: Kita akan tracking aktifitas dari SW, ketika worker sedang di-install, kita bisa mengecek status dari worker tersebut. Ada beberapa status yang tersedia yaitu: <code>installing, installed, activating, activated, redundant</code> . Lengkapnya bisa dibaca <a href="https://developers.google.com/web/fundamentals/instant-and-offline/service-worker/lifecycle">disini</a>. Karena status <code>installing</code> maka ada kemungkinan akan terjadi error, karena itu kita akan mengecek apakah state dari sw, jika <code>installed</code> maka kita akan menampilkan pemberitahuan (lihat di dalam method <code>trackInstall()</code> pada line 53)</li>
+<li>Line 33: Karena proses SW berjalan di background, maka kita perlu tracking status dari SW. Karena itu kita memanggil kembali method <code>trackInstall()</code> lagi. Ketika SW terbaru sudah selesai terinstall maka, kita tidak perlu me-refresh halaman untuk mendapatkan pemberitahuan update. Apa yang terjadi jika kode dari line 33–35 dihilangkan? Jawabannya adalah kalian perlu me-refresh halaman untuk menampilkan pemberitahuan update, karena setelah me-refresh halaman baru kalian mendapatkan status <code>waiting</code> yang akan men-trigger method <code>updateReady()</code> .</li>
+<li>Line 38: Seperti yang saya sebut tadi, proses update SW berjalan di background, ketika SW yang baru sudah diaktifkan oleh user dengan cara mengklik tombol refresh pada toast, maka kita akan mendengarkan perubahan controller (SW) dengan memanfaatkan <code>controllerchange</code> . Setelah itu kita akan mereload halaman dengan cache yang baru dengan menggunakan <code>window.location.reload()</code>.</li>
+<li>Line 66: Akan kita bahas setelah ini.</li>
+</ol>
+<p>Jadi sekarang ketika teman-teman merubah css, lalu memberikan perubahan pada file <code>sw.js</code> maka ketika teman-teman mereload halaman, secara otomatis akan menampilkan pemberitahuan. Keren bukan?</p>
+<p>Tapi jangan buru-buru dulu, tombol REFRESH nya masih tidak berguna, sekarang saatnya kita membuatnya menjadi berguna. 😌</p>
+<h4 id="trigger-updates">Trigger Updates</h4>
+<p>Seperti yang kita ketahui, bahwa Service Worker dan Javascript di halaman kita berjalan di thread yang berbeda. Service Worker tidak bisa mengakses DOM yang ada di dalam halaman kita. Lalu bagaimana kita berkomunikasi dengan SW?</p>
+<p>SW mempunyai sebuah API untuk mengirim sinyal dari halaman ke SW, yaitu dengan menggunakan <code>reg.installing.postMessage({ foo: bar })</code></p>
+<p>Kembali ke code diatas pada <strong>line 66</strong> disana kita mengirimkan sinyal berupa object dengan property action dan dengan nilai <code>skipWaiting</code> . Code tersebut kita gunakan untuk mengirimkan sinyal ke SW. Lalu sekarang saatnya SW untuk mendengarkan sinyal tersebut.</p>
+<p>Silakan tambahkan kode ini pada baris terakhir di dalam file <code>sw.js</code></p>
+<p>Kemudian ulangi langkah-langkah perubahan CSS seperti pada video sebelumnya, dan jangan lupa berikan perubahan juga pada file <code>sw.js</code></p>
+<p>Lihat hasilnya:</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Tidak terasa perjalanan kita jauh banget. Tidak perlu dijelaskan panjang lebar, intinya kalo kalian punya web dan sudah HTTPS wajib pasang SW ya!! 😆</p>
+<p>Maaf cuma bercanda.</p>
+<p>Setelah kita mengetahui fitur-fitur keren dari SW yang sudah kita pelajari tadi diatas, bagaimana menurut kalian? Jawaban silakan teman-teman renungkan sendiri ya.</p>
+<p>Nah, sekarang apa selanjutnya?</p>
+<p>Masih banyak yang perlu dibahas, pada artikel selanjutnya semoga saya dimampukan untuk membahas <strong>Push Notification</strong>. Doakan yah!!! 😆</p>
+<h3 id="reference">Reference</h3>
+<ol>
+<li><a href="https://developers.google.com/web/fundamentals/instant-and-offline/service-worker/lifecycle">https://developers.google.com/web/fundamentals/instant-and-offline/service-worker/lifecycle</a></li>
+</ol>
+<h4 id="link-bermanfaat">Link bermanfaat</h4>
+<ol>
+<li><a href="https://www.npmjs.com/package/sw-precache-webpack-plugin">sw-precache-webpack-plugin</a> atau <a href="https://www.npmjs.com/package/offline-plugin">offline-plugin</a> buat kalian yang membangun SPA dengan webpack bisa menggunakan plugin tersebut.</li>
+<li><a href="https://developers.google.com/web/fundamentals/engage-and-retain/app-install-banners/#deferring_or_cancelling_the_prompt">Intercept, defer atau cancel add to homescreen</a></li>
+</ol>
+<h3 id="pwathe-series-dalam-bahasa-indonesia">PWA — The Series Dalam Bahasa Indonesia</h3>
+<ol>
+<li><a href="https://medium.com/@alfrcr/pengenalan-progressive-web-app-pwa-bagian-1-cac0fadbe5f4">Bagian 1</a></li>
+<li>Kalian sedang disini</li>
+</ol>
+<p>Jangan lupa jika artikel ini bermanfaat dibagikan ke teman-teman yang lain dan klik lambang hati ♥️</p>
+</div>
+  <footer class="post-footer">
+    <div class="post-share">
+        <amp-social-share type="twitter"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="facebook"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="email"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="pinterest"
+        width="45"
+        height="33"></amp-social-share>
+    </div>
+    
+    <p class="section-title">Klik kata kunci di bawah ini untuk melihat konten terkait lebih banyak</p>
+    <ul class="post-tags">
+      
+      <li><a href="https://wwwid.org/tags/pwa/">Pwa</a></li>
+      
+      <li><a href="https://wwwid.org/tags/javascript/">JavaScript</a></li>
+      
+    </ul>
+    
+  </footer>
+  
+  
+  
+  
+</article>
+
+
+<h3 class="section-title">Related Contents</h3>
+<amp-carousel class="featured-block" height="200"
+  layout="fixed-height"
+  type="carousel">
+  
+  <div class="featured-post">
+        <a class="entry-link" href="https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-1/">
+        
+            <img src="/posts/2017-07-05_progressive-web-app-bagian-1/images/4.jpeg" alt="featured image">
+            <div class="overlay"></div>
+        
+        <h4>Progressive Web App — Bagian 1</h4>
+        </a>
+        </div>
+    
+</amp-carousel>
+
+</main>
+<footer class="footer">
+  <span>&copy; 2020 <a href="https://wwwid.org/">Modern Web Community Indonesia</a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="https://wwwid.org/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
+

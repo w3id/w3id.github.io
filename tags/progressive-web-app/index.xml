@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Progressive Web App on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/progressive-web-app/</link>
+    <description>Recent content in Progressive Web App on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Fri, 30 Nov 2018 10:30:16 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/progressive-web-app/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Chrome Dev Summit 2018, mana yang kalian harus coba implementasikan? ( 1 dari 2)</title>
+      <link>https://wwwid.org/posts/2018-11-30_chrome-dev-summit-2018-mana-yang-kalian-harus-coba-implementasikan-1-dari-2/</link>
+      <pubDate>Fri, 30 Nov 2018 10:30:16 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-11-30_chrome-dev-summit-2018-mana-yang-kalian-harus-coba-implementasikan-1-dari-2/</guid>
+      <description>Google Developer Experts Web di CDS 2018
+Chrome Dev Summit(CDS) 2018 yang merupakan ajang tahunan Google Chrome untuk bertatap muka dengan para pengembang web baru saja diselenggarakan beberapa minggu lalu di mana event selama 2 hari tersebut memberikan insights seputar kondisi web saat ini, dan apa yang akan hadir di web platform ke depannya. Terlalu banyak konten yang kadang malah membuat bingung pengembang web, mana yang harus saya coba gunakan terlebih dahulu.</description>
+    </item>
+    
+    <item>
+      <title>Panduan Memulai Pengembangan Web Modern (PWA)</title>
+      <link>https://wwwid.org/posts/2018-08-27_panduan-memulai-pengembangan-web-modern-pwa/</link>
+      <pubDate>Mon, 27 Aug 2018 08:29:02 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-08-27_panduan-memulai-pengembangan-web-modern-pwa/</guid>
+      <description>Panduan ini akan menjadi dasar bagaimana sebuah web modern atau biasa disebut Progressive Web App(PWA) dikembangkan. Karena sebagian besar permasalahan web pada saat sudah berjalan adalah arsitektur yang kurang baik serta perancangan awal yang tidak disesuaikan dengan kebutuhan pengguna. Panduan ini akan memberikan gambaran bagaimana arsitektur dan perancangan sebuah aplikasi modern web tanpa menggunakan framework apapun, namun tetap bisa diterapkan di framework apapun.
+Kriteria Modern Web Untuk kebutuhan website modern yang fokus pada kebutuhan pengguna, makan kita mendefinisikan modern web sebagai berikut:</description>
+    </item>
+    
+    <item>
+      <title>Yang sering developer lupakan soal PWA</title>
+      <link>https://wwwid.org/posts/2018-08-23_yang-sering-developer-lupakan-soal-pwa/</link>
+      <pubDate>Thu, 23 Aug 2018 07:03:41 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-08-23_yang-sering-developer-lupakan-soal-pwa/</guid>
+      <description>PWA (Progressive Web Apps) memang sepertinya menjadi satu hal yang sering terjadi simpang siur antar satu developer dengan developer lain pun antar satu perusahaan dengan perusahaan lain baik dalam hal implementasi maupun dalam hal pemahamannya sendiri.
+Gambar dari motivasinews.com
+ Disclaimer: saya pribadi menulis ini bukan berarti apa yang saya pahami adalah mutlak yang terbenar dan yang lain salah, melainkan mencoba menyampaikan apa yang saya pahami agar sama-sama berpikir ulang untuk memahami kembali apa yang selama ini sudah kita yakini benarnya.</description>
+    </item>
+    
+    <item>
+      <title>Web Pintar Yang Beradaptasi Sesuai Perangkat dan Jaringan</title>
+      <link>https://wwwid.org/posts/2018-08-08_web-pintar-yang-beradaptasi-sesuai-perangkat-dan-jaringan/</link>
+      <pubDate>Wed, 08 Aug 2018 06:35:21 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-08-08_web-pintar-yang-beradaptasi-sesuai-perangkat-dan-jaringan/</guid>
+      <description>Para pengguna internet mengakses web saat ini dengan perangkat yang beragam walaupun bisa dibilang bahwa perangkat tersebut didominasi oleh mobile. Namun ragam perangkat mobile ini sendiri sebenarnya cukup beragam dan bisa kita klasifikasikan dalam perangkat tingkat atas, seperti iPhone 8/X, Samsung S9, LG G6 dan lain-lain. Lalu perangkat tingkat menengah seperti Oppo, Xiaomi, dan Vivo. Serta perangkat low end di bawah 1 juta seperti Samsung seri J.
+Beradaptasi dengan perangkat Dengan beragamnya perangkat dari pengakses web, maka sudah seharusnya kita sebagai pengembang wajib mengoptimalkan website kita untuk perangkat yang paling banyak mengakses website kita.</description>
+    </item>
+    
+    <item>
+      <title>Progressive Web App — Aplikasi Web Yang Bisa Di-Install — Bagian 2</title>
+      <link>https://wwwid.org/posts/2018-07-13_progressive-web-app-aplikasi-web-yang-bisa-diinstall-bagian-2/</link>
+      <pubDate>Fri, 13 Jul 2018 09:11:55 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-07-13_progressive-web-app-aplikasi-web-yang-bisa-diinstall-bagian-2/</guid>
+      <description>Melanjutkan tulisan sebelumnya terkait bagaimana sebuah Progressive Web App(PWA) bisa di-install, di tulisan ini kita ingin membahas bagaimana sebenarnya untuk implementasi di aplikasi web kita dan kira-kira hal seperti apa saja yang bisa kita lakukan.
+Sebelum implementasi kita harus memastikan terlebih dahulu apakah memang kita membutuhkan implementasi A2HS(Add To Home Screen) ini. Beberapa pertanyaan yang mungkin perlu kita jawab adalah:
+Native atau PWA? Bila kita sudah memiliki aplikasi native di platform yang sama, baik Android atau iOS, apakah kita lebih ingin pengguna memasang PWA kita atau aplikasi native kita?</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu Di #IO18</title>
+      <link>https://wwwid.org/posts/2018-05-15_yang-web-developers-harus-tahu-di-sharpio18/</link>
+      <pubDate>Tue, 15 May 2018 10:31:19 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-05-15_yang-web-developers-harus-tahu-di-sharpio18/</guid>
+      <description>Google I/O 2018
+Selesai sudah hajat tahunan Google Developers, Google IO 2018 di Mountain View yang menjadi ajang tahunan untuk mengundang para developers dari seluruh dunia untuk bisa mendapatkan update terkini terkait platform teknologi yang dimiliki Google dan berinteraksi dengan orang-orang di belakangnya sehingga para developers bisa membangun aplikasi atau fungsi di atas platform tersebut. Dan tulisan ini akan memberikan rekapan apa saja yang perlu kalian tahu terkait web platform dan bagaimana kalian sebagai pengembang bisa mengadopsi perkembangan tersebut.</description>
+    </item>
+    
+    <item>
+      <title>Progressive Web App — Aplikasi Web Yang Bisa Di Install — Bagian 1</title>
+      <link>https://wwwid.org/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/</link>
+      <pubDate>Fri, 20 Apr 2018 08:49:47 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/</guid>
+      <description>Salah satu pengalaman yang sangat memudahkan pengguna aplikasi native dalam mengakses aplikasi yang mereka ingin gunakan adalah kemudahannya dalam men-launch aplikasi tersebut dengan semudah men-tap icon aplikasi di layar home smart phone mereka dan aplikasi langsung siap digunakan. Bandingkan dengan aplikasi web yang harus melakukan tap beberapa kali karena selain men-tap icon browser di layar home, tentu juga harus mengetikkan alamat URL dari aplikasi web tersebut. Ini yang membuat retention dan tingkat interaktifitas aplikasi web terkadang lebih kecil dibandingkan aplikasi native.</description>
+    </item>
+    
+    <item>
+      <title>Peluang dan Tantangan Web Developer</title>
+      <link>https://wwwid.org/posts/2018-02-16_peluang-dan-tantangan-web-developer/</link>
+      <pubDate>Fri, 16 Feb 2018 04:13:04 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-16_peluang-dan-tantangan-web-developer/</guid>
+      <description>Selamat datang di tahun 2018, dimana website telah memasuki era baru. Kita akan memanggilnya dengan sebutan webapps (aplikasi web) dan bukan website lagi. Setiap developer berlomba untuk memberikan byte pertama tercepat. Forbes dengan situs mobile terbarunya merender dalam waktu 2.5 detik, konversi web BookMyShow’s naik sebesar 80% dan OLX telah melihat lebih dari 250% keterlibatan kembali dengan pengguna (re-engagement user) di situs mereka. Apa yang sebenarnya terjadi di dunia web? Dengan grafik JavaScript-CPU-Profiler yang menyeramkan seperti kardiogram monster lochness, semua hal dilakukan untuk mengoptimalkan setiap bit yang kita kirimkan dari sebuah kabel.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu #6</title>
+      <link>https://wwwid.org/posts/2018-02-15_yang-web-developers-harus-tahu-sharp6/</link>
+      <pubDate>Thu, 15 Feb 2018 10:31:55 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-15_yang-web-developers-harus-tahu-sharp6/</guid>
+      <description>Mendekati Imlek, dan libur panjang saatnya kalian punya bacaan untuk long weekend. Di tengah kesibukan beberapa dari kalian yang lagi mengulik tantangan untuk membuat webapp bisa digunakan dalam 5 detik, mungkin beberapa update dan artikel menarik di bawah ini bisa jadi pengisi waktu luang kalian. Gong xi fa cai!
+Berita Terbaru Chrome akan menampilkan tanda sebuah web tidak aman tanpa HTTPS
+Tampilan website tanpa HTTPS per July 2018
+Inisiatif yang sebenarnya cukup lama untuk membuat web bisa lebih aman dengan protokol yang terenkripsi menggunakan HTTPS akan diperketat lagi.</description>
+    </item>
+    
+    <item>
+      <title>Tantangan Web Developer Untuk Membuat Aplikasi Web Bisa Digunakan Kurang Dari 5 Detik</title>
+      <link>https://wwwid.org/posts/2018-02-13_tantangan-web-developer-untuk-membuat-aplikasi-web-bisa-digunakan-kurang-dari-5-detik/</link>
+      <pubDate>Tue, 13 Feb 2018 07:45:58 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-13_tantangan-web-developer-untuk-membuat-aplikasi-web-bisa-digunakan-kurang-dari-5-detik/</guid>
+      <description>Ada banyak jalan menuju Roma, sama dengan ada banyak cara membuat sebuah aplikasi web dan banyak teknik untuk mengoptimalkan sebuah aplikasi web. Cara membuat saat ini sudah cukup banyak tutorialnya, tapi bagaimana dengan teknik mengoptimalkannya?
+Tantangan ini ingin mengajak teman-teman web developer Indonesia untuk mencoba membuat sebuah aplikasi RSS reader sederhana dengan goal membuat time to interactive dibawah 5 detik di kondisi jaringan 3G yang lambat dan mobile phone dengan spesifikasi menengah rata-rata.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu #5</title>
+      <link>https://wwwid.org/posts/2018-02-05_yang-web-developers-harus-tahu-sharp5/</link>
+      <pubDate>Mon, 05 Feb 2018 02:51:56 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-05_yang-web-developers-harus-tahu-sharp5/</guid>
+      <description>Who love Monday?? Nah sudah memasuki Februari dan saatnya untuk update terbaru untuk kalian biar tetap tahu perkembangan di dunia web. Kali ini bagian artikel menarik kami ubah menjadi konten menarik karena beberapa konten bukan cuma berupa tulisan tapi juga berupa video. Dan ini dia yang kalian harus tahu sebagai web developers. Have an amazing week guys!
+Berita Terbaru Ranking Google Search akan terpengaruh oleh page speed**
+**Sebelumnya page speed sudah berpengaruh pada ranking hasil pencarian Google Search, tapi hanya di desktop.</description>
+    </item>
+    
+    <item>
+      <title>Progressive Web Apps, mulai dari mana?</title>
+      <link>https://wwwid.org/posts/2018-02-02_progressive-web-apps-mulai-dari-mana/</link>
+      <pubDate>Fri, 02 Feb 2018 05:17:43 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-02_progressive-web-apps-mulai-dari-mana/</guid>
+      <description>Banyak orang salah kaprah pada saat berbicara tentang Progressive Web App(PWA), bahwa untuk bisa memiliki PWA harus Single Page Application(SPA), atau harus menggunakan framework modern seperti React, Angular, Polymer, dan lainnya. Sehingga banyak developer yang merasa bahwa mereka tidak bisa menerapkan PWA karena mereka masih menggunakan server rendered framework seperti PHP atau Ruby Framework. Padahal berbicara PWA, tentunya yang utama adalah kata progressive di mana maksud sebenarnya adalah peningkatan pengalaman user secara progresif atau bertahap.</description>
+    </item>
+    
+    <item>
+      <title>Membuat WordPress Tampil dan Bisa Digunakan Dalam 5 Detik</title>
+      <link>https://wwwid.org/posts/2017-11-14_membuat-wordpress-tampil-dan-bisa-digunakan-dalam-5-detik/</link>
+      <pubDate>Tue, 14 Nov 2017 11:34:40 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-11-14_membuat-wordpress-tampil-dan-bisa-digunakan-dalam-5-detik/</guid>
+      <description>TwentySeventeen — WordPress Default Theme
+Web yang modern saat ini mencoba menaikkan standar kecepatan tampil di layar yang rata-rata 19 detik di 3G menjadi 5 detik atau kurang. Dengan demikian potensi kehilangan user yang tidak ingin menunggu lebih dari 3 detik bisa dihindari.
+WordPress adalah CMS paling populer di dunia dengan angka penggunaan sekitar 24% dari semua website yang ada di internet. Dan karena WordPress dikembangkan sejak lama, maka metode pengembangan web dengan WordPress secara default belum cukup optimal untuk kondisi jaringan cellular yang masih sebagian besar di 2G dan spesifikasi rendah dari sebagian besar smart phone yang digunakan.</description>
+    </item>
+    
+    <item>
+      <title>Pembelajaran yang saya dapatkan dari Chrome Dev Summit untuk Indonesia</title>
+      <link>https://wwwid.org/posts/2017-10-30_pembelajaran-yang-saya-dapatkan-dari-chrome-dev-summit-untuk-indonesia/</link>
+      <pubDate>Mon, 30 Oct 2017 02:26:01 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-10-30_pembelajaran-yang-saya-dapatkan-dari-chrome-dev-summit-untuk-indonesia/</guid>
+      <description>Saya baru balik dari Chrome Dev Summit dan tulisan ini ingin merangkum beberapa hal yang saya dapatkan dari event tahunan team Chrome untuk para pengembang web. Dari semua yang disampaikan di-event ini, ada beberapa hal yang saya rasa sangat berguna bagi pengembang web Indonesia terutama dalam meningkatkan standar pengalaman web yang dikembangkan.
+Bagaimana Pengguna Mengakses Web Untuk membuka tulisan ini saya rasa yang menarik untuk disimak adalah The Web for the Entire World oleh Tal Oppenheimer ini.</description>
+    </item>
+    
+    <item>
+      <title>Web Payment Request API dan Kemungkinan Adopsinya di Indonesia</title>
+      <link>https://wwwid.org/posts/2017-10-09_web-payment-request-api-dan-kemungkinan-adopsinya-di-indonesia/</link>
+      <pubDate>Mon, 09 Oct 2017 06:42:43 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-10-09_web-payment-request-api-dan-kemungkinan-adopsinya-di-indonesia/</guid>
+      <description>Lanjutan dari tulisan sebelumnya terkait topik yang dibahas di Progressive Web App Roadshow Indonesia tentang service workers, kali ini saya ingin menulis salah satu topik yang dipresentasikan di sesi integration, yaitu Payment Request API.
+Kenapa perlu adanya Payment Request API? Seperti yang kalian tahu kalau melihat ekosistem startup Indonesia, e-commerce merupakan salah satu area yang mendominasi. Dan di e-commerce, pembayaran adalah metrics yang paling penting. Sales conversion menjadi goal utama dari startup e-commerce.</description>
+    </item>
+    
+    <item>
+      <title>Service Worker Tanpa Application Shell Untuk Mempercepat Navigasi Antar Halaman Web</title>
+      <link>https://wwwid.org/posts/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web/</link>
+      <pubDate>Thu, 21 Sep 2017 04:18:28 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web/</guid>
+      <description>Seminggu lalu saya disibukkan oleh 2 Google events yaitu Progressive Web App Road Show Indonesia yang diadakan di 2 kota yaitu Jakarta dan Yogyakarta. Dan salah satu yang ingin saya highlight adalah kata progressive. Bahwa dalam Progressive Web App, kita bisa meningkatkan experience dari sebuah web app secara bertahap, tidak harus langsung sekaligus. Bahkan tidak perlu menulis ulang aplikasi web kita untuk menjadikannya Progressive Web App.
+Sebagian besar developer yang saya kenal adalah backend developer yang berawal dari server side script seperti PHP, Ruby, Python, dan lainnya.</description>
+    </item>
+    
+  </channel>
+</rss>

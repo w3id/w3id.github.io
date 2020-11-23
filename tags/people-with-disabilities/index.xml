@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>People With Disabilities on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/people-with-disabilities/</link>
+    <description>Recent content in People With Disabilities on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Tue, 31 Oct 2017 00:11:45 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/people-with-disabilities/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Perkenalan Accessibility</title>
+      <link>https://wwwid.org/posts/2017-10-31_perkenalan-accessibility/</link>
+      <pubDate>Tue, 31 Oct 2017 00:11:45 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-10-31_perkenalan-accessibility/</guid>
+      <description>Sebagai seorang web developer, selain urusan performance dan interface pada website yang dibuat, kita perlu memperhatikan siapa user kita. Apakah user kita lahir tidak ada kekurangan fisik atau sebaliknya (disabilitas). Jika user yang mengakses website kita adalah kalangan disabiilitas maka kita perlu memberikan perhatian ekstra terhadap website kita. Lalu bagaimana caranya? Accessibility adalah jawaban dari hal tersebut.
+Definisi Accessibility secara garis besar adalah bagaimana user yang disabilitas bisa mengakses aplikasi kita layaknya orang normal (making disability users able to access our website).</description>
+    </item>
+    
+  </channel>
+</rss>

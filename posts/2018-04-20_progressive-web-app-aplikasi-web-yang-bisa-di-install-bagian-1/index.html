@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-ID">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Progressive Web App — Aplikasi Web Yang Bisa Di Install — Bagian 1 - Modern Web Community Indonesia</title>
+    
+    <meta name="description" content="Salah satu pengalaman yang sangat memudahkan pengguna aplikasi native dalam mengakses aplikasi yang mereka ingin gunakan adalah kemudahannya dalam men-launch aplikasi tersebut dengan semudah men-tap icon aplikasi di layar home smart phone mereka dan aplikasi langsung siap digunakan. Bandingkan dengan aplikasi web yang harus melakukan tap beberapa kali karena selain men-tap icon browser di layar home, tentu juga harus mengetikkan alamat URL dari aplikasi web tersebut. Ini yang membuat retention dan tingkat interaktifitas aplikasi web terkadang lebih kecil dibandingkan aplikasi native.">
+    <meta name="author" content="Yohan Totting">
+    
+    <link href="https://wwwid.org/an-old-hope.min.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/style.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/featured.css" rel="stylesheet">
+    <meta name="color-scheme" content="dark light">
+    
+    <link rel="apple-touch-icon" href="https://wwwid.org/apple-touch-icon.png">
+    <link rel="icon" href="https://wwwid.org/favicon.ico">
+    
+    <meta name="generator" content="Hugo 0.62.2" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://wwwid.org/index.xml" title="Modern Web Community Indonesia">
+    
+    
+    
+    <meta property="og:title" content="Progressive Web App — Aplikasi Web Yang Bisa Di Install — Bagian 1" />
+<meta property="og:description" content="Salah satu pengalaman yang sangat memudahkan pengguna aplikasi native dalam mengakses aplikasi yang mereka ingin gunakan adalah kemudahannya dalam men-launch aplikasi tersebut dengan semudah men-tap icon aplikasi di layar home smart phone mereka dan aplikasi langsung siap digunakan. Bandingkan dengan aplikasi web yang harus melakukan tap beberapa kali karena selain men-tap icon browser di layar home, tentu juga harus mengetikkan alamat URL dari aplikasi web tersebut. Ini yang membuat retention dan tingkat interaktifitas aplikasi web terkadang lebih kecil dibandingkan aplikasi native." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wwwid.org/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/" />
+<meta property="og:image" content="https://wwwid.org/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/images/1.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/images/2.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/images/3.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/images/4.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/images/5.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/images/6.png" />
+<meta property="article:published_time" content="2018-04-20T08:49:47+00:00" />
+<meta property="article:modified_time" content="2019-05-21T11:21:49+07:00" />
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118693499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-118693499-2');
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MXRJCWB');</script>
+  
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  
+  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+  
+    
+        <script>
+    if("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/sw.js").then(swReg => {}).catch(err => {
+                console.error('Service Worker Error', err);
+            });
+        });
+    }
+  </script>
+    
+  </head>
+  <body class="single">
+    <header class="header">
+      <nav class="nav">
+        
+        <p class="logo"><a href="https://wwwid.org/">
+          <img class="logo light" 
+          srcset="https://wwwid.org/images/logo-light-bg@2x.png 2x,
+          https://wwwid.org/images/logo-light-bg.png"
+          src="https://wwwid.org/images/logo-light-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/> 
+          <img class="logo dark" 
+          srcset="https://wwwid.org/images/logo-dark-bg@2x.png 2x,
+          https://wwwid.org/images/logo-dark-bg.png"
+          src="https://wwwid.org/images/logo-dark-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/>
+        
+        </a></p>
+        
+        
+        <ul class="menu">
+          
+          <li>
+            <a href="/pages/tentang-kami/">Tentang Kami</a>
+          </li>
+          
+        </ul>
+        
+      </nav>
+    </header>
+    <main class="main">
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": "https:\/\/wwwid.org\/posts\/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1\/",
+  "headline": "Progressive Web App — Aplikasi Web Yang Bisa Di Install — Bagian 1",
+  "datePublished": "2018-04-20",
+  "dateModified": "2019-05-21",
+  "description": "Salah satu pengalaman yang sangat memudahkan pengguna aplikasi native dalam mengakses aplikasi yang mereka ingin gunakan adalah kemudahannya dalam men-launch aplikasi tersebut dengan semudah men-tap icon aplikasi di layar home smart phone mereka dan aplikasi langsung siap digunakan. Bandingkan dengan aplikasi web yang harus melakukan tap beberapa kali karena selain men-tap icon browser di layar home, tentu juga harus mengetikkan alamat URL dari aplikasi web tersebut. Ini yang membuat retention dan tingkat interaktifitas aplikasi web terkadang lebih kecil dibandingkan aplikasi native.","author": {
+    "@type": "Person",
+    "name": "Yohan Totting"
+  },
+  
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "WWWID",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https:\/\/wwwid.org\//images/wwwid-logogram.png",
+      "width": 388,
+      "height": 388
+    }
+  },
+  
+  "image": {
+    "@type": "ImageObject",
+    "url": "\/posts\/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1\/images\/1.png"
+  }
+   
+  
+  }
+  </script>
+<article class="post-single">
+  <header class="post-header">
+   
+    <h1 class="post-title">Progressive Web App — Aplikasi Web Yang Bisa Di Install — Bagian 1</h1>
+    
+    <div class="post-meta">Yohan Totting · 20 Apr 2018</div>
+  </header><div class="post-featured-image">
+    <img src="/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/images/1.png" alt="feature image for Progressive Web App — Aplikasi Web Yang Bisa Di Install — Bagian 1"/>
+  </div>
+  
+  <div class="post-content"><p>Salah satu pengalaman yang sangat memudahkan pengguna aplikasi <em>native</em> dalam mengakses aplikasi yang mereka ingin gunakan adalah kemudahannya dalam men-launch aplikasi tersebut dengan semudah men-tap <em>icon</em> aplikasi di layar <em>home smart phone</em> mereka dan aplikasi langsung siap digunakan. Bandingkan dengan aplikasi web yang harus melakukan tap beberapa kali karena selain men-tap <em>icon</em> <em>browser</em> di layar home, tentu juga harus mengetikkan alamat URL dari aplikasi web tersebut. Ini yang membuat <em>retention</em> dan tingkat interaktifitas aplikasi web terkadang lebih kecil dibandingkan aplikasi native.</p>
+<p>Berkaca dari contoh di atas, maka komunitas web mencoba mencari cara bagaimana memberikan pengalaman yang sama, di mana pengguna dapat dengan mudah mengakses aplikasi web semudah melakukan sekali tap di layar smartphone. Salah satu caranya adalah adanya tombol <em>add to home screen</em> (A2HS) yang bila di-tap maka akan membuat icon launcher di layar smartphone pengguna. Ini tidak cuma ada di Android, tapi juga tersedia di iOS.</p>
+<p><img src="/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/images/1.png" alt="image"></p>
+<p>Tombol add to home screen di iOS</p>
+<p>Tapi ternyata tidak semua pengguna bisa melihat adanya tombol tersebut sehingga pengguna <em>smartphone</em> masih mengeluhkan repotnya harus mengetikkan alamat URL berulang kali setiap ingin mengakses aplikasi web yang mereka gunakan. Karena memang posisinya tidak langsung tampak di kalau di Android, atau icon di iOS masih kurang familiar buat pengguna. Dari situ mulailah dikembangkan semacam dialog yang akan menanyakan apakah ingin menambahkan akses langsung di layar <em>smartphone</em> dengan <em>icon launcher</em>, bila pengguna mengakses suatu aplikasi web cukup sering dan memenuhi <a href="https://developers.google.com/web/fundamentals/app-install-banners/#what_are_the_criteria">kriteria tertentu</a>.</p>
+<h3 id="syarat-agar-bisa-menampilkan-add-to-homescreen">Syarat Agar Bisa Menampilkan Add To Homescreen</h3>
+<p>Agar website tersebut bisa memunculkan dialog <em>add to homescreen</em> maka diperlukan beberapa syarat yang harus dipenuhi:</p>
+<ol>
+<li>Memiliki <em>file web manifest</em></li>
+<li>Memiliki <em>service worker</em> teregisterasi</li>
+<li>Diakses di protokol aman HTTPS</li>
+<li>Memenuhi <a href="https://www.chromium.org/developers/design-documents/site-engagement">tingkat interaktifitas tertentu dengan halaman web tersebut</a> (ini selalu berubah dan berbeda di tiap browser)</li>
+</ol>
+<p>Bila syarat di atas terpenuhi maka kita bisa menempatkan icon launcher web tersebut di home screen kita baik melalui menu <em>add to homescreen</em> di <em>browser</em> atau muncul secara otomatis berdasarkan tingkat interaktifitas pengguna.</p>
+<p><img src="/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/images/2.png" alt="image"></p>
+<p>Dialog add to home screen di Android Chrome</p>
+<p>Untuk menguji coba apakah website kalian sudah bisa menampilkan dialog <em>add to homescreen</em>, bisa menggunakan <a href="https://developers.google.com/web/tools/chrome-devtools/">ChomeDevTool</a> dengan masuk ke <em>tab application</em> dan mengklik tombol <em>add to homescreen</em> seperti di gambar ini.</p>
+<p><img src="/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/images/3.png" alt="image"></p>
+<p>Mengaktifkan dialog add to homescreen secara manual</p>
+<p>Setelah aplikasi dapat diakses langsung dari layar <em>smartphone</em> langsung tanpa mengetikkan alamat URL, ternyata sebagian besar pengguna berekspektasi bahwa layar aplikas web yang dijalankan tersebut akan muncul tanpa <em>location bar</em> selayaknya sebuah aplikasi <em>native</em>, bukan seperti <em>browser</em>.</p>
+<h3 id="web-application-manifest">Web Application Manifest</h3>
+<p>Untuk menentukan apakah sebuah aplikasi web yang sudah terpasang di layar <em>smartphone</em> bisa muncul <em>full screen</em> tanpa <em>location bar</em> maka diperlukan sebuah <em>manifest</em> <em>file</em> yang mendeskripsikan bagaimana aplikasi harus ditampilkan pada saat dijalankan dari <em>icon launcher</em>, bukan dari mengetikkan alamat di browser. <em>Manifest file</em> ini dinamakan <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest"><em>Application Manifest</em></a> dengan format JSON file yang isinya kurang lebih seperti di bawah ini.
+<code>{   &amp;#34;name&amp;#34;: &amp;#34;HackerWeb&amp;#34;,   &amp;#34;short_name&amp;#34;: &amp;#34;HackerWeb&amp;#34;,   &amp;#34;start_url&amp;#34;: &amp;#34;/app&amp;#34;,   &amp;#34;display&amp;#34;: &amp;#34;standalone&amp;#34;,   &amp;#34;background_color&amp;#34;: &amp;#34;#fff&amp;#34;,   &amp;#34;description&amp;#34;: &amp;#34;A simply readable Hacker News app.&amp;#34;,   &amp;#34;icons&amp;#34;: [{   &amp;#34;src&amp;#34;: &amp;#34;images/touch/homescreen144.png&amp;#34;,   &amp;#34;sizes&amp;#34;: &amp;#34;144x144&amp;#34;,   &amp;#34;type&amp;#34;: &amp;#34;image/png&amp;#34;   }, {   &amp;#34;src&amp;#34;: &amp;#34;images/touch/homescreen168.png&amp;#34;,   &amp;#34;sizes&amp;#34;: &amp;#34;168x168&amp;#34;,   &amp;#34;type&amp;#34;: &amp;#34;image/png&amp;#34;   }, {   &amp;#34;src&amp;#34;: &amp;#34;images/touch/homescreen192.png&amp;#34;,   &amp;#34;sizes&amp;#34;: &amp;#34;192x192&amp;#34;,   &amp;#34;type&amp;#34;: &amp;#34;image/png&amp;#34;   }],   &amp;#34;related_applications&amp;#34;: [{   &amp;#34;platform&amp;#34;: &amp;#34;web&amp;#34;   }, {   &amp;#34;platform&amp;#34;: &amp;#34;play&amp;#34;,   &amp;#34;url&amp;#34;: &amp;#34;https://play.google.com/store/apps/details?id=cheeaun.hackerweb&amp;#34;   }]   }</code></p>
+<p>Di contoh di atas ada bagian <code>start_url:&amp;#34;/app&amp;#34;</code> yang menjadi pembeda antara aplikasi yang dijalankan dari browser dengan aplikasi yang dijalankan dengan tap di icon di home screen smartphone. Dengan demikian kalian bisa mengkontrol dan mencatat setiap akses dari launcher misalnya untuk keperluan analytics.</p>
+<h3 id="hal-yang-perlu-diperhatikan-sebelum-implementasi-add-to-homescreen">Hal Yang Perlu Diperhatikan Sebelum Implementasi Add To Homescreen</h3>
+<p>Kebanyakan developer akan mengeksploitasi fungsi dan menggunakan tanpa memikirkan bagaimana pengguna menggunakannya. Salah satu contohnya adalah <em>push notification</em> yang diminta oleh hampir sebagian besar website modern.</p>
+<p>Hal ini sangat mengganggu bila kita tidak ingin menerima <em>push notification</em> tapi setiap website meminta secara otomatis pada saat website mereka dibuka pertama kali. Bahkan beberapa mulai mengakali agar tidak terblok dengan tetap memunculkan custom dialog pertanyaan apakah mau menerima push notification sebelum melakukan <em>trigger request push notification browser</em>. Hal ini karena di browser begitu pengguna melakukan <em>block</em> pada website tersebut maka kecil kemungkinan dia akan di-<em>unblock</em> lagi.</p>
+<p><img src="/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/images/4.png" alt="image"></p>
+<p>Custom dialog untuk menawarkan notifikasi di Detik.com</p>
+<p>Dampak push notification inilah yang ingin dihindari oleh <em>add to homescreen,</em> karena kita tidak ingin setiap kita membuka website langsung muncul tawaran install seperti iklan pop-up yang menjadi hal wajib di website berita Indonesia. Padahal harusnya setiap penawaran yang dilakukan oleh sebuah website harusnya berdasarkan konteks tertentu yang kemungkinan besar user memang perlu apa yang kita tawarkan.</p>
+<p><img src="/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/images/5.png" alt="image"></p>
+<p>Twitter Lite hanya menawarkan push notification bila kita membuka page notification.</p>
+<p>Contoh yang baik misalnya Twitter Lite yang menawarkan untuk mengaktifkan <em>push notification</em> hanya pada saat kita membuka halaman atau <em>tab notification</em>, bukan pada saat kita membuka Twitter lite. Selain itu memberikan konteks yang tepat kepada pengguna apa manfaat buat mereka bila mengaktifkan push notification.</p>
+<p><img src="/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/images/6.png" alt="image"></p>
+<p>Dialog <em>add to homescreen default</em> tanpa konteks apapun</p>
+<p>Bila melihat <em>dialog window add to homescreen default</em> di atas, maka jelas bahwa <em>add to homescreen</em> tidak memiliki konteks yang baik. Tidak ada alasan yang diberikan kenapa pengguna sebaiknya <em>add to homescreen</em>. Sehingga pengguna yang awam akan bingung apa yang ditawarkan. Berikut adalah bagaimana memberikan informasi konteks untuk pengguna.</p>
+<p><img src="/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/images/7.png" alt="image"></p>
+<p>Contoh dialog untuk menawarkan A2HS</p>
+<p>Lalu bagaimana mengontrol flow dan memberikan konteks pada penawaran <em>add to homescreen</em> ini? Sedangkan tidak ada API khusus untuk melakukan pemanggilan manual dialog <em>add to homescreen</em>. Tunggu di bagian 2 yang akan membahas cara implementasinya.</p>
+</div>
+  <footer class="post-footer">
+    <div class="post-share">
+        <amp-social-share type="twitter"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="facebook"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="email"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="pinterest"
+        width="45"
+        height="33"></amp-social-share>
+    </div>
+    
+    <p class="section-title">Klik kata kunci di bawah ini untuk melihat konten terkait lebih banyak</p>
+    <ul class="post-tags">
+      
+      <li><a href="https://wwwid.org/tags/add-to-homescreen/">Add To Homescreen</a></li>
+      
+      <li><a href="https://wwwid.org/tags/progressive-web-app/">Progressive Web App</a></li>
+      
+      <li><a href="https://wwwid.org/tags/front-end-development/">Front End Development</a></li>
+      
+      <li><a href="https://wwwid.org/tags/web-app-manifest/">Web App Manifest</a></li>
+      
+    </ul>
+    
+  </footer>
+  
+  
+  
+  
+</article>
+
+
+<h3 class="section-title">Related Contents</h3>
+<amp-carousel class="featured-block" height="200"
+  layout="fixed-height"
+  type="carousel">
+  
+  <div class="featured-post">
+        <a class="entry-link" href="https://wwwid.org/posts/2018-02-15_yang-web-developers-harus-tahu-sharp6/">
+        
+            <img src="/posts/2018-02-15_yang-web-developers-harus-tahu-sharp6/images/1.png" alt="featured image">
+            <div class="overlay"></div>
+        
+        <h4>Yang Web Developers Harus Tahu #6</h4>
+        </a>
+        </div>
+    
+  <div class="featured-post">
+        <a class="entry-link" href="https://wwwid.org/posts/2018-02-05_yang-web-developers-harus-tahu-sharp5/">
+        
+            <img src="/posts/2018-02-05_yang-web-developers-harus-tahu-sharp5/images/1.gif" alt="featured image">
+            <div class="overlay"></div>
+        
+        <h4>Yang Web Developers Harus Tahu #5</h4>
+        </a>
+        </div>
+    
+  <div class="featured-post">
+        <a class="entry-link" href="https://wwwid.org/posts/2018-03-20_yang-web-developers-harus-tahu-sharp7/">
+        
+            <img src="/posts/2018-03-20_yang-web-developers-harus-tahu-sharp7/images/1.png" alt="featured image">
+            <div class="overlay"></div>
+        
+        <h4>Yang Web Developers Harus Tahu #7</h4>
+        </a>
+        </div>
+    
+  <div class="featured-post">
+        <a class="entry-link" href="https://wwwid.org/posts/2018-02-16_peluang-dan-tantangan-web-developer/">
+        
+            <img src="/posts/2018-02-16_peluang-dan-tantangan-web-developer/images/2.jpeg" alt="featured image">
+            <div class="overlay"></div>
+        
+        <h4>Peluang dan Tantangan Web Developer</h4>
+        </a>
+        </div>
+    
+  <div class="featured-post">
+        <a class="entry-link" href="https://wwwid.org/posts/2018-02-13_tantangan-web-developer-untuk-membuat-aplikasi-web-bisa-digunakan-kurang-dari-5-detik/">
+        
+            <img src="/posts/2018-02-13_tantangan-web-developer-untuk-membuat-aplikasi-web-bisa-digunakan-kurang-dari-5-detik/images/1.png" alt="featured image">
+            <div class="overlay"></div>
+        
+        <h4>Tantangan Web Developer Untuk Membuat Aplikasi Web Bisa Digunakan Kurang Dari 5 Detik</h4>
+        </a>
+        </div>
+    
+</amp-carousel>
+
+</main>
+<footer class="footer">
+  <span>&copy; 2020 <a href="https://wwwid.org/">Modern Web Community Indonesia</a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="https://wwwid.org/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
+

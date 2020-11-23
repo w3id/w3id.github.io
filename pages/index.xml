@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/pages/</link>
+    <description>Recent content in Pages on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Wed, 22 May 2019 10:09:50 +0700</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tentang Kami</title>
+      <link>https://wwwid.org/pages/tentang-kami/</link>
+      <pubDate>Wed, 22 May 2019 10:09:50 +0700</pubDate>
+      
+      <guid>https://wwwid.org/pages/tentang-kami/</guid>
+      <description>Apa Itu WWWID? Kami melihat bahwa web adalah medium masa depan untuk menghubungkan pengguna dengan informasi dan layanan online. Namun pengembang web di Indonesia sebagian besar masih tidak fokus mengembangkan web yang ditujukan untuk kenyamanan pengguna. Pengembang web Indonesia masih sekedar membuat web mereka bisa diakses tanpa peduli apakah web tersebut bisa memberikan layanan yang baik bagi penggunanya.
+Untuk itu kami komunitas pengembang web modern Indonesia mencoba memberikan edukasi bagi para pengembang web Indonesia melalui pengembangan konten, diskusi online, serta meetup offline.</description>
+    </item>
+    
+  </channel>
+</rss>

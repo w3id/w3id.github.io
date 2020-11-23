@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Architecture on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/architecture/</link>
+    <description>Recent content in Architecture on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Fri, 01 Feb 2019 01:58:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Visualisasi Arsitektur Aplikasi Dengan Madge</title>
+      <link>https://wwwid.org/posts/2019-02-01_visualisasi-arsitektur-aplikasi-dengan-madge/</link>
+      <pubDate>Fri, 01 Feb 2019 01:58:04 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2019-02-01_visualisasi-arsitektur-aplikasi-dengan-madge/</guid>
+      <description>Madge merupakan Aplikasi pengembang yang menghasilkan Grafik Visual mengenai struktur sebuah aplikasi, modul-modul yang digunakan (dependencies Modul), &amp;amp; Lingkaran Dependensi atau “Keterkaitan” satu atau lebih penggunaan sebuah modul (Circular Dependency).
+Circular dependency - Wikipedia
+Sebelumnya, saya sedang mempelajari Lighthouse, tepatnya Arsitektur dari Lighthouse kemudian mendapatkan sebuah informasi menarik “yah , tentang Madge ini” dari **** tautan ini.
+GoogleChrome/lighthouse
+Pada tautan tersebut saya menemukan gambar atau visual grafik dari arsitektur lighthouse.</description>
+    </item>
+    
+  </channel>
+</rss>

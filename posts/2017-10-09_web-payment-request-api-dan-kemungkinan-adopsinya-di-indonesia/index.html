@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-ID">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Web Payment Request API dan Kemungkinan Adopsinya di Indonesia - Modern Web Community Indonesia</title>
+    
+    <meta name="description" content="Lanjutan dari tulisan sebelumnya terkait topik yang dibahas di Progressive Web App Roadshow Indonesia tentang service workers, kali ini saya ingin menulis salah satu topik yang dipresentasikan di sesi integration, yaitu Payment Request API.
+Kenapa perlu adanya Payment Request API? Seperti yang kalian tahu kalau melihat ekosistem startup Indonesia, e-commerce merupakan salah satu area yang mendominasi. Dan di e-commerce, pembayaran adalah metrics yang paling penting. Sales conversion menjadi goal utama dari startup e-commerce.">
+    <meta name="author" content="Yohan Totting">
+    
+    <link href="https://wwwid.org/an-old-hope.min.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/style.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/featured.css" rel="stylesheet">
+    <meta name="color-scheme" content="dark light">
+    
+    <link rel="apple-touch-icon" href="https://wwwid.org/apple-touch-icon.png">
+    <link rel="icon" href="https://wwwid.org/favicon.ico">
+    
+    <meta name="generator" content="Hugo 0.62.2" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://wwwid.org/index.xml" title="Modern Web Community Indonesia">
+    
+    
+    
+    <meta property="og:title" content="Web Payment Request API dan Kemungkinan Adopsinya di Indonesia" />
+<meta property="og:description" content="Apa itu Web Payment Request API, kenapa perlu adanya API khusus untuk pembayaran online dan bagaimana adopsinya di Indonesia? Bagaimana cara menggunakan Payment Request API." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wwwid.org/posts/2017-10-09_web-payment-request-api-dan-kemungkinan-adopsinya-di-indonesia/" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-10-09_web-payment-request-api-dan-kemungkinan-adopsinya-di-indonesia/images/1.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-10-09_web-payment-request-api-dan-kemungkinan-adopsinya-di-indonesia/images/2.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-10-09_web-payment-request-api-dan-kemungkinan-adopsinya-di-indonesia/images/3.gif" />
+<meta property="article:published_time" content="2017-10-09T06:42:43+00:00" />
+<meta property="article:modified_time" content="2019-05-21T11:21:49+07:00" />
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118693499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-118693499-2');
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MXRJCWB');</script>
+  
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  
+  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+  
+    
+        <script>
+    if("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/sw.js").then(swReg => {}).catch(err => {
+                console.error('Service Worker Error', err);
+            });
+        });
+    }
+  </script>
+    
+  </head>
+  <body class="single">
+    <header class="header">
+      <nav class="nav">
+        
+        <p class="logo"><a href="https://wwwid.org/">
+          <img class="logo light" 
+          srcset="https://wwwid.org/images/logo-light-bg@2x.png 2x,
+          https://wwwid.org/images/logo-light-bg.png"
+          src="https://wwwid.org/images/logo-light-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/> 
+          <img class="logo dark" 
+          srcset="https://wwwid.org/images/logo-dark-bg@2x.png 2x,
+          https://wwwid.org/images/logo-dark-bg.png"
+          src="https://wwwid.org/images/logo-dark-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/>
+        
+        </a></p>
+        
+        
+        <ul class="menu">
+          
+          <li>
+            <a href="/pages/tentang-kami/">Tentang Kami</a>
+          </li>
+          
+        </ul>
+        
+      </nav>
+    </header>
+    <main class="main">
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": "https:\/\/wwwid.org\/posts\/2017-10-09_web-payment-request-api-dan-kemungkinan-adopsinya-di-indonesia\/",
+  "headline": "Web Payment Request API dan Kemungkinan Adopsinya di Indonesia",
+  "datePublished": "2017-10-09",
+  "dateModified": "2019-05-21",
+  "description": "Lanjutan dari tulisan sebelumnya terkait topik yang dibahas di Progressive Web App Roadshow Indonesia tentang service workers, kali ini saya ingin menulis salah satu topik yang dipresentasikan di sesi integration, yaitu Payment Request API.\nKenapa perlu adanya Payment Request API? Seperti yang kalian tahu kalau melihat ekosistem startup Indonesia, e-commerce merupakan salah satu area yang mendominasi. Dan di e-commerce, pembayaran adalah metrics yang paling penting. Sales conversion menjadi goal utama dari startup e-commerce.","author": {
+    "@type": "Person",
+    "name": "Yohan Totting"
+  },
+  
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "WWWID",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https:\/\/wwwid.org\//images/wwwid-logogram.png",
+      "width": 388,
+      "height": 388
+    }
+  },
+  
+  "image": {
+    "@type": "ImageObject",
+    "url": "\/posts\/2017-10-09_web-payment-request-api-dan-kemungkinan-adopsinya-di-indonesia\/images\/1.png"
+  }
+   
+  
+  }
+  </script>
+<article class="post-single">
+  <header class="post-header">
+   
+    <h1 class="post-title">Web Payment Request API dan Kemungkinan Adopsinya di Indonesia</h1>
+    
+    <div class="post-meta">Yohan Totting · 9 Oct 2017</div>
+  </header><div class="post-featured-image">
+    <img src="/posts/2017-10-09_web-payment-request-api-dan-kemungkinan-adopsinya-di-indonesia/images/1.png" alt="feature image for Web Payment Request API dan Kemungkinan Adopsinya di Indonesia"/>
+  </div>
+  
+  <div class="post-content"><p>Lanjutan dari tulisan sebelumnya terkait topik yang dibahas di <em>Progressive Web App Roadshow</em> Indonesia tentang <em>service workers</em>, kali ini saya ingin menulis salah satu topik yang dipresentasikan di sesi <em>integration</em>, yaitu <em>Payment Request API</em>.</p>
+<h3 id="kenapa-perlu-adanya-payment-request-api">Kenapa perlu adanya Payment Request API?</h3>
+<p>Seperti yang kalian tahu kalau melihat ekosistem startup Indonesia, <em>e-commerce</em> merupakan salah satu area yang mendominasi. Dan di e-commerce, pembayaran adalah metrics yang paling penting. <em>Sales conversion</em> menjadi goal utama dari startup <em>e-commerce</em>. Dan Indonesia adalah <em>mobile first country</em> di mana penggunaan mobile mendominasi dalam hal mengakses internet.</p>
+<p><img src="/posts/2017-10-09_web-payment-request-api-dan-kemungkinan-adopsinya-di-indonesia/images/1.png" alt="image"></p>
+<p>Persentase pembelian di mobile 66% terjadi di web.</p>
+<p>Menurut data global 66% transaksi <em>e-commerce</em> di <em>mobile</em> itu terjadi di web. Tapi sayangnya walaupun angka tersebut cukup besar, tapi kegagalan pembayaran cukup besar terjadi di mobile kalau dibandingkan dengan desktop. Angkanya cukup besar, hingga 66% lebih kecil dibandingkan di desktop.</p>
+<p><img src="/posts/2017-10-09_web-payment-request-api-dan-kemungkinan-adopsinya-di-indonesia/images/2.png" alt="image"></p>
+<p>Transaksi pembayaran di mobile 66% lebih sedikit dibandingkan di desktop</p>
+<p>Belajar dari angka di atas, maka tantangan buat para pelaku <em>e-commerce</em> adalah bagaimana untuk memperbaiki pengalaman dalam transaksi <em>e-commerce</em>.</p>
+<p>Salah satu alasan akan konversi dari pengunjung menjadi pembeli adalah setiap langkah yang harus dilakukan tersebut berpotensi membuat pengunjung tidak melanjutkan. Bahkan data riset yang ada menunjukkan bahwa [<strong>setiap langkah yang harus dilakukan pengunjung berpotensi menghilangkan 20% dari pengunjung tersebut</strong>.] (<a href="http://blog.gaborcselle.com/2012/10/every-step-costs-you-20-of-users.html)Dan">http://blog.gaborcselle.com/2012/10/every-step-costs-you-20-of-users.html)Dan</a> alasan inilah kenapa kita membutuhkan cara pembayaran yang lebih mudah di web untuk mengurangi jumlah kehilangan user yang berlanjut ke penyelesaian transaksi.</p>
+<p><img src="/posts/2017-10-09_web-payment-request-api-dan-kemungkinan-adopsinya-di-indonesia/images/3.gif" alt="image"></p>
+<p>Payment Request API</p>
+<p>Kalau ingin mendeskripsikan apa fungsi dari <em>Payment Request API</em> ini, maka <strong><em>Payment Request API</em> ini adalah cara <em>browsers</em> untuk bisa mengumpulkan data pembayaran seperti data pembeli, alamat pengiriman, dan data pembayaran di mana semua input data ini bisa dibilang membutuhkan 3 langkah.</strong> Sehingga data tersebut bisa diproses lebih lanjut di <em>payment gateway</em>.</p>
+<p>Bayangkan bila semua data transaksi sudah terekam di <em>browsers</em>, maka pengguna tidak perlu lagi memasukkan semua data tersebut. Dengan demikian 3 langkah bisa dikurangi, dan pembeli bisa membayar hanya dengan mengkonfirmasi data saja.</p>
+<p>Setelah mencoba bereksperimen dengan <em>Payment Request API</em> ini, saya berkesimpulan bahwa API ini memang bisa mengurangi hambatan <em>user experiences(UX)</em> yang buruk dalam proses transaksi pembayaran. UX yang buruk tentu berpotensi membuat calon pembeli tidak melanjutkan pembayaran karena bingung, kesulitan, atau tidak punya waktu.</p>
+<p>Bahkan salah satu <em>e-commerce startup</em> yang sempat saya bimbing di <a href="https://developers.google.com/startups/accelerator/">Google Launchpad Accelerator</a> memiliki tantangan bagaimana mengurangi tingginya angka pengguna yang memasukkan barang ke keranjang belanja tapi tidak terkonversi menjadi pembeli. Dan sebagian pengguna yang tidak terkonversi itu ternyata bila di-<em>followup</em> kembali, sekitar 50% akan melanjutkan pembayaran. Maka kesimpulannya setelah ditanya, sebagian besar mereka tidak berlanjut ke pembayaran karena terdistraksi. Distraksi yang mungkin bisa dihindari bila pembayaran bisa diselesaikan dalam waktu singkat.</p>
+<h3 id="kemungkinan-adopsi-payment-api-request-di-indonesia">Kemungkinan adopsi Payment API Request di Indonesia</h3>
+<p>Namun salah satu yang menjadi kendala implementasi <em>Payment Request API</em> ini di Indonesia dan sebagian besar <em>emerging market countries</em> tentu adalah cara pembayaran. <em>Payment Request API</em> hingga tulisan ini dibuat cuma mendukung 2 cara pembayaran, yaitu dengan kartu kredit/debit, dan aplikasi pembayaran seperti Paypal, Stripe, Android Pay, atau Apple Pay. Sedangkan negara-negara seperti Indonesia belum banyak menggunakan 2 media pembayaran tersebut. Sebenarnya saat ini sudah ada <a href="http://w3c.github.io/webpayments-methods-credit-transfer-direct-debit/">r</a>ancangan spesifikasi untuk pembayaran transfer antar bank, namun hingga saat ini belum ada wacana untuk implementasinya di browser.</p>
+<p>Namun seperti kita ketahui bahwa Indonesia sedang dalam masa transisi media pembayaran. Di mana pemerintah dan masyarakat mulai mengadopsi cashless society. Beberapa contohnya adalah maraknya transportasi <em>online</em>, pembayaran transport seperti Transjakarta, kereta api, dan tol dengan kartu e-money. Bahkannya maraknya <em>startups fintech</em> yang bermunculan dalam setahun belakangan. Ini membuka peluang untuk integrasi aplikasi pembayaran online dengan <em>Payment Request API</em>.</p>
+<h3 id="integrasi-_payment-request-api_-dengan-aplikasi-pembayaran-onlineperbankan">Integrasi <em>Payment Request API</em> dengan aplikasi pembayaran online/perbankan</h3>
+<p>Intergrasi <em>Payment Request API</em> dengan aplikasi pembayaran sendiri memang sudah tersedia. Untuk implementasi yang banyak saya lihat dari contoh-contoh yang ada sebagian besar adalah integrasi dengan Android Pay atau Apple Pay. Di Indonesia sendiri beberapa peluang yang memungkinkan untuk integrasi ini adalah integrasi dengan <a href="https://www.go-jek.com/go-pay/">Go-Pay</a>, <a href="https://kudo.co.id/">Kudo</a>, <a href="https://www.jenius.com/">Jenius</a>, <a href="https://www.dbs.com/digibank/id/id/index.html">Digibank</a>, <a href="https://ibank.bankmandiri.co.id/retail3/">Mandiri Online</a>, atau aplikasi online pembayaran atau perbankan lainnya.</p>
+<p>Integrasi ini tidaklah instant, karena diperlukan implementasi di sisi aplikasi dan juga di merchant atau web si penjual. Di sisi aplikasi diperlukan intent untuk menerima request pembayaran dari aplikasi lain, dalam hal ini yaitu dari browsers. Lalu dari sisi web penjual atau merchant memerlukan implementasi <em>Payment Request API</em> dan mendaftarkan aplikasi pembayaran yang ingin didukung di web tersebut.</p>
+<p>Spesifikasi dukungan <em>Payment Request API</em> dengan aplikasi pembayaran ini bisa dilihat <a href="https://w3c.github.io/payment-method-manifest/">di halaman ini.</a> Dan bisa dilihat juga contoh implementasi menggunakan [Android Pay] (<a href="https://developers.google.com/web/fundamentals/payments/android-pay)dan">https://developers.google.com/web/fundamentals/payments/android-pay)dan</a> <a href="https://github.com/GoogleChrome/appr-wrapper">Apple Pay</a> sebagai referensi kalau kalian ingin melihat bagaimana untuk menintegrasikan dengan aplikasi pembayaran yang kalian punya.</p>
+<p>Saat tulisan ini dibuat saya belum selesai dalam bereksperimen dengan <em>Payment Request API</em>. Dan ingin mencoba apakah mungkin kita mengintegrasikan <em>Payment Request API</em> dengan aplikasi pembayaran seperti <a href="https://www.go-jek.com/go-pay/">Go-Pay</a>, <a href="https://kudo.co.id/">Kudo</a>, atau lainnya? Akan saya <em>update</em> di tulisan berikutnya bagaimana hasil dari eksperimen integrasi <em>Payment Request API</em> ini dengan aplikasi pembayaran online.</p>
+</div>
+  <footer class="post-footer">
+    <div class="post-share">
+        <amp-social-share type="twitter"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="facebook"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="email"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="pinterest"
+        width="45"
+        height="33"></amp-social-share>
+    </div>
+    
+    <p class="section-title">Klik kata kunci di bawah ini untuk melihat konten terkait lebih banyak</p>
+    <ul class="post-tags">
+      
+      <li><a href="https://wwwid.org/tags/e-commerce/">E-commerce</a></li>
+      
+      <li><a href="https://wwwid.org/tags/progressive-web-app/">Progressive Web App</a></li>
+      
+      <li><a href="https://wwwid.org/tags/fintech/">Fintech</a></li>
+      
+      <li><a href="https://wwwid.org/tags/payment-request-api/">Payment Request Api</a></li>
+      
+    </ul>
+    
+  </footer>
+  
+  
+  
+  
+</article>
+
+
+<h3 class="section-title">Related Contents</h3>
+<amp-carousel class="featured-block" height="200"
+  layout="fixed-height"
+  type="carousel">
+  
+  <div class="featured-post">
+        <a class="entry-link" href="https://wwwid.org/posts/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web/">
+        
+            <img src="/posts/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web/images/1.png" alt="featured image">
+            <div class="overlay"></div>
+        
+        <h4>Service Worker Tanpa Application Shell Untuk Mempercepat Navigasi Antar Halaman Web</h4>
+        </a>
+        </div>
+    
+</amp-carousel>
+
+</main>
+<footer class="footer">
+  <span>&copy; 2020 <a href="https://wwwid.org/">Modern Web Community Indonesia</a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="https://wwwid.org/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
+

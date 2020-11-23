@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Front End Development on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/front-end-development/</link>
+    <description>Recent content in Front End Development on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Fri, 30 Nov 2018 10:30:16 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/front-end-development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Chrome Dev Summit 2018, mana yang kalian harus coba implementasikan? ( 1 dari 2)</title>
+      <link>https://wwwid.org/posts/2018-11-30_chrome-dev-summit-2018-mana-yang-kalian-harus-coba-implementasikan-1-dari-2/</link>
+      <pubDate>Fri, 30 Nov 2018 10:30:16 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-11-30_chrome-dev-summit-2018-mana-yang-kalian-harus-coba-implementasikan-1-dari-2/</guid>
+      <description>Google Developer Experts Web di CDS 2018
+Chrome Dev Summit(CDS) 2018 yang merupakan ajang tahunan Google Chrome untuk bertatap muka dengan para pengembang web baru saja diselenggarakan beberapa minggu lalu di mana event selama 2 hari tersebut memberikan insights seputar kondisi web saat ini, dan apa yang akan hadir di web platform ke depannya. Terlalu banyak konten yang kadang malah membuat bingung pengembang web, mana yang harus saya coba gunakan terlebih dahulu.</description>
+    </item>
+    
+    <item>
+      <title>Panduan Memulai Pengembangan Web Modern (PWA)</title>
+      <link>https://wwwid.org/posts/2018-08-27_panduan-memulai-pengembangan-web-modern-pwa/</link>
+      <pubDate>Mon, 27 Aug 2018 08:29:02 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-08-27_panduan-memulai-pengembangan-web-modern-pwa/</guid>
+      <description>Panduan ini akan menjadi dasar bagaimana sebuah web modern atau biasa disebut Progressive Web App(PWA) dikembangkan. Karena sebagian besar permasalahan web pada saat sudah berjalan adalah arsitektur yang kurang baik serta perancangan awal yang tidak disesuaikan dengan kebutuhan pengguna. Panduan ini akan memberikan gambaran bagaimana arsitektur dan perancangan sebuah aplikasi modern web tanpa menggunakan framework apapun, namun tetap bisa diterapkan di framework apapun.
+Kriteria Modern Web Untuk kebutuhan website modern yang fokus pada kebutuhan pengguna, makan kita mendefinisikan modern web sebagai berikut:</description>
+    </item>
+    
+    <item>
+      <title>Web Pintar Yang Beradaptasi Sesuai Perangkat dan Jaringan</title>
+      <link>https://wwwid.org/posts/2018-08-08_web-pintar-yang-beradaptasi-sesuai-perangkat-dan-jaringan/</link>
+      <pubDate>Wed, 08 Aug 2018 06:35:21 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-08-08_web-pintar-yang-beradaptasi-sesuai-perangkat-dan-jaringan/</guid>
+      <description>Para pengguna internet mengakses web saat ini dengan perangkat yang beragam walaupun bisa dibilang bahwa perangkat tersebut didominasi oleh mobile. Namun ragam perangkat mobile ini sendiri sebenarnya cukup beragam dan bisa kita klasifikasikan dalam perangkat tingkat atas, seperti iPhone 8/X, Samsung S9, LG G6 dan lain-lain. Lalu perangkat tingkat menengah seperti Oppo, Xiaomi, dan Vivo. Serta perangkat low end di bawah 1 juta seperti Samsung seri J.
+Beradaptasi dengan perangkat Dengan beragamnya perangkat dari pengakses web, maka sudah seharusnya kita sebagai pengembang wajib mengoptimalkan website kita untuk perangkat yang paling banyak mengakses website kita.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript, Sosial Media, dan SEO</title>
+      <link>https://wwwid.org/posts/2018-07-20_javascript-sosial-media-dan-seo/</link>
+      <pubDate>Fri, 20 Jul 2018 19:37:23 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-07-20_javascript-sosial-media-dan-seo/</guid>
+      <description>Tren membangun website menggunakan framework dan library JavaScript saat ini sedang tinggi-tingginya. Bahkan perkembangan framework dan library JavaScript sangat cepat sekali. Periode 2000an awal website menggunakan JavaScript paling sering untuk validasi form atau hal yang fancy. Kemudian JavaScript digunakan untuk membuat seluruh halaman website karena kemudahan dari framework dan library yang tersedia.
+Kalau melihat grafik dibawah ini terlihat framework dan library apa yang popular di frontend engineers.
+diambil dari https://hackernoon.com/the-status-of-javascript-libraries-frameworks-2018-beyond-3a5a7cae7513</description>
+    </item>
+    
+    <item>
+      <title>Progressive Web App — Aplikasi Web Yang Bisa Di Install — Bagian 1</title>
+      <link>https://wwwid.org/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/</link>
+      <pubDate>Fri, 20 Apr 2018 08:49:47 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/</guid>
+      <description>Salah satu pengalaman yang sangat memudahkan pengguna aplikasi native dalam mengakses aplikasi yang mereka ingin gunakan adalah kemudahannya dalam men-launch aplikasi tersebut dengan semudah men-tap icon aplikasi di layar home smart phone mereka dan aplikasi langsung siap digunakan. Bandingkan dengan aplikasi web yang harus melakukan tap beberapa kali karena selain men-tap icon browser di layar home, tentu juga harus mengetikkan alamat URL dari aplikasi web tersebut. Ini yang membuat retention dan tingkat interaktifitas aplikasi web terkadang lebih kecil dibandingkan aplikasi native.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu #7</title>
+      <link>https://wwwid.org/posts/2018-03-20_yang-web-developers-harus-tahu-sharp7/</link>
+      <pubDate>Tue, 20 Mar 2018 04:33:32 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-03-20_yang-web-developers-harus-tahu-sharp7/</guid>
+      <description>Edisi minggu pertama bulan Maret ini terlewat berhubung terlalu banyak hal lain yang harus dibereskan. Tapi semoga kalian tidak kelewat beberapa konten menarik seputar web development. Untuk melengkapi bacaan kalian, silakan dinikmati pilihan konten dalam 2 minggu terakhir.
+Berita Terbaru Stack Overflow 2018 Developer Survey
+Kapan developers bangun pagi?
+Stack Overflow sebagai sumber jawaban segala masalah programmer merilis hasil survey mereka terhadap developer, dan insight menarik bisa kalian temukan di sini terkait bagaimana tren, kondisi, dan gambaran developer global.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu #6</title>
+      <link>https://wwwid.org/posts/2018-02-15_yang-web-developers-harus-tahu-sharp6/</link>
+      <pubDate>Thu, 15 Feb 2018 10:31:55 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-15_yang-web-developers-harus-tahu-sharp6/</guid>
+      <description>Mendekati Imlek, dan libur panjang saatnya kalian punya bacaan untuk long weekend. Di tengah kesibukan beberapa dari kalian yang lagi mengulik tantangan untuk membuat webapp bisa digunakan dalam 5 detik, mungkin beberapa update dan artikel menarik di bawah ini bisa jadi pengisi waktu luang kalian. Gong xi fa cai!
+Berita Terbaru Chrome akan menampilkan tanda sebuah web tidak aman tanpa HTTPS
+Tampilan website tanpa HTTPS per July 2018
+Inisiatif yang sebenarnya cukup lama untuk membuat web bisa lebih aman dengan protokol yang terenkripsi menggunakan HTTPS akan diperketat lagi.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu #5</title>
+      <link>https://wwwid.org/posts/2018-02-05_yang-web-developers-harus-tahu-sharp5/</link>
+      <pubDate>Mon, 05 Feb 2018 02:51:56 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-05_yang-web-developers-harus-tahu-sharp5/</guid>
+      <description>Who love Monday?? Nah sudah memasuki Februari dan saatnya untuk update terbaru untuk kalian biar tetap tahu perkembangan di dunia web. Kali ini bagian artikel menarik kami ubah menjadi konten menarik karena beberapa konten bukan cuma berupa tulisan tapi juga berupa video. Dan ini dia yang kalian harus tahu sebagai web developers. Have an amazing week guys!
+Berita Terbaru Ranking Google Search akan terpengaruh oleh page speed**
+**Sebelumnya page speed sudah berpengaruh pada ranking hasil pencarian Google Search, tapi hanya di desktop.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu #4</title>
+      <link>https://wwwid.org/posts/2018-01-16_yang-web-developers-harus-tahu-sharp4/</link>
+      <pubDate>Tue, 16 Jan 2018 04:28:26 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-01-16_yang-web-developers-harus-tahu-sharp4/</guid>
+      <description>Memulai 2018 biasanya dengan merencanakan kira-kira apa yang akan dilakukan selama setahun ke depan. Termasuk kira-kira akan belajar library atau framework apa, atau akan membuat sesuatu dan merilisnya ke publik dalam setahun ke depan. Apapun itu rencana kalian mudah-mudahan pilihan artikel ini bisa membantu mempermudah rencana kalian.
+Berita Terbaru Autofill Di Browsers Bisa Mencuri Data Kalian
+Demo auto fill mengisi data fields tersembunyi
+Fitur auto fill form di browser terkadang memudahkan tapi bisa juga dimanfaatkan untuk mencuri data credentials pengguna seperti password atau kartu kredit.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu #3</title>
+      <link>https://wwwid.org/posts/2018-01-01_yang-web-developers-harus-tahu-sharp3/</link>
+      <pubDate>Mon, 01 Jan 2018 23:55:13 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-01-01_yang-web-developers-harus-tahu-sharp3/</guid>
+      <description>Edisi ke 3 ini menutup 2017 dan menyambut 2018. Beberapa artikel adalah rangkuman atau kilas balik dari 2017. Sudah siapkah kalian #MakeTheWebGreatAgain di 2018? Silakan memulai dengan membaca artikel pilihan berikut.
+Berita Terbaru Web Advent Today
+Rangkuman 10 tulisan oleh praktisi web untuk menghitung mundur ke 2018 sangat menarik diikuti untuk melihat perspektif mereka akan perkembangan web di 2017 dan apa yang mereka harapkan di 2018. Di tiap artikel ada link ke blog post dari masing-masing author yang menurut saya sangat menarik untuk dibaca untuk penutup 2017 dan pembuka 2018.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developer Harus Tahu #1</title>
+      <link>https://wwwid.org/posts/2017-12-04_yang-web-developer-harus-tahu-sharp1/</link>
+      <pubDate>Mon, 04 Dec 2017 01:34:55 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-12-04_yang-web-developer-harus-tahu-sharp1/</guid>
+      <description>Ini adalah newsletter pertama dari WWWID untuk secara rutin memberikan update terkini untuk para web developer agar tahu perkembangan dan tren pengembangan web seperti teknik, tools, libraries, dan frameworks. Berikut adalah apa yang web developer harus tahu edisi pertama.
+Berita Terbaru Firefox Developers 58 Release Notes
+Firefox DevTool Terbaru
+Rilis terbaru Firefox Developers yang berbasis Quantum Engine ini datang dengan beragam tool terbaru untuk web developers seperti devtool terbaru, dukungan font display di CSS, serta dukungan WebVR secara default.</description>
+    </item>
+    
+    <item>
+      <title>15 Hal di Chrome Dev Tools yang Mungkin Kamu Belum Tau</title>
+      <link>https://wwwid.org/posts/2017-11-18_15-hal-di-chrome-dev-tools-yang-mungkin-kamu-belum-tau/</link>
+      <pubDate>Sat, 18 Nov 2017 12:26:11 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-11-18_15-hal-di-chrome-dev-tools-yang-mungkin-kamu-belum-tau/</guid>
+      <description>Chrome Developer Tools
+No 8 bikin netizen geleng-geleng kepala. K etika mengembangkan sebuah aplikasi web, tentunya kita tak jauh dari yang namanya debugging. Chrome Dev Tools adalah salah satu tools debugging yang sering digunakan. Setelah sekian lama menggunakammya, akhirnya saya menemukan beberapa hidden-gems yang ada di Chrome Dev Tools, dan beberapa saya selalu gunakan dalam kehidupan saya sebagai engineer sehari-hari. 😹
+Berikut ini adalah list fitur dan tips nya:
+1. Throttle Network &amp;amp; CPU Throttling juga dapat diakses melalui Tab Network.</description>
+    </item>
+    
+  </channel>
+</rss>

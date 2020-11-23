@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Challenge on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/challenge/</link>
+    <description>Recent content in Challenge on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Fri, 16 Feb 2018 04:13:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/challenge/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Peluang dan Tantangan Web Developer</title>
+      <link>https://wwwid.org/posts/2018-02-16_peluang-dan-tantangan-web-developer/</link>
+      <pubDate>Fri, 16 Feb 2018 04:13:04 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-16_peluang-dan-tantangan-web-developer/</guid>
+      <description>Selamat datang di tahun 2018, dimana website telah memasuki era baru. Kita akan memanggilnya dengan sebutan webapps (aplikasi web) dan bukan website lagi. Setiap developer berlomba untuk memberikan byte pertama tercepat. Forbes dengan situs mobile terbarunya merender dalam waktu 2.5 detik, konversi web BookMyShow’s naik sebesar 80% dan OLX telah melihat lebih dari 250% keterlibatan kembali dengan pengguna (re-engagement user) di situs mereka. Apa yang sebenarnya terjadi di dunia web? Dengan grafik JavaScript-CPU-Profiler yang menyeramkan seperti kardiogram monster lochness, semua hal dilakukan untuk mengoptimalkan setiap bit yang kita kirimkan dari sebuah kabel.</description>
+    </item>
+    
+    <item>
+      <title>Tantangan Web Developer Untuk Membuat Aplikasi Web Bisa Digunakan Kurang Dari 5 Detik</title>
+      <link>https://wwwid.org/posts/2018-02-13_tantangan-web-developer-untuk-membuat-aplikasi-web-bisa-digunakan-kurang-dari-5-detik/</link>
+      <pubDate>Tue, 13 Feb 2018 07:45:58 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-13_tantangan-web-developer-untuk-membuat-aplikasi-web-bisa-digunakan-kurang-dari-5-detik/</guid>
+      <description>Ada banyak jalan menuju Roma, sama dengan ada banyak cara membuat sebuah aplikasi web dan banyak teknik untuk mengoptimalkan sebuah aplikasi web. Cara membuat saat ini sudah cukup banyak tutorialnya, tapi bagaimana dengan teknik mengoptimalkannya?
+Tantangan ini ingin mengajak teman-teman web developer Indonesia untuk mencoba membuat sebuah aplikasi RSS reader sederhana dengan goal membuat time to interactive dibawah 5 detik di kondisi jaringan 3G yang lambat dan mobile phone dengan spesifikasi menengah rata-rata.</description>
+    </item>
+    
+  </channel>
+</rss>

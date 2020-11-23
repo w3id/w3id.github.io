@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-ID">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Service Worker Tanpa Application Shell Untuk Mempercepat Navigasi Antar Halaman Web - Modern Web Community Indonesia</title>
+    
+    <meta name="description" content="Seminggu lalu saya disibukkan oleh 2 Google events yaitu Progressive Web App Road Show Indonesia yang diadakan di 2 kota yaitu Jakarta dan Yogyakarta. Dan salah satu yang ingin saya highlight adalah kata progressive. Bahwa dalam Progressive Web App, kita bisa meningkatkan experience dari sebuah web app secara bertahap, tidak harus langsung sekaligus. Bahkan tidak perlu menulis ulang aplikasi web kita untuk menjadikannya Progressive Web App.
+Sebagian besar developer yang saya kenal adalah backend developer yang berawal dari server side script seperti PHP, Ruby, Python, dan lainnya.">
+    <meta name="author" content="Yohan Totting">
+    
+    <link href="https://wwwid.org/an-old-hope.min.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/style.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/featured.css" rel="stylesheet">
+    <meta name="color-scheme" content="dark light">
+    
+    <link rel="apple-touch-icon" href="https://wwwid.org/apple-touch-icon.png">
+    <link rel="icon" href="https://wwwid.org/favicon.ico">
+    
+    <meta name="generator" content="Hugo 0.62.2" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://wwwid.org/index.xml" title="Modern Web Community Indonesia">
+    
+    
+    
+    <meta property="og:title" content="Service Worker Tanpa Application Shell Untuk Mempercepat Navigasi Antar Halaman Web" />
+<meta property="og:description" content="Seminggu lalu saya disibukkan oleh 2 Google events yaitu Progressive Web App Road Show Indonesia yang diadakan di 2 kota yaitu Jakarta dan Yogyakarta. Dan salah satu yang ingin saya highlight adalah kata progressive. Bahwa dalam Progressive Web App, kita bisa meningkatkan experience dari sebuah web app secara bertahap, tidak harus langsung sekaligus. Bahkan tidak perlu menulis ulang aplikasi web kita untuk menjadikannya Progressive Web App.
+Sebagian besar developer yang saya kenal adalah backend developer yang berawal dari server side script seperti PHP, Ruby, Python, dan lainnya." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wwwid.org/posts/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web/" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web/images/1.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web/images/2.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web/images/3.png" />
+<meta property="article:published_time" content="2017-09-21T04:18:28+00:00" />
+<meta property="article:modified_time" content="2019-08-30T11:49:00+07:00" />
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118693499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-118693499-2');
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MXRJCWB');</script>
+  
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  
+  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+  
+    
+        <script>
+    if("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/sw.js").then(swReg => {}).catch(err => {
+                console.error('Service Worker Error', err);
+            });
+        });
+    }
+  </script>
+    
+  </head>
+  <body class="single">
+    <header class="header">
+      <nav class="nav">
+        
+        <p class="logo"><a href="https://wwwid.org/">
+          <img class="logo light" 
+          srcset="https://wwwid.org/images/logo-light-bg@2x.png 2x,
+          https://wwwid.org/images/logo-light-bg.png"
+          src="https://wwwid.org/images/logo-light-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/> 
+          <img class="logo dark" 
+          srcset="https://wwwid.org/images/logo-dark-bg@2x.png 2x,
+          https://wwwid.org/images/logo-dark-bg.png"
+          src="https://wwwid.org/images/logo-dark-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/>
+        
+        </a></p>
+        
+        
+        <ul class="menu">
+          
+          <li>
+            <a href="/pages/tentang-kami/">Tentang Kami</a>
+          </li>
+          
+        </ul>
+        
+      </nav>
+    </header>
+    <main class="main">
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": "https:\/\/wwwid.org\/posts\/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web\/",
+  "headline": "Service Worker Tanpa Application Shell Untuk Mempercepat Navigasi Antar Halaman Web",
+  "datePublished": "2017-09-21",
+  "dateModified": "2019-08-30",
+  "description": "Seminggu lalu saya disibukkan oleh 2 Google events yaitu Progressive Web App Road Show Indonesia yang diadakan di 2 kota yaitu Jakarta dan Yogyakarta. Dan salah satu yang ingin saya highlight adalah kata progressive. Bahwa dalam Progressive Web App, kita bisa meningkatkan experience dari sebuah web app secara bertahap, tidak harus langsung sekaligus. Bahkan tidak perlu menulis ulang aplikasi web kita untuk menjadikannya Progressive Web App.\nSebagian besar developer yang saya kenal adalah backend developer yang berawal dari server side script seperti PHP, Ruby, Python, dan lainnya.","author": {
+    "@type": "Person",
+    "name": "Yohan Totting"
+  },
+  
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "WWWID",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https:\/\/wwwid.org\//images/wwwid-logogram.png",
+      "width": 388,
+      "height": 388
+    }
+  },
+  
+  "image": {
+    "@type": "ImageObject",
+    "url": "\/posts\/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web\/images\/1.png"
+  }
+   
+  
+  }
+  </script>
+<article class="post-single">
+  <header class="post-header">
+   
+    <h1 class="post-title">Service Worker Tanpa Application Shell Untuk Mempercepat Navigasi Antar Halaman Web</h1>
+    
+    <div class="post-meta">Yohan Totting · 21 Sep 2017</div>
+  </header><div class="post-featured-image">
+    <img src="/posts/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web/images/1.png" alt="feature image for Service Worker Tanpa Application Shell Untuk Mempercepat Navigasi Antar Halaman Web"/>
+  </div>
+  
+  <div class="post-content"><p>Seminggu lalu saya disibukkan oleh 2 Google events yaitu <a href="https://events.withgoogle.com/progressive-web-app-roadshow-indonesia/">Progressive Web App Road Show Indonesia</a> yang diadakan di 2 kota yaitu Jakarta dan Yogyakarta. Dan salah satu yang ingin saya highlight adalah kata <em>progressive</em>. Bahwa dalam <em>Progressive Web App</em>, kita bisa meningkatkan <em>experience</em> dari sebuah web app secara bertahap, tidak harus langsung sekaligus. Bahkan tidak perlu menulis ulang aplikasi web kita untuk menjadikannya <em>Progressive Web App</em>.</p>
+<p>Sebagian besar developer yang saya kenal adalah <em>backend developer</em> yang berawal dari <em>server side script</em> seperti PHP, Ruby, Python, dan lainnya. Terutama PHP dengan WordPress yang merupakan CMS paling popular di Indonesia. Dan teman-teman ini hampir semuanya mengembangkan aplikasi tanpa menggunakan application shell sama sekali. Karena <em>pattern</em> <a href="https://developers.google.com/web/fundamentals/architecture/app-shell"><em>application shell</em></a> hanya populer di kalangan front end developer, karena mereka biasanya mengembangkan aplikasi web menggunakan pattern <a href="https://medium.com/@NeotericEU/single-page-application-vs-multiple-page-application-2591588efe58">Single Page Application(SPA)</a>.</p>
+<p>Jadi apa yang bisa dilakukan bila teman-teman hanya memiliki sebuah web dengan <em>server rendered scripts</em>? Kalian bisa memulai dengan <a href="https://developers.google.com/web/fundamentals/getting-started/primers/service-workers">service worker</a> yang akan mempercepat navigasi antar halaman. Nah apakah service worker bisa diterapkan tanpa <a href="https://developers.google.com/web/fundamentals/architecture/app-shell"><em>application shell</em></a>? Jawabannya: Ya, bisa! Buktinya kalian bisa lihat hasil <em>experiment</em> di bawah ini.</p>
+<p>Saya mencoba mensimulasikan sebuah <em>server rendered website</em> dengan 3 halaman html yaitu index.html, about.html, dan contact.html. Ketiganya adalah file html dengan struktur lengkap seperti <em>&lt;html&gt;</em>, <em>&lt;head&gt;</em>, dan <em>&lt;body&gt;</em> yang kita asumsikan adalah halaman hasil <em>server rendered</em> dari PHP, Python, atau lainnya. Di halaman web ini cuma <em>title</em> dari masing-masing halaman.
+<code>&amp;lt;!doctype html&amp;gt;``&amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;``&amp;lt;head&amp;gt;``&amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt;``&amp;lt;title&amp;gt;NON SPA - Service Worker&amp;lt;/title&amp;gt;``&amp;lt;meta name=&amp;#34;description&amp;#34; content=&amp;#34;Testing service worker without application shell&amp;#34;&amp;gt;``&amp;lt;meta name=&amp;#34;author&amp;#34; content=&amp;#34;Yohan Totting&amp;#34;&amp;gt;``&amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1&amp;#34;&amp;gt;``&amp;lt;/head&amp;gt;``&amp;lt;body&amp;gt;``&amp;lt;div id=&amp;#34;menu&amp;#34;&amp;gt;&amp;lt;a href=&amp;#34;/index.html&amp;#34;&amp;gt;Home&amp;lt;/a&amp;gt; | &amp;lt;a href=&amp;#34;/about.html&amp;#34;&amp;gt;About&amp;lt;/a&amp;gt; | &amp;lt;a href=&amp;#34;/contact.html&amp;#34;&amp;gt;Contact&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;``&amp;lt;div id=&amp;#34;main-container&amp;#34;&amp;gt;``&amp;lt;h1&amp;gt;Home&amp;lt;/h1&amp;gt;``&amp;lt;/div&amp;gt;``&amp;lt;script&amp;gt;``if (&amp;#39;serviceWorker&amp;#39; in navigator) {``window.addEventListener(&amp;#39;load&amp;#39;, function() {``navigator.serviceWorker.register(&amp;#39;/service-worker.js&amp;#39;).then(function(registration) {``// Registration was successful``console.log(&amp;#39;ServiceWorker registration successful with scope: &amp;#39;, registration.scope);``}, function(err) {``// registration failed :(``console.log(&amp;#39;ServiceWorker registration failed: &amp;#39;, err);``});``});``}&amp;lt;/script&amp;gt;``&amp;lt;/body&amp;gt;``&amp;lt;/html&amp;gt;</code></p>
+<p>Tanpa mengubah apapun di halaman html tersebut hanya dengan melakukan injeksi <em>script</em> untuk <em>service worker</em>, kita bisa langsung <a href="https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/">melakukan cache</a> untuk setiap halaman statis hanya dengan mendeklarasikan halaman yang ingin kita <em>cache</em> di <em>script service worker</em> kita. Kalian bisa mengecek apakah halaman dikembalikan dari <em>service worker</em> atau dari <em>server</em> menggunakan tab networks di Chrome Dev Tools dan hasilnya seperti di bawah ini.</p>
+<p><img src="/posts/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web/images/1.png" alt="image"></p>
+<p>File about.html didapatkan dari service worker</p>
+<p>Setelah service worker terpasang, maka setiap <em>request</em> ke server dari web tersebut akan dicegat oleh service worker, dan kita bisa melakukan <em>processing</em> di mana di contoh ini hanya melakukan pengecekan di cache dan bila tersedia maka hasil dari cache akan dikembalikan langsung ke halaman web untuk ditampilkan. Kalian bisa melihat beda <em>response time</em> dengan atau tanpa service worker di bawah ini</p>
+<p><img src="/posts/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web/images/2.png" alt="image"></p>
+<p>Response time di simulasi slow 3G tanpa service worker</p>
+<p><img src="/posts/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web/images/3.png" alt="image"></p>
+<p>Response time di simulasi slow 3G dengan service worker</p>
+<p>Membandingkan <em>response time</em> tanpa service worker yaitu 2 seconds dan dengan service worker yaitu 10 milliseconds di kondisi simulasi <em>slow</em> 3G menunjukkan perbedaan signifikan. Tapi memang kondisi tersebut hanya bisa kejadian bila halaman web diakses sekali agar service worker terpasang lalu kunjungan berikutnya akan jauh lebih cepat karena halaman dikembalikan dari cache, bukan dari server.</p>
+<p>Lalu mungkin kalian bertanya, sama aja kalau butuh akses sekali dulu biar bisa service worker terpasang. Apa keuntungannya? Menurut saya ingin bergantung skenario kapan web kalian digunakan. Salah satunya adalah berpindah halaman lebih cepat karena semua sudah disimpan di cache pada saat kalian membuka halaman home. Sehingga kalian bisa berpindah ke halaman lain seperti about dan contact dengan cepat walaupun halaman tersebut belum pernah diakses, karena pada saat kalian mengakses home, halaman lainnya langsung disimpan di cache karena dideklarasikan di saat fase <em>install</em> service worker seperti yang kalian bisa lihat di bawah ini.
+<code>//service-worker.js``var CACHE_NAME = &amp;#39;my-site-cache-v1&amp;#39;;``var urlsToCache = [``&amp;#39;/index.html&amp;#39;,``&amp;#39;/about.html&amp;#39;,``&amp;#39;/contact.html&amp;#39;``];``self.addEventListener(&amp;#39;install&amp;#39;, function(event) {`` // Perform install steps`` event.waitUntil(``  caches.open(CACHE_NAME)``  .then(function(cache) {``   console.log(&amp;#39;Opened cache&amp;#39;);``   return cache.addAll(urlsToCache);``  })`` );``});</code></p>
+<p>Contoh service worker di atas adalah contoh sederhana bagaimana melakukan cache semua file yang kita inginkan. Tapi sangat disarankan walaupun kita bisa memasukkan banyak file, tapi sebaiknya digunakan dengan bijaksana dengan hanya memasukkan file statis seperti JavaScript file, CSS file, atau aset gambar dan font karena kita tidak tahu perangkat yang digunakan oleh pengunjung kita memiliki spesifikasi seperti apa. Mungkin saja kapasitas penyimpanan terbatas, sehingga sebaiknya website kita juga tidak mengkonsumsi cache space dengan file yang tidak terlalu sering diakses.</p>
+<p>Hasil <em>experiment</em> di atas menunjukkan bagaimana kalian bisa meningkatkan pengalaman pengguna di website kalian dimulai dengan kecepatan navigasi antar halaman. Dengan implementasi service worker, kalian bisa meningkatkan pengalaman secara progressive atau bertahap di kondisi jaringan yang lambat sekalipun. Lalu bagaimana bila jaringan sedang <em>offline</em>? Apakah <em>server rendered scripts</em> website bisa tetap diakses? Nantikan di <em>experiment</em> berikutnya.<em>Source code experiment</em> di atas bisa diakses di <a href="https://github.com/tyohan/pwa-experiments/tree/master/nonspa-sw">https://github.com/tyohan/pwa-experiments/tree/master/nonspa-sw</a>.</p>
+</div>
+  <footer class="post-footer">
+    <div class="post-share">
+        <amp-social-share type="twitter"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="facebook"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="email"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="pinterest"
+        width="45"
+        height="33"></amp-social-share>
+    </div>
+    
+    <p class="section-title">Klik kata kunci di bawah ini untuk melihat konten terkait lebih banyak</p>
+    <ul class="post-tags">
+      
+      <li><a href="https://wwwid.org/tags/progressive-web-app/">Progressive Web App</a></li>
+      
+      <li><a href="https://wwwid.org/tags/service-worker/">Service Worker</a></li>
+      
+      <li><a href="https://wwwid.org/tags/server-side-rendering/">Server Side Rendering</a></li>
+      
+      <li><a href="https://wwwid.org/tags/web-performance/">Web Performance</a></li>
+      
+    </ul>
+    
+  </footer>
+  
+  
+  
+  
+</article>
+
+
+</main>
+<footer class="footer">
+  <span>&copy; 2020 <a href="https://wwwid.org/">Modern Web Community Indonesia</a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="https://wwwid.org/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
+

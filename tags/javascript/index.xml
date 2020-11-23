@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/javascript/</link>
+    <description>Recent content in JavaScript on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Tue, 26 Feb 2019 01:58:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LighthouseBOT Untuk Auto Audit Web di Github Repositori</title>
+      <link>https://wwwid.org/posts/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori/</link>
+      <pubDate>Tue, 26 Feb 2019 01:58:04 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori/</guid>
+      <description>LighthouseBOT — merupakan sebuah akun “bot” yang bekerja untuk “Audit Web” dengan menggunakan Lighthouse dan melaporkan hasil audit tersebut pada repositori kita di Github. Dengan menggunakan LighthouseBOT maka kita tidak perlu lagi untuk melakukan audit secara manual dengan menggunakan https://web.dev, Lighthouse pada Chrome DevTools, Lighthouse Extension pada browser, Lighthouse-cli, &amp;amp; cara-cara lain yang menggunakan Lighthouse.
+Hal — hal yang bisa dilakukan LighthouseBOT hanyalah menampilkan laporan mengenai Performance, Accessibility, SEO, &amp;amp; Best Practices.</description>
+    </item>
+    
+    <item>
+      <title>Visualisasi Arsitektur Aplikasi Dengan Madge</title>
+      <link>https://wwwid.org/posts/2019-02-01_visualisasi-arsitektur-aplikasi-dengan-madge/</link>
+      <pubDate>Fri, 01 Feb 2019 01:58:04 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2019-02-01_visualisasi-arsitektur-aplikasi-dengan-madge/</guid>
+      <description>Madge merupakan Aplikasi pengembang yang menghasilkan Grafik Visual mengenai struktur sebuah aplikasi, modul-modul yang digunakan (dependencies Modul), &amp;amp; Lingkaran Dependensi atau “Keterkaitan” satu atau lebih penggunaan sebuah modul (Circular Dependency).
+Circular dependency - Wikipedia
+Sebelumnya, saya sedang mempelajari Lighthouse, tepatnya Arsitektur dari Lighthouse kemudian mendapatkan sebuah informasi menarik “yah , tentang Madge ini” dari **** tautan ini.
+GoogleChrome/lighthouse
+Pada tautan tersebut saya menemukan gambar atau visual grafik dari arsitektur lighthouse.</description>
+    </item>
+    
+    <item>
+      <title>Progressive Web App — Bagian 2</title>
+      <link>https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-2/</link>
+      <pubDate>Wed, 05 Jul 2017 17:15:44 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-2/</guid>
+      <description>Hijack Request, Cache Storage, App Manifest, App Shell, Notify Updates Untuk membuat Web App kita menjadi sebuah Progressive Web App ada beberapa checklist yang harus dipenuhi, teman-teman bisa melihat checklist nya pada link ini.
+Saatnya kita mulai dengan membuat project sederhana. Teman-teman bisa clone project ini dari github. Kita akan fokus pada service worker saja. Jadi kita tidak akan membahas hal diluar SW dulu ya. git clone [https://github.com/alfrcr/tutorial-pwa-bahasa-indonesia.git](https://github.com/alfrcr/tutorial-pwa-bahasa-indonesia.git)
+ catatan: teman-teman perlu menginstall NodeJS untuk menjalankan project diatas.</description>
+    </item>
+    
+    <item>
+      <title>Progressive Web App — Bagian 1</title>
+      <link>https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-1/</link>
+      <pubDate>Wed, 05 Jul 2017 17:15:21 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-1/</guid>
+      <description>Benefit web app offline-first, and intro service worker. Belakangan ini Google sedang gencar mengenalkan teknologi PWA ke perusahan-perusahaan teknologi di Asia Tenggara, khususnya di Indonesia. Pada awal bulan kemarin salah seorang staff di Google menghubungi kami dan menyarankan kami untuk menerapkan teknologi ini ke salah satu situs kami.
+Pertanyaannya kenapa kita harus menerapkan PWA?
+Sebelumnya kita harus tahu dulu apa itu PWA.
+ PWA adalah sebuah aplikasi web yang menggunakan beberapa teknologi modern yang membuat user experience seperti menggunakan Native App (Android/iOS)</description>
+    </item>
+    
+  </channel>
+</rss>

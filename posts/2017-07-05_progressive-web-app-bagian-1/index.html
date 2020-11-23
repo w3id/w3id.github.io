@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-ID">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Progressive Web App — Bagian 1 - Modern Web Community Indonesia</title>
+    
+    <meta name="description" content="Benefit web app offline-first, and intro service worker. Belakangan ini Google sedang gencar mengenalkan teknologi PWA ke perusahan-perusahaan teknologi di Asia Tenggara, khususnya di Indonesia. Pada awal bulan kemarin salah seorang staff di Google menghubungi kami dan menyarankan kami untuk menerapkan teknologi ini ke salah satu situs kami.
+Pertanyaannya kenapa kita harus menerapkan PWA?
+Sebelumnya kita harus tahu dulu apa itu PWA.
+ PWA adalah sebuah aplikasi web yang menggunakan beberapa teknologi modern yang membuat user experience seperti menggunakan Native App (Android/iOS)">
+    <meta name="author" content="Putu Alfred Crosby">
+    
+    <link href="https://wwwid.org/an-old-hope.min.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/style.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/featured.css" rel="stylesheet">
+    <meta name="color-scheme" content="dark light">
+    
+    <link rel="apple-touch-icon" href="https://wwwid.org/apple-touch-icon.png">
+    <link rel="icon" href="https://wwwid.org/favicon.ico">
+    
+    <meta name="generator" content="Hugo 0.62.2" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://wwwid.org/index.xml" title="Modern Web Community Indonesia">
+    
+    
+    
+    <meta property="og:title" content="Progressive Web App — Bagian 1" />
+<meta property="og:description" content="Benefit web app offline-first, and intro service worker. Belakangan ini Google sedang gencar mengenalkan teknologi PWA ke perusahan-perusahaan teknologi di Asia Tenggara, khususnya di Indonesia. Pada awal bulan kemarin salah seorang staff di Google menghubungi kami dan menyarankan kami untuk menerapkan teknologi ini ke salah satu situs kami.
+Pertanyaannya kenapa kita harus menerapkan PWA?
+Sebelumnya kita harus tahu dulu apa itu PWA.
+ PWA adalah sebuah aplikasi web yang menggunakan beberapa teknologi modern yang membuat user experience seperti menggunakan Native App (Android/iOS)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-1/" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-1/images/1.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-1/images/2.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-1/images/3.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-1/images/4.jpeg" />
+<meta property="article:published_time" content="2017-07-05T17:15:21+00:00" />
+<meta property="article:modified_time" content="2019-05-21T11:21:49+07:00" />
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118693499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-118693499-2');
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MXRJCWB');</script>
+  
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  
+  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+  
+    
+        <script>
+    if("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/sw.js").then(swReg => {}).catch(err => {
+                console.error('Service Worker Error', err);
+            });
+        });
+    }
+  </script>
+    
+  </head>
+  <body class="single">
+    <header class="header">
+      <nav class="nav">
+        
+        <p class="logo"><a href="https://wwwid.org/">
+          <img class="logo light" 
+          srcset="https://wwwid.org/images/logo-light-bg@2x.png 2x,
+          https://wwwid.org/images/logo-light-bg.png"
+          src="https://wwwid.org/images/logo-light-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/> 
+          <img class="logo dark" 
+          srcset="https://wwwid.org/images/logo-dark-bg@2x.png 2x,
+          https://wwwid.org/images/logo-dark-bg.png"
+          src="https://wwwid.org/images/logo-dark-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/>
+        
+        </a></p>
+        
+        
+        <ul class="menu">
+          
+          <li>
+            <a href="/pages/tentang-kami/">Tentang Kami</a>
+          </li>
+          
+        </ul>
+        
+      </nav>
+    </header>
+    <main class="main">
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": "https:\/\/wwwid.org\/posts\/2017-07-05_progressive-web-app-bagian-1\/",
+  "headline": "Progressive Web App — Bagian 1",
+  "datePublished": "2017-07-05",
+  "dateModified": "2019-05-21",
+  "description": "Benefit web app offline-first, and intro service worker. Belakangan ini Google sedang gencar mengenalkan teknologi PWA ke perusahan-perusahaan teknologi di Asia Tenggara, khususnya di Indonesia. Pada awal bulan kemarin salah seorang staff di Google menghubungi kami dan menyarankan kami untuk menerapkan teknologi ini ke salah satu situs kami.\nPertanyaannya kenapa kita harus menerapkan PWA?\nSebelumnya kita harus tahu dulu apa itu PWA.\n PWA adalah sebuah aplikasi web yang menggunakan beberapa teknologi modern yang membuat user experience seperti menggunakan Native App (Android\/iOS)","author": {
+    "@type": "Person",
+    "name": "Putu Alfred Crosby"
+  },
+  
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "WWWID",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https:\/\/wwwid.org\//images/wwwid-logogram.png",
+      "width": 388,
+      "height": 388
+    }
+  },
+  
+  "image": {
+    "@type": "ImageObject",
+    "url": "\/posts\/2017-07-05_progressive-web-app-bagian-1\/images\/4.jpeg"
+  }
+   
+  
+  }
+  </script>
+<article class="post-single">
+  <header class="post-header">
+   
+    <h1 class="post-title">Progressive Web App — Bagian 1</h1>
+    
+    <div class="post-meta">Putu Alfred Crosby · 5 Jul 2017</div>
+  </header><div class="post-featured-image">
+    <img src="/posts/2017-07-05_progressive-web-app-bagian-1/images/4.jpeg" alt="feature image for Progressive Web App — Bagian 1"/>
+  </div>
+  
+  <div class="post-content"><h4 id="benefit-web-app-offline-first-and-intro-service-worker">Benefit web app offline-first, and intro service worker.</h4>
+<p>Belakangan ini Google sedang gencar mengenalkan teknologi PWA ke perusahan-perusahaan teknologi di Asia Tenggara, khususnya di Indonesia. Pada awal bulan kemarin salah seorang staff di Google menghubungi kami dan menyarankan kami untuk menerapkan teknologi ini ke salah satu situs kami.</p>
+<p>Pertanyaannya kenapa kita harus menerapkan PWA?</p>
+<p>Sebelumnya kita harus tahu dulu apa itu PWA.</p>
+<blockquote>
+<p>PWA adalah sebuah aplikasi web yang menggunakan beberapa teknologi modern yang membuat user experience seperti menggunakan Native App (Android/iOS)</p>
+</blockquote>
+<p>Maksudnya “<strong><em>seperti menggunakan Native apps</em></strong>”?</p>
+<p>Native Apps dapat <strong>berjalan secara offline</strong>, <strong>mengirim Push Notifications</strong>, <strong>load</strong> dengan <strong>cepat</strong>, dan <strong>dapat dibuka melalui Home screen</strong>. Supaya lebih jelas, yang kita bicarakan disini adalah modern web yaitu <strong>SPA</strong>(<em>Single Page Application</em>) menggunakan framework/library seperti VueJS, AngularJS, Polymer, Preact, React atau yang lainnya. Bagi teman-teman yang belum paham SPA disarankan untuk googling tentang SPA terlebih dahulu 😃</p>
+<h3 id="the-problem">The Problem</h3>
+<p>Masalah pertama adalah ketika user tidak memiliki akses internet dan akan menampilkan halaman seperti ini:</p>
+<p><img src="/posts/2017-07-05_progressive-web-app-bagian-1/images/1.png" alt="image"></p>
+<p>Tidak ada akses internet</p>
+<p>Namun itu bukan masalah terbesar kita, yang lebih berbahaya dari itu adalah ini:</p>
+<p><img src="/posts/2017-07-05_progressive-web-app-bagian-1/images/2.png" alt="image"></p>
+<p>Low Signal — source: <a href="https://thenounproject.com/term/low-signal/269791/">https://thenounproject.com/term/low-signal/269791/</a></p>
+<p>Kenapa itu menjadi masalah terbesar kita? <strong>Karena user dengan internet yang lambat akan menunggu sangat lama dan mungkin selamanya.</strong> Kita tidak tahu paket yang kita kirim sudah sampai server atau belum, atau mungkin jika sudah sampai bisa saja putus ditengah jalan ketika akan dikirim balik ke user (putus tanpa ada kabar 😆 #jleb).</p>
+<p>Pernahkah kita mengalaminya?</p>
+<p><em>Mungkin sebentar lagi halaman ini akan selesai load, hmm mungkin 3 detik lagi, coba tunggu 4 detik, ternyata belum selesai juga, coba tunggu 10 detik lagi ternyata belum selesai.</em></p>
+<p><img src="/posts/2017-07-05_progressive-web-app-bagian-1/images/3.png" alt="image"></p>
+<p>User mendapatkan tampilan seperti ini ketika internet sedang lambat</p>
+<p>Menurut data dari Google, 53% orang akan meninggalkan halaman jika memakan waktu lebih dari 3 detik untuk memuat halaman. Masalah besar bukan?</p>
+<p>Disinilah Service Worker memberi jawaban untuk masalah ini, kita akan menyimpan shell (kerangka halaman) dan assets (CSS &amp; JS) di Cache Storage yang nantinya akan ditampilkan kepada user. Jadi user tidak perlu mendownload ulang terus-menerus setiap reload halaman, dan bahkan bisa ditampilkan ketika user sedang offline sehingga user tidak perlu melihat gambar dinosaurus seperti diatas.</p>
+<h3 id="the-benefit">The Benefit</h3>
+<p>Karena disimpan di dalam Cache Storage jadi user hanya perlu mendownload halaman kita sekali saja dan setelah itu user tidak perlu lagi untuk mendownload shell dan assets kita setiap user membuka halaman web. Bagaimana cara kerja Service Worker? Untuk lebih jelasnya teman-teman bisa perhatikan pada gambar di bawah ini:</p>
+<p><img src="/posts/2017-07-05_progressive-web-app-bagian-1/images/4.jpeg" alt="image"></p>
+<p>Service Worker bekerja sebagai proxy. Source: <a href="https://vaadin.com/blog/-/blogs/14122731">https://vaadin.com/blog/-/blogs/14122731</a></p>
+<p>Secara garis besar akan saya jelaskan</p>
+<ol>
+<li>Kita berasumsi user belum pernah mengunjungi web kita. Ketika user melakukan request dan melewati SW(Service Worker), SW akan mengecek terlebih dahulu, apakah file sudah tersedia di dalam Cache Storage? Karena ini <strong>pertama kalinya</strong> user mengunjungi halaman kita, maka SW akan mengarahkan request ke web server dan SW juga akan menyimpan file yang sudah di download ke dalam Cache Storage.</li>
+<li>Kini shell &amp; assets sudah tersimpan dalam Cache Storage, untuk request selanjutnya sama seperti diatas, request akan melewati SW, dan SW akan mengecek terlebih dahulu di Cache Storage. Karena assets dan shell sudah tersedia di Cache Storage, maka SW akan otomatis mengirimkan file dari Cache Storage untuk ditampilkan ke user.</li>
+</ol>
+<p>Jadi SW bertugas sebagai proxy. Sangat powerful bukan? Karena fitur ini bisa meng-hijack request, maka fitur ini <strong>hanya dapat berjalan di HTTPS dan localhost saja.</strong></p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Jadi kembali ke pertanyaan diatas, kenapa kita harus menerapkan PWA?</p>
+<ol>
+<li>Web kita bisa berjalan di kondisi jaringan apapun (GPRS/EDGE/3G) 😮</li>
+<li>Increase the engagement — Menggunakan Web Push Notifications API</li>
+<li>Menambah konversi — <a href="https://developers.google.com/web/showcase/">Lihat PWA Case Studies</a></li>
+</ol>
+<p>Lalu apa setelah ini? Dimana tutorial nya?</p>
+<p>Tutorial akan kita pelajari pada artikel kedua. Jadi tunggu di artikel selanjutnya ya. 😃</p>
+<p><strong>Referensi</strong>:</p>
+<ol>
+<li><a href="http://blog.ionic.io/what-is-a-progressive-web-app/">http://blog.ionic.io/what-is-a-progressive-web-app/</a></li>
+<li><a href="https://vaadin.com/blog/-/blogs/14122731">https://vaadin.com/blog/-/blogs/14122731</a></li>
+<li><a href="https://developers.google.com/web/progressive-web-apps/">https://developers.google.com/web/progressive-web-apps/</a></li>
+</ol>
+<h3 id="pwathe-series-dalam-bahasa-indonesia">PWA — The Series Dalam Bahasa Indonesia</h3>
+<ol>
+<li>Kalian sedang disini</li>
+<li><a href="https://medium.com/@alfrcr/tutorial-pwa-progressive-web-app-bahasa-indonesia-627e1f6810d2">Bagian 2</a></li>
+</ol>
+<p>Jika kalian rasa artikel ini bermanfaat jangan lupa dibagikan ke teman yang lain dan juga klik lambang hati ♥️ 😆</p>
+</div>
+  <footer class="post-footer">
+    <div class="post-share">
+        <amp-social-share type="twitter"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="facebook"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="email"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="pinterest"
+        width="45"
+        height="33"></amp-social-share>
+    </div>
+    
+    <p class="section-title">Klik kata kunci di bawah ini untuk melihat konten terkait lebih banyak</p>
+    <ul class="post-tags">
+      
+      <li><a href="https://wwwid.org/tags/pwa/">Pwa</a></li>
+      
+      <li><a href="https://wwwid.org/tags/javascript/">JavaScript</a></li>
+      
+    </ul>
+    
+  </footer>
+  
+  
+  
+  
+</article>
+
+
+</main>
+<footer class="footer">
+  <span>&copy; 2020 <a href="https://wwwid.org/">Modern Web Community Indonesia</a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="https://wwwid.org/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
+

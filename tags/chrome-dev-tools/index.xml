@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chrome Dev Tools on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/chrome-dev-tools/</link>
+    <description>Recent content in Chrome Dev Tools on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Sun, 24 May 2020 11:16:22 +0700</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/chrome-dev-tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Perjalanan menuju gambar responsif: CSS width, media query, sampai img srcset</title>
+      <link>https://wwwid.org/posts/2020-05-26_gambar-responsif-img-srcset-css-media-query/</link>
+      <pubDate>Sun, 24 May 2020 11:16:22 +0700</pubDate>
+      
+      <guid>https://wwwid.org/posts/2020-05-26_gambar-responsif-img-srcset-css-media-query/</guid>
+      <description>Artikel ini membahas teknik-teknik memuat dan menampilkan gambar responsif yang sesuai dengan ukuran viewport.
+Daftar Isi
+ Non-responsif Teknik 0: CSS width dan height Teknik 1: CSS media query dan background-image  File mana yang di-download? Media query untuk layar dengan kepadatan pixel tinggi (“retina”) Gabungan media query width dan resolution Uji coba CSS background-image dengan media query   Teknik 2: img dengan atribut srcset  Uji coba img srcset   Perbandingan performa Penutup  Extra credits   Referensi   Perangkat (device) yang digunakan untuk mengakses web makin bervariasi—makin besar, makin kecil, makin tajam.</description>
+    </item>
+    
+    <item>
+      <title>Mengoptimasi Gambar Pada Halaman Situs</title>
+      <link>https://wwwid.org/posts/2019-09-04_mengoptimasi-gambar-pada-halaman-situs/</link>
+      <pubDate>Wed, 04 Sep 2019 15:55:08 +0700</pubDate>
+      
+      <guid>https://wwwid.org/posts/2019-09-04_mengoptimasi-gambar-pada-halaman-situs/</guid>
+      <description>Mengaudit situs yang perlu dioptimasi dengan Lighthouse Untuk mencari tahu apa yang bisa kita lakukan untuk mengoptimasi situs kita makan kita perlu melakukan audit terlebih dahulu menggunakan Lighthouse, sebuat perangkat dari Google untuk web developer dapat mengoptimalkan situs yang mereka buat. Cara paling mudah adalah menggunakan Lighthouse yang sudah terintegrasi dengan Chrome Dev Tools.
+Untuk melakukan audit dengan Chrome DevTools lakukan langkah berikut:
+ Buka halaman website yang ingin dioptimasi Buka Chrome DevTools Buka panel audit Jalankan audit pada situs yang ingin dioptimasi.</description>
+    </item>
+    
+  </channel>
+</rss>

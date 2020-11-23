@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Responsive on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/responsive/</link>
+    <description>Recent content in Responsive on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Sun, 24 May 2020 11:16:22 +0700</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/responsive/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Perjalanan menuju gambar responsif: CSS width, media query, sampai img srcset</title>
+      <link>https://wwwid.org/posts/2020-05-26_gambar-responsif-img-srcset-css-media-query/</link>
+      <pubDate>Sun, 24 May 2020 11:16:22 +0700</pubDate>
+      
+      <guid>https://wwwid.org/posts/2020-05-26_gambar-responsif-img-srcset-css-media-query/</guid>
+      <description>Artikel ini membahas teknik-teknik memuat dan menampilkan gambar responsif yang sesuai dengan ukuran viewport.
+Daftar Isi
+ Non-responsif Teknik 0: CSS width dan height Teknik 1: CSS media query dan background-image  File mana yang di-download? Media query untuk layar dengan kepadatan pixel tinggi (“retina”) Gabungan media query width dan resolution Uji coba CSS background-image dengan media query   Teknik 2: img dengan atribut srcset  Uji coba img srcset   Perbandingan performa Penutup  Extra credits   Referensi   Perangkat (device) yang digunakan untuk mengakses web makin bervariasi—makin besar, makin kecil, makin tajam.</description>
+    </item>
+    
+  </channel>
+</rss>

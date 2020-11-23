@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en-ID">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Mengoptimasi Gambar Pada Halaman Situs - Modern Web Community Indonesia</title>
+    
+    <meta name="description" content="Mengaudit situs yang perlu dioptimasi dengan Lighthouse Untuk mencari tahu apa yang bisa kita lakukan untuk mengoptimasi situs kita makan kita perlu melakukan audit terlebih dahulu menggunakan Lighthouse, sebuat perangkat dari Google untuk web developer dapat mengoptimalkan situs yang mereka buat. Cara paling mudah adalah menggunakan Lighthouse yang sudah terintegrasi dengan Chrome Dev Tools.
+Untuk melakukan audit dengan Chrome DevTools lakukan langkah berikut:
+ Buka halaman website yang ingin dioptimasi Buka Chrome DevTools Buka panel audit Jalankan audit pada situs yang ingin dioptimasi.">
+    <meta name="author" content="Yohan Totting">
+    
+    <link href="https://wwwid.org/an-old-hope.min.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/style.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/featured.css" rel="stylesheet">
+    <meta name="color-scheme" content="dark light">
+    
+    <link rel="apple-touch-icon" href="https://wwwid.org/apple-touch-icon.png">
+    <link rel="icon" href="https://wwwid.org/favicon.ico">
+    
+    <meta name="generator" content="Hugo 0.62.2" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://wwwid.org/index.xml" title="Modern Web Community Indonesia">
+    
+    
+    
+    <meta property="og:title" content="Mengoptimasi Gambar Pada Halaman Situs" />
+<meta property="og:description" content="Bagaimana cara mengoptimalkan gambar pada halaman situs menggunakan petunjuk Lighthouse tool." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wwwid.org/posts/2019-09-04_mengoptimasi-gambar-pada-halaman-situs/" />
+<meta property="og:image" content="https://wwwid.org/2019-09-04_mengoptimasi-gambar-pada-halaman-situs/images/audit-oversize.png" />
+<meta property="og:image" content="https://wwwid.org/2019-09-04_mengoptimasi-gambar-pada-halaman-situs/images/better-format.png" />
+<meta property="og:image" content="https://wwwid.org/2019-09-04_mengoptimasi-gambar-pada-halaman-situs/images/image-optimisation-large.jpeg" />
+<meta property="og:image" content="https://wwwid.org/2019-09-04_mengoptimasi-gambar-pada-halaman-situs/images/offscreen-audit-2x.png" />
+<meta property="article:published_time" content="2019-09-04T15:55:08+07:00" />
+<meta property="article:modified_time" content="2020-05-26T09:23:30+07:00" />
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118693499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-118693499-2');
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MXRJCWB');</script>
+  
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  
+  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+  
+    
+        <script>
+    if("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/sw.js").then(swReg => {}).catch(err => {
+                console.error('Service Worker Error', err);
+            });
+        });
+    }
+  </script>
+    
+  </head>
+  <body class="single">
+    <header class="header">
+      <nav class="nav">
+        
+        <p class="logo"><a href="https://wwwid.org/">
+          <img class="logo light" 
+          srcset="https://wwwid.org/images/logo-light-bg@2x.png 2x,
+          https://wwwid.org/images/logo-light-bg.png"
+          src="https://wwwid.org/images/logo-light-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/> 
+          <img class="logo dark" 
+          srcset="https://wwwid.org/images/logo-dark-bg@2x.png 2x,
+          https://wwwid.org/images/logo-dark-bg.png"
+          src="https://wwwid.org/images/logo-dark-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/>
+        
+        </a></p>
+        
+        
+        <ul class="menu">
+          
+          <li>
+            <a href="/pages/tentang-kami/">Tentang Kami</a>
+          </li>
+          
+        </ul>
+        
+      </nav>
+    </header>
+    <main class="main">
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": "https:\/\/wwwid.org\/posts\/2019-09-04_mengoptimasi-gambar-pada-halaman-situs\/",
+  "headline": "Mengoptimasi Gambar Pada Halaman Situs",
+  "datePublished": "2019-09-04",
+  "dateModified": "2020-05-26",
+  "description": "Mengaudit situs yang perlu dioptimasi dengan Lighthouse Untuk mencari tahu apa yang bisa kita lakukan untuk mengoptimasi situs kita makan kita perlu melakukan audit terlebih dahulu menggunakan Lighthouse, sebuat perangkat dari Google untuk web developer dapat mengoptimalkan situs yang mereka buat. Cara paling mudah adalah menggunakan Lighthouse yang sudah terintegrasi dengan Chrome Dev Tools.\nUntuk melakukan audit dengan Chrome DevTools lakukan langkah berikut:\n Buka halaman website yang ingin dioptimasi Buka Chrome DevTools Buka panel audit Jalankan audit pada situs yang ingin dioptimasi.","author": {
+    "@type": "Person",
+    "name": "Yohan Totting"
+  },
+  
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "WWWID",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https:\/\/wwwid.org\//images/wwwid-logogram.png",
+      "width": 388,
+      "height": 388
+    }
+  },
+  
+  "image": {
+    "@type": "ImageObject",
+    "url": "\/2019-09-04_mengoptimasi-gambar-pada-halaman-situs\/images\/image-optimisation-large.jpeg"
+  }
+   
+  
+  }
+  </script>
+<article class="post-single">
+  <header class="post-header">
+   
+    <h1 class="post-title">Mengoptimasi Gambar Pada Halaman Situs</h1>
+    
+    <div class="post-meta">Yohan Totting · 4 Sep 2019</div>
+  </header><div class="post-featured-image">
+    <img src="/2019-09-04_mengoptimasi-gambar-pada-halaman-situs/images/image-optimisation-large.jpeg" alt="feature image for Mengoptimasi Gambar Pada Halaman Situs"/>
+  </div>
+  
+  <div class="post-content"><h2 id="mengaudit-situs-yang-perlu-dioptimasi-dengan-lighthouse">Mengaudit situs yang perlu dioptimasi dengan Lighthouse</h2>
+<p>Untuk mencari tahu apa yang bisa kita lakukan untuk mengoptimasi situs kita makan kita perlu melakukan audit terlebih dahulu menggunakan Lighthouse, sebuat perangkat dari Google untuk web developer dapat mengoptimalkan situs yang mereka buat. Cara paling mudah adalah menggunakan Lighthouse yang sudah terintegrasi dengan Chrome Dev Tools.</p>
+<p>Untuk melakukan audit dengan Chrome DevTools lakukan langkah berikut:</p>
+<ol>
+<li>Buka halaman website yang ingin dioptimasi</li>
+<li>Buka Chrome DevTools</li>
+<li>Buka panel audit</li>
+<li>Jalankan audit pada situs yang ingin dioptimasi.</li>
+</ol>
+<h2 id="memahami-hasil-audit-pada-file-gambar">Memahami Hasil Audit Pada File Gambar</h2>
+<p>Setelah audit selesai, lihat hasilnya dan cari yang berhubungan dengan file gambar. Biasanya ada 3 rekomendasi yang berhubungan dengan gambar bila kita tidak mengoptimalkan gambar yang digunakan pada situs kita. Rekomendasi tersebut adalah:</p>
+<h2 id="1-mengoptimasi-gambar-agar-tidak-dimuat-bila-tidak-terlihat-di-layar">1. Mengoptimasi gambar agar tidak dimuat bila tidak terlihat di layar</h2>
+<figure>
+    <img src="images/offscreen-audit-2x.png"/> <figcaption>
+            <h4>Lighthouse audit untuk gambar dimuat tapi tidak terlihat dilayar</h4>
+        </figcaption>
+</figure>
+
+<p>Maksud dari hasil audit ini adalah bila pada saat saat pertama kali halaman dimuat dan ditemukan gambar yang dimuat namun tidak terlihat di layar maka gambar tersebut dianggap tidak perlu dimuat hingga pengguna berinteraksi dengan halaman situs misalnya dengan scrolling atau tapping.</p>
+<p>Untuk mengoptimalkannya maka kita perlu melakukan lazy-loading atau hanya memuat pada saat gambar akan terlihat dilayar karena aktifitas pengguna misalnya scrolling halaman.</p>
+<p>Lazy loading dengan sudah bisa digunakan mulai dari Chrome 76 tanpa perlu menggunakan library tertentu. Caranya cukup mudah yaitu menambahkan attribute loading pada gambar atau iframe. Sebagai contoh di bawah ini pada tag <code>&lt;img&gt;</code> ditambahkan atribut <code>loading=&quot;lazy&quot;</code>.</p>
+<pre><code>&lt;img src=&quot;image.png&quot; 
+    loading=&quot;lazy&quot; 
+    alt=&quot;…&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;
+&lt;iframe src=&quot;https://example.com&quot; 
+    loading=&quot;lazy&quot;&gt;
+&lt;/iframe&gt;
+</code></pre><p>Dengan menggunakan atribut <code>loading=&quot;lazy&quot;</code> pada elemen gambar atau iframe maka secara otomatis file gambar atau iframe tidak akan dimuat bila belum terlihat di layar. Namun bila atribut loading ini belum didukung oleh browser pengguna maka kita perlu melakukan cara berbeda.</p>
+<p>Cara lainnya adalah dengan menyimpan URL file gambar tersebut pada atribut sementara, bukan pada atribut <code>src</code> sehingga browser tidak memuat gambar tersebut. Pada saat halaman dimuat, kita akan melakukan pengecekan apakah gambar terlihat di dalam layar atau tidak. Bila terlihat makan kita akan mengubah atribut sementara tersebut menjadi atribut <code>src</code>.</p>
+<pre><code>&lt;img data-src=&quot;image.png&quot; alt=&quot;…&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;
+</code></pre><p>Contoh di atas browser tidak akan memuat gambar karena URL gambar tidak berada pada atribut <code>src</code>. Bila terlihat elemen gambar kita ubah menjadi</p>
+<pre><code>&lt;img src=&quot;image.png&quot; alt=&quot;…&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;
+</code></pre><p>Untuk mengubah atribut tersebut kita harus memeriksa apakah elemen gambar akan muncul di layar pada saat pengguna berinteraksi dengan halaman.</p>
+<h3 id="mengoptimasi-gambar-pada-carousel-atau-slide-show">Mengoptimasi gambar pada carousel atau slide show</h3>
+<p><figure>
+    <img src="images/carousel.png"/> <figcaption>
+            <h4>Contoh carousel pada homepage WWWID</h4>
+        </figcaption>
+</figure>
+
+Melakukan optimasi gambar pada carousel yang berada di dalam layar namun tidak menampilkan semua gambar agak berbeda dengan file gambar yang berada diluar layar. Karena secara teknis gambar yang terlihat hanyak beberapa saja, dan sisanya disembunyikan oleh carousel. Biasanya untuk menampilkannya diperlukan interaksi mengeser gambar bila caraousel tidak diatur untuk berjalan otomatis.</p>
+<p>Untuk carousel ini kita bisa menggunakan Intersection Observer API di mana kita bisa mengukur seberapa jauh sebuah element akan akan masuk di dalam container element pada saat di-scrolling baik vertical ataupun horizontal.</p>
+<pre><code>const options = {
+  root: document.querySelector('#container'),
+  rootMargin: '50px',
+  threshold: 0
+}
+
+let observer = new IntersectionObserver(callback, options);
+</code></pre><p><figure>
+    <img src="images/intersection-observer.png"/> <figcaption>
+            <h4>Konsep intersection observer</h4>
+        </figcaption>
+</figure>
+
+Gambar di atas menunjukkan bagaimana browser memanggil fungsi callback pada Intersection Observer API. Pada dasarnya bila elemen masuk dalam area cakupan root container ditambah area root margin maka elemen akan diperhitungkan apakah callback perlu dipanggil atau tidak berdasarkan nilai threshold pada options. Threshold 0 berarti 1 pixel pun yang masuk sudah akan memanggil callback, sedangkan nilai 1.0 berarti callback baru dipanggil bila 100% elemen masuk dalam area aktif.</p>
+<h2 id="2-mengoptimasi-gambar-agar-memuat-file-gambar-sesuai-dengan-ukuran-layar">2. Mengoptimasi gambar agar memuat file gambar sesuai dengan ukuran layar</h2>
+<figure>
+    <img src="images/audit-oversize.png"/> <figcaption>
+            <h4>Lighthouse audit untuk ukuran yang tidak sesuai layar</h4>
+        </figcaption>
+</figure>
+
+<p>Salah satu hal paling sering terjadi adalah editor konten menggunakan gambar yang ukurannya lebih besar dari ukuran layar. Hal ini terjadi karena pada saat pengerjaan konten, editor melakukannya di desktop namun pengguna mengaksesnya melalui mobile.</p>
+<p>Untuk mengatasi hal ini sebenarnya pada elemen gambar sudah tersedia atribut srcset yang bisa digunakan untuk mendefenisikan file gambar dengan lebih dari satu ukuran. Browser akan secara otomatis menggunakan gambar. Contohnya sebagai berikut</p>
+<!-- raw HTML omitted -->
+<p>Gambar di atas adalah gambar yang responsive, dalam artian akan memuat ukuran gambar yang sesuai dengan ukuran layar. Silakan gunakan Chrome DevTools dengan network panel untuk melihat file gambar yang dimuat. Jadi kode HTML gambar standar perlu dioptimalmkan seperti berikut:</p>
+<p>Sebelum</p>
+<pre><code>&lt;img src=&quot;images/car-large.jpg&quot;&gt;
+</code></pre><p>Sesudah</p>
+<pre><code>&lt;img src=&quot;images/car-large.jpg&quot; srcset=&quot;images/car-small.jpg 480w, images/car-large.jpg 1080w&quot; sizes=&quot;90vw&quot; alt=&quot;VW Combi&quot;&gt;
+</code></pre><p>Pada contoh tersebut pada saat layar terdeteksi berukuran kurang sama dengan 480 pixel maka gambar yang akan dimuat adalah <code>car-small.jpg</code> sedangkan pada saat layar kurang sama dengan 1080 pixel maka yang dimuat adalah <code>car-large.jpg</code>. Lebih besar dari itu karena tidak didefinisikan pada atribut <code>srcset</code> maka agak menggunakan <code>car-large.jpg</code> sesuai definisi pada atribut <code>src</code>.</p>
+<h2 id="3-menggunakan-format-gambar-yang-lebih-modern">3. Menggunakan format gambar yang lebih modern</h2>
+<figure>
+    <img src="images/better-format.png"/> <figcaption>
+            <h4>Lighthouse audit untuk format gambar yang optimal</h4>
+        </figcaption>
+</figure>
+
+<p>Format gambar juga terus bertransformasi dan dukungan format juga makin luas. Sebagai contoh, dengan format standar JPEG kita bisa melihat bagaimana sebuah gambar berukuran besar dimuat layaknya sebuah layar diturunkan dan secara perspektif pengguna ini terasa lagging. Format baru JPEG progressive memungkinkan hal ini dihindari dan proses memuat gambar lebih terasa baik dengan menampilkan gambar yang blur terlebih dahulu dan perlahan-lahan menjadi lebih jelas.</p>
+<p><a href="https://cloudinary.com/blog/progressive_jpegs_and_green_martians">Blogpost dari Cloudinary ini</a> memberikan gambaran lebih jelas perbedaan antara format JPG biasa dan progressive.
+<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="memastikan-gambar-terkompresi-optimal">Memastikan gambar terkompresi optimal</h3>
+<p>Selain pemilihan format, terkadang kita juga tidak mengoptimalkan kompresi file gambar. Pada saat gambar dibuat dan diekspor dari aplikasi editor gambar, pengaturan kompresi dan format tidak terlalu diperhatikan. Dampaknya terkadang gambar walaupun ukuran sudah sesuai namun ukurannya masih terlalu besar.</p>
+<p>Sebagai contoh dua file berikut adalah gambar yang menggunakan export default dari Photoshop dan gambar yang sudah dioptimalkan dengan MozJPEG melalui <!-- raw HTML omitted -->Squoosh.app<!-- raw HTML omitted -->.</p>
+<p>Bisa terlihat bahwa ukuran file jauh lebih kecil setelah dioptimalkan dengna kualitas yang tidak terlalu terlihat (setidaknya bagi mata saya).</p>
+<p>Namun untuk memastikan kita menggunakan ukuran yang optimal bagi browser, kita perlu menggunakan tag <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture"><code>&lt;picture&gt;</code></a> pada html untuk mendefenisikan file gambar dengan format yang berbeda. Contohnya:</p>
+<pre><code>&lt;picture&gt;
+   &lt;source srcset=&quot;photo.webp&quot; type=&quot;image/webp&quot;&gt;
+   &lt;source srcset=&quot;photo.jxr&quot; type=&quot;image/vnd.ms-photo&quot;&gt;
+   &lt;source srcset=&quot;photo.jp2&quot; type=&quot;image/jp2&quot;&gt;
+   &lt;img src=&quot;photo.jpg&quot; alt=&quot;My beautiful face&quot;&gt;
+&lt;/picture&gt;
+</code></pre><p>Atau bila dikombinasikan dengan atribut <code>srcset</code> maka kodenya bisa seperti</p>
+<pre><code>&lt;picture&gt;
+    &lt;source srcset=&quot;/media/examples/surfer-240-200.webp&quot;
+            media=&quot;(min-width: 800px)&quot;&gt;
+    &lt;source srcset=&quot;/media/examples/surfer-240-200.jpg&quot;
+            media=&quot;(min-width: 800px)&quot;&gt;
+    &lt;img src=&quot;/media/examples/painted-hand-298-332.jpg&quot; /&gt;
+&lt;/picture&gt;
+</code></pre><p>Kode di atas akan membantu browser untuk memuat file yang sesuai urutan yang ditentukan dan akan memuat file berikutnya bila file sebelumnya tidak didukung oleh browser. Sebagai contoh, format WEBP belum didukung oleh Safari, maka Safari akan memuat file JPG sebagai penggantinya.</p>
+<h2 id="recap">Recap</h2>
+<p>Pada dasarnya ada 3 kekurangan yang paling sering dilupakan oleh pengembang atau pemilik situs yaitu:</p>
+<ol>
+<li>Gambar yang tidak dimuat hanya pada saat ditampilkan.</li>
+<li>Gambar yang ditampilkan tidak memiliki ukuran lebih dari satu sesuai layar sehingga terkadang ukuran gambar lebih besar dari ukuran layar.</li>
+<li>Gambar tidak dioptimasi baik untuk ukuran, format, dan kompresi.</li>
+</ol>
+<h2 id="referensi">Referensi</h2>
+<ol>
+<li><a href="https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/">https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/</a></li>
+<li><a href="https://images.guide/">https://images.guide/</a></li>
+<li><a href="https://web.dev/native-lazy-loading">https://web.dev/native-lazy-loading</a></li>
+</ol>
+</div>
+  <footer class="post-footer">
+    <div class="post-share">
+        <amp-social-share type="twitter"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="facebook"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="email"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="pinterest"
+        width="45"
+        height="33"></amp-social-share>
+    </div>
+    
+    <p class="section-title">Klik kata kunci di bawah ini untuk melihat konten terkait lebih banyak</p>
+    <ul class="post-tags">
+      
+      <li><a href="https://wwwid.org/tags/chrome-dev-tools/">Chrome Dev Tools</a></li>
+      
+      <li><a href="https://wwwid.org/tags/progressive-web-apps/">Progressive Web Apps</a></li>
+      
+      <li><a href="https://wwwid.org/tags/pwa/">PWA</a></li>
+      
+      <li><a href="https://wwwid.org/tags/images/">Images</a></li>
+      
+    </ul>
+    
+  </footer>
+  
+  
+  
+  
+</article>
+
+
+</main>
+<footer class="footer">
+  <span>&copy; 2020 <a href="https://wwwid.org/">Modern Web Community Indonesia</a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="https://wwwid.org/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
+

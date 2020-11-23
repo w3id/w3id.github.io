@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guides And Tutorials on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/guides-and-tutorials/</link>
+    <description>Recent content in Guides And Tutorials on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Mon, 27 Aug 2018 08:29:02 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/guides-and-tutorials/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Panduan Memulai Pengembangan Web Modern (PWA)</title>
+      <link>https://wwwid.org/posts/2018-08-27_panduan-memulai-pengembangan-web-modern-pwa/</link>
+      <pubDate>Mon, 27 Aug 2018 08:29:02 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-08-27_panduan-memulai-pengembangan-web-modern-pwa/</guid>
+      <description>Panduan ini akan menjadi dasar bagaimana sebuah web modern atau biasa disebut Progressive Web App(PWA) dikembangkan. Karena sebagian besar permasalahan web pada saat sudah berjalan adalah arsitektur yang kurang baik serta perancangan awal yang tidak disesuaikan dengan kebutuhan pengguna. Panduan ini akan memberikan gambaran bagaimana arsitektur dan perancangan sebuah aplikasi modern web tanpa menggunakan framework apapun, namun tetap bisa diterapkan di framework apapun.
+Kriteria Modern Web Untuk kebutuhan website modern yang fokus pada kebutuhan pengguna, makan kita mendefinisikan modern web sebagai berikut:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chrome on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/chrome/</link>
+    <description>Recent content in Chrome on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Sat, 18 Nov 2017 12:26:11 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/chrome/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>15 Hal di Chrome Dev Tools yang Mungkin Kamu Belum Tau</title>
+      <link>https://wwwid.org/posts/2017-11-18_15-hal-di-chrome-dev-tools-yang-mungkin-kamu-belum-tau/</link>
+      <pubDate>Sat, 18 Nov 2017 12:26:11 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-11-18_15-hal-di-chrome-dev-tools-yang-mungkin-kamu-belum-tau/</guid>
+      <description>Chrome Developer Tools
+No 8 bikin netizen geleng-geleng kepala. K etika mengembangkan sebuah aplikasi web, tentunya kita tak jauh dari yang namanya debugging. Chrome Dev Tools adalah salah satu tools debugging yang sering digunakan. Setelah sekian lama menggunakammya, akhirnya saya menemukan beberapa hidden-gems yang ada di Chrome Dev Tools, dan beberapa saya selalu gunakan dalam kehidupan saya sebagai engineer sehari-hari. 😹
+Berikut ini adalah list fitur dan tips nya:
+1. Throttle Network &amp;amp; CPU Throttling juga dapat diakses melalui Tab Network.</description>
+    </item>
+    
+  </channel>
+</rss>

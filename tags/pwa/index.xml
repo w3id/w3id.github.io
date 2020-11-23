@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pwa on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/pwa/</link>
+    <description>Recent content in Pwa on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Wed, 04 Sep 2019 15:55:08 +0700</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/pwa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mengoptimasi Gambar Pada Halaman Situs</title>
+      <link>https://wwwid.org/posts/2019-09-04_mengoptimasi-gambar-pada-halaman-situs/</link>
+      <pubDate>Wed, 04 Sep 2019 15:55:08 +0700</pubDate>
+      
+      <guid>https://wwwid.org/posts/2019-09-04_mengoptimasi-gambar-pada-halaman-situs/</guid>
+      <description>Mengaudit situs yang perlu dioptimasi dengan Lighthouse Untuk mencari tahu apa yang bisa kita lakukan untuk mengoptimasi situs kita makan kita perlu melakukan audit terlebih dahulu menggunakan Lighthouse, sebuat perangkat dari Google untuk web developer dapat mengoptimalkan situs yang mereka buat. Cara paling mudah adalah menggunakan Lighthouse yang sudah terintegrasi dengan Chrome Dev Tools.
+Untuk melakukan audit dengan Chrome DevTools lakukan langkah berikut:
+ Buka halaman website yang ingin dioptimasi Buka Chrome DevTools Buka panel audit Jalankan audit pada situs yang ingin dioptimasi.</description>
+    </item>
+    
+    <item>
+      <title>Progressive Web-Application di AWS</title>
+      <link>https://wwwid.org/posts/2018-10-19_progressive-webapplication-di-aws/</link>
+      <pubDate>Fri, 19 Oct 2018 10:10:54 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-10-19_progressive-webapplication-di-aws/</guid>
+      <description>PWA+S3+Cloudfront = ❤️
+Sumber: Pexels
+Membangun PWA sepertinya sedang tren. Kita tidak akan membahas tips membangun PWA, jika ingin update tulisan yang berkaitan dengan pengembangan website di Indonesia bisa ikuti tautan ini https://medium.com/wwwid
+Create React App Saya akan mencontohkan menggunakan React tapi sebenarnya seluruh website statis bisa juga (VueJS, Angular, Vanilla, dsb). Statis disini maksudnya adalah hanya HTML, JavaScript, dan CSS. Bukan server-side rendering.
+CRA ini sudah PWA-enabled, jadi bisa kita jadikan contoh.</description>
+    </item>
+    
+    <item>
+      <title>Berbagi Pengalaman menggunakan Web yang Progresif</title>
+      <link>https://wwwid.org/posts/2018-08-10_berbagi-pengalaman-menggunakan-web-yang-progresif/</link>
+      <pubDate>Fri, 10 Aug 2018 13:28:02 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-08-10_berbagi-pengalaman-menggunakan-web-yang-progresif/</guid>
+      <description>Jika pengembang mobile harus mengupload ke Google Play / App Store (belum ditambah dengan pengujian atau persetujuan aplikasi dari mereka), pengembang web cukup memiliki yang namanya URL a.k.a link situs website kita dan kirimkan ke penggunanya. Bahkan jika ada pembaharuan mulai dari interface dan fungsionalitas maka web adalah pemenangnya dibandingkan mobile (native). Mungkin ini yang bisa katakan “Kekuatan URL yang sesungguhnya”.
+Saat ini, Progressive Web Apps (PWA) atau web yang progresif telah menjadi primadona bagi para web developer untuk menciptakan pengalaman web yang lebih baik kepada penggunanya sehingga bisa meminimalisir pembuatan aplikasi berbasis mobile (Android dan iOS).</description>
+    </item>
+    
+    <item>
+      <title>Progressive Web App — Bagian 2</title>
+      <link>https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-2/</link>
+      <pubDate>Wed, 05 Jul 2017 17:15:44 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-2/</guid>
+      <description>Hijack Request, Cache Storage, App Manifest, App Shell, Notify Updates Untuk membuat Web App kita menjadi sebuah Progressive Web App ada beberapa checklist yang harus dipenuhi, teman-teman bisa melihat checklist nya pada link ini.
+Saatnya kita mulai dengan membuat project sederhana. Teman-teman bisa clone project ini dari github. Kita akan fokus pada service worker saja. Jadi kita tidak akan membahas hal diluar SW dulu ya. git clone [https://github.com/alfrcr/tutorial-pwa-bahasa-indonesia.git](https://github.com/alfrcr/tutorial-pwa-bahasa-indonesia.git)
+ catatan: teman-teman perlu menginstall NodeJS untuk menjalankan project diatas.</description>
+    </item>
+    
+    <item>
+      <title>Progressive Web App — Bagian 1</title>
+      <link>https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-1/</link>
+      <pubDate>Wed, 05 Jul 2017 17:15:21 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-1/</guid>
+      <description>Benefit web app offline-first, and intro service worker. Belakangan ini Google sedang gencar mengenalkan teknologi PWA ke perusahan-perusahaan teknologi di Asia Tenggara, khususnya di Indonesia. Pada awal bulan kemarin salah seorang staff di Google menghubungi kami dan menyarankan kami untuk menerapkan teknologi ini ke salah satu situs kami.
+Pertanyaannya kenapa kita harus menerapkan PWA?
+Sebelumnya kita harus tahu dulu apa itu PWA.
+ PWA adalah sebuah aplikasi web yang menggunakan beberapa teknologi modern yang membuat user experience seperti menggunakan Native App (Android/iOS)</description>
+    </item>
+    
+  </channel>
+</rss>

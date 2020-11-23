@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript Tips on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/javascript-tips/</link>
+    <description>Recent content in Javascript Tips on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Fri, 20 Jul 2018 19:37:23 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/javascript-tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JavaScript, Sosial Media, dan SEO</title>
+      <link>https://wwwid.org/posts/2018-07-20_javascript-sosial-media-dan-seo/</link>
+      <pubDate>Fri, 20 Jul 2018 19:37:23 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-07-20_javascript-sosial-media-dan-seo/</guid>
+      <description>Tren membangun website menggunakan framework dan library JavaScript saat ini sedang tinggi-tingginya. Bahkan perkembangan framework dan library JavaScript sangat cepat sekali. Periode 2000an awal website menggunakan JavaScript paling sering untuk validasi form atau hal yang fancy. Kemudian JavaScript digunakan untuk membuat seluruh halaman website karena kemudahan dari framework dan library yang tersedia.
+Kalau melihat grafik dibawah ini terlihat framework dan library apa yang popular di frontend engineers.
+diambil dari https://hackernoon.com/the-status-of-javascript-libraries-frameworks-2018-beyond-3a5a7cae7513</description>
+    </item>
+    
+  </channel>
+</rss>

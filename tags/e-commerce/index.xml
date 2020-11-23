@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>E-commerce on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/e-commerce/</link>
+    <description>Recent content in E-commerce on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Mon, 09 Oct 2017 06:42:43 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/e-commerce/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Web Payment Request API dan Kemungkinan Adopsinya di Indonesia</title>
+      <link>https://wwwid.org/posts/2017-10-09_web-payment-request-api-dan-kemungkinan-adopsinya-di-indonesia/</link>
+      <pubDate>Mon, 09 Oct 2017 06:42:43 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-10-09_web-payment-request-api-dan-kemungkinan-adopsinya-di-indonesia/</guid>
+      <description>Lanjutan dari tulisan sebelumnya terkait topik yang dibahas di Progressive Web App Roadshow Indonesia tentang service workers, kali ini saya ingin menulis salah satu topik yang dipresentasikan di sesi integration, yaitu Payment Request API.
+Kenapa perlu adanya Payment Request API? Seperti yang kalian tahu kalau melihat ekosistem startup Indonesia, e-commerce merupakan salah satu area yang mendominasi. Dan di e-commerce, pembayaran adalah metrics yang paling penting. Sales conversion menjadi goal utama dari startup e-commerce.</description>
+    </item>
+    
+  </channel>
+</rss>

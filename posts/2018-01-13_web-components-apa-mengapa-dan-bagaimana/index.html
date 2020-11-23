@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-ID">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Web Components — Apa, Mengapa dan Bagaimana - Modern Web Community Indonesia</title>
+    
+    <meta name="description" content="Web Components — Apa, Mengapa dan Bagaimana?
+Pendahuluan Sebagai web developer, wajib hukumnya untuk up to date terhadap teknologi web mulai dari dengerin podcast, lihat forum, follow para developer dan engineer di Twitter dan baca artikel di WWWID tentunya. 😉
+Pernahkah anda membuka sebuah website dan iseng meng-inspect elemen atau view page source dan menemukan tag HTML yang tak lazim (contoh: &amp;lt;foo-bar&amp;gt; atau &amp;lt;custom-tag&amp;gt;)? Mungkin anda akan berpikir jika tag HTML tersebut tidak tersedia di tag HTML pada umumnya.">
+    <meta name="author" content="Satya Kresna Adi Pratama">
+    
+    <link href="https://wwwid.org/an-old-hope.min.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/style.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/featured.css" rel="stylesheet">
+    <meta name="color-scheme" content="dark light">
+    
+    <link rel="apple-touch-icon" href="https://wwwid.org/apple-touch-icon.png">
+    <link rel="icon" href="https://wwwid.org/favicon.ico">
+    
+    <meta name="generator" content="Hugo 0.62.2" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://wwwid.org/index.xml" title="Modern Web Community Indonesia">
+    
+    
+    
+    <meta property="og:title" content="Web Components — Apa, Mengapa dan Bagaimana" />
+<meta property="og:description" content="Web Components — Apa, Mengapa dan Bagaimana?
+Pendahuluan Sebagai web developer, wajib hukumnya untuk up to date terhadap teknologi web mulai dari dengerin podcast, lihat forum, follow para developer dan engineer di Twitter dan baca artikel di WWWID tentunya. 😉
+Pernahkah anda membuka sebuah website dan iseng meng-inspect elemen atau view page source dan menemukan tag HTML yang tak lazim (contoh: &amp;lt;foo-bar&amp;gt; atau &amp;lt;custom-tag&amp;gt;)? Mungkin anda akan berpikir jika tag HTML tersebut tidak tersedia di tag HTML pada umumnya." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wwwid.org/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/" />
+<meta property="og:image" content="https://wwwid.org/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/images/1.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/images/2.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/images/3.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/images/4.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/images/5.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/images/6.png" />
+<meta property="article:published_time" content="2018-01-13T00:38:26+00:00" />
+<meta property="article:modified_time" content="2019-05-21T11:21:49+07:00" />
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118693499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-118693499-2');
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MXRJCWB');</script>
+  
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  
+  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+  
+    
+        <script>
+    if("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/sw.js").then(swReg => {}).catch(err => {
+                console.error('Service Worker Error', err);
+            });
+        });
+    }
+  </script>
+    
+  </head>
+  <body class="single">
+    <header class="header">
+      <nav class="nav">
+        
+        <p class="logo"><a href="https://wwwid.org/">
+          <img class="logo light" 
+          srcset="https://wwwid.org/images/logo-light-bg@2x.png 2x,
+          https://wwwid.org/images/logo-light-bg.png"
+          src="https://wwwid.org/images/logo-light-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/> 
+          <img class="logo dark" 
+          srcset="https://wwwid.org/images/logo-dark-bg@2x.png 2x,
+          https://wwwid.org/images/logo-dark-bg.png"
+          src="https://wwwid.org/images/logo-dark-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/>
+        
+        </a></p>
+        
+        
+        <ul class="menu">
+          
+          <li>
+            <a href="/pages/tentang-kami/">Tentang Kami</a>
+          </li>
+          
+        </ul>
+        
+      </nav>
+    </header>
+    <main class="main">
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": "https:\/\/wwwid.org\/posts\/2018-01-13_web-components-apa-mengapa-dan-bagaimana\/",
+  "headline": "Web Components — Apa, Mengapa dan Bagaimana",
+  "datePublished": "2018-01-13",
+  "dateModified": "2019-05-21",
+  "description": "Web Components — Apa, Mengapa dan Bagaimana?\nPendahuluan Sebagai web developer, wajib hukumnya untuk up to date terhadap teknologi web mulai dari dengerin podcast, lihat forum, follow para developer dan engineer di Twitter dan baca artikel di WWWID tentunya. 😉\nPernahkah anda membuka sebuah website dan iseng meng-inspect elemen atau view page source dan menemukan tag HTML yang tak lazim (contoh: \x26lt;foo-bar\x26gt; atau \x26lt;custom-tag\x26gt;)? Mungkin anda akan berpikir jika tag HTML tersebut tidak tersedia di tag HTML pada umumnya.","author": {
+    "@type": "Person",
+    "name": "Satya Kresna Adi Pratama"
+  },
+  
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "WWWID",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https:\/\/wwwid.org\//images/wwwid-logogram.png",
+      "width": 388,
+      "height": 388
+    }
+  },
+  
+  "image": {
+    "@type": "ImageObject",
+    "url": "\/posts\/2018-01-13_web-components-apa-mengapa-dan-bagaimana\/images\/1.png"
+  }
+   
+  
+  }
+  </script>
+<article class="post-single">
+  <header class="post-header">
+   
+    <h1 class="post-title">Web Components — Apa, Mengapa dan Bagaimana</h1>
+    
+    <div class="post-meta">Satya Kresna Adi Pratama · 13 Jan 2018</div>
+  </header><div class="post-featured-image">
+    <img src="/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/images/1.png" alt="feature image for Web Components — Apa, Mengapa dan Bagaimana"/>
+  </div>
+  
+  <div class="post-content"><p><img src="/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/images/1.png" alt="image"></p>
+<p>Web Components — Apa, Mengapa dan Bagaimana?</p>
+<h3 id="pendahuluan">Pendahuluan</h3>
+<p>Sebagai web developer, wajib hukumnya untuk up to date terhadap teknologi web mulai dari dengerin podcast, lihat forum, follow para developer dan engineer di Twitter dan baca artikel di <a href="https://medium.com/wwwid">WWWID</a> tentunya. 😉</p>
+<p>Pernahkah anda membuka sebuah website dan iseng meng-inspect elemen atau view page source dan menemukan tag HTML yang tak lazim (contoh: <code>&amp;lt;foo-bar&amp;gt;</code> atau <code>&amp;lt;custom-tag&amp;gt;</code>)? Mungkin anda akan berpikir jika tag HTML tersebut tidak tersedia <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">di tag HTML</a> pada umumnya. Jika anda menemukannya, selamat anda telah menemukan sebagian kepingan dunia web modern jaman now. Perkenalkan Web Components, sebuah fitur bagi anda untuk menciptakan tag HTML milik anda sendiri.</p>
+<h3 id="tldr">TL;DR</h3>
+<h4 id="apa-itu-web-components">Apa itu Web Components?</h4>
+<p>Secara singkat, Web Components adalah set plaform web API untuk membuat custom tag HTML yang reusable (bisa digunakan kembali) dan dienkapsulasi (child-tag dibungkus oleh parents-tag) di halaman atau aplikasi web yang kita miliki.</p>
+<h4 id="mengapa-dia-lahir">Mengapa dia lahir?</h4>
+<p>Web developer mengalami ketergantungan beragam framework dan library dalam membangun dan memelihara aplikasi. Ketergantungan yang saya maksud adalah membangun tag HTML element yang diberi CSS dan JS. Jika anda menggunakan sebuah framework seperti Bootstrap untuk membangun sebuah tag button, navs dan pagination kurang lebih sintaksnya seperti ini:</p>
+<p><strong>Bootstrap button</strong></p>
+<p><strong>Bootstrap nav</strong></p>
+<p><strong>Bootstrap pagination</strong></p>
+<p>Jika menggunakan Web Components, anda dapat mendefinisikan nya dengan tag — tag di atas seperti source code di bawah.</p>
+<p><strong>Custom button</strong></p>
+<p><strong>Custom nav</strong></p>
+<p><strong>Custom pagination</strong></p>
+<p>Bagaimana? Tidak ada “div” dan anda menciptakan tag html buatan anda. Masih ingat dengan pasal mutlak “Programmer itu pemalas”? ❤️ Web Components.</p>
+<p>Web components lahir dari konsep desain yg modular (standar) dengan tujuan memudahkan para developer untuk menciptakan komponen atau elemen web yg dapat diperpanjang (extensible), digunakan kembali (reusable), mudah dipelihara (maintainable). Selain itu dengan dapat memudahkan kita melakukan pemisahan konsentrasi terhadap komponen kita (separation of concern) mulai dari scoping style CSS hingga DOM di JavaScript.</p>
+<h4 id="bagaimana-proses-lahirnya-web-components">Bagaimana proses lahirnya Web Components?</h4>
+<p>Semula, istilah “web components” digunakan oleh Microsoft untuk menggambarkan add-ons mereka ke Office. Kemudian Sun, sekarang yang dikenal sebagai Oracle, digunakan untuk menggambarkan Java servlets. Kata “component” juga bukanlah hal yang baru ketika membahas CBSE (Component Based Software Engineering), yang didasarkan pada pendekatan pengembangan sistem perangkat lunak dengan memilih komponen yang sudah ada dan kemudian merakitnya menggunakan arsitektur perangkat lunak yang terdefinisi dengan baik. Sejak awal tahun 2011 dan juga sekarang, istilah “Web Components” telah digunakan merujuk pada standar W3C yang baru.</p>
+<p>Pengembangan “Web Components” yang modern dapat ditelusuri kembali di tahun 2005, dengan dimulainya revolusi “AJAX” dan server side framework RAD (Rapid Application Development) seperti Ruby on Rails, CakePHP dan Django. Teknologi ini membantu pengembangan front-end dengan memberikan konten secara asynchronous sambil mempertahankan kinerja dan memungkinkan situs web dibangun dalam beberapa minggu daripada beberapa bulan. Selain itu, pada tahun 2005, toolkit DOJO diluncurkan, memungkinkan pengembang menambahkan widget ke situs web mereka hanya dengan beberapa baris kode. Hal ini semakin menggarisbawahi keuntungan pembuatan modul yang dapat digunakan kembali (reusable modules).</p>
+<p>Pada tahun 2006, library JavaScript, jQuery dirilis. Library ini memungkinkan developer untuk menulis program JavaScript memanfaatkan API yang disederhanakan untuk interaksi DOM di berbagai macam web browser. Ini membantu memulai era “single page apps”. Mendampingi kesuksesan jQuery, banyak sekali library front-end, toolkit dan framework lainnya termasuk YUI, Prototype dan Extjs — masing-masing berisi stok widget library mereka sendiri. Sekitar tahun 2010 terlihat kemajuan besar dalam pengembangan sisi klien dan popularitas aplikasi satu halaman, yang mengarah ke implementasi sisi klien dari pola MV* (Model View Whatever). Di sini, pentingnya komponen UI yang dapat digunakan kembali dan dienkapsulasi menjadi semakin relevan karena kode yang menggelembung dalam single web apps berskala besar dan front-end framework.</p>
+<p>Saat ini library, toolkit dan framework semua tampaknya memiliki keterbatasan besar — keduanya tidak berinteraksi dengan baik, developer juga tidak bisa dengan mudah mencampur dan mencocokkan komponen dari framework atau library yang berbeda. Keterbatasan utama lainnya saat bekerja dengan komponen berbasis library adalah platform browser itu sendiri.</p>
+<blockquote>
+<p>Jika vendor browser berhasil membangun kemampuan untuk mengenkapsulasi, mengemas, dan menggunakan kembali kode HTML dan DOM API sebelum revolusi AJAX, perkembangan web modern mungkin akan sangat berbeda hari ini. Inilah yang ditawarkan oleh Web Components — dukungan native browser untuk memperluas, mengemas, mengenkapsulasi, dan mengimpor UI.</p>
+</blockquote>
+<p>Google telah menjadi advokat terdepan untuk Web Components sejak draf W3C pertama di bulan Mei 2012, yang dipimpin oleh dua Googler yakni <a href="https://github.com/dglazkov">Dimitri Glazkov</a> dan <a href="https://twitter.com/hayatoito">Hayato Ito</a>. Investasi Google dalam Web Components terbukti pada tahun 2013 Google I/O di mana mereka mengumumkan Polymer, library ciptaan mereka untuk membangun komponen. Sejak itu, banyak sumber daya website seperti <a href="http://webcomponents.org">webcomponents.org</a> dan customelements.io dan framework seperti <a href="https://x-tag.github.io/">X-tag</a> dan <a href="http://bosonic.github.io/">Bosonic</a>, memungkinkan penerapan komponen web secara modern dengan dukungan browser yang lebih baik.</p>
+<h4 id="apa-spesifikasi-dari-web-components">Apa spesifikasi dari web components?</h4>
+<p>Web Components memiliki empat spesifikasi meliputi:</p>
+<p><strong>A. Custom Elements</strong><br>
+Salah satu yang bisa saya katakan menonjol dari Web Components adalah Custom Elements. Ia adalah sebuah spesifikasi atau syarat yang memperbolehkan developer untuk membuat tag HTML baru, mengextend tag HTML yang sudah ada atau mengextend komponen yang telah dibuat oleh developer lain. Custom Elements menyediakan sebuah jalan secara native untuk membuat komponen yang dapat digunakan kembali (re-usable components). Spesifikasi ini harus didefinisikan dalam JavaScript dan memiliki beberapa siklus kehidupan (lifecycle) seperti kode di bawah.</p>
+<p>Jika anda ingin menambahkan DOM ke dalam elemen dapat dilakukan dengan menambahkan markup ke dalam<br>
+<code>this.innerHTML</code>:</p>
+<p>Hal — hal yang harus diperhatikan:</p>
+<ul>
+<li>Nama harus terdiri dari minimal dua kata dan berisi tanda strip (-) untuk memisahkan setiap kata (contoh: <code>&amp;lt;foo-bar&amp;gt;</code>). Kita sebut ini dengan istilah <strong><em>kebab-case.</em></strong></li>
+<li>Nama harus unik.</li>
+<li>Custom Elements harus disertai dengan closing tag (contoh: <code>&amp;lt;foo-bar&amp;gt;&amp;lt;/foo-bar&amp;gt;</code>) dan tidak bisa melakukan self closing tag (contoh: <code>&amp;lt;foo-bar&amp;gt;</code> tidak bisa).</li>
+<li>Berdasarkan spesifikasi custom elements, kita bisa meng-extend tag HTML element native yang sudah ada (contoh: <code>HTMLButtonElement</code>). Jika anda melakukannya maka, elemen kustom yang kita buat akan mewarisi langsung semua fungsionalitas yang ada di <code>HTMLButtonElement</code>. Sayangnya, hal ini belum diimplementasikan di browser manapun. 😭</li>
+<li>HTML template adalah tempat yang ideal untuk markup (shadow) DOM sebuah custom elements.</li>
+<li>Selalu tambahkan method getter dan setter untuk semua dan setiap jenis atribut yang anda gunakan.</li>
+</ul>
+<p><strong>HTML Templates</strong><br>
+HTML templates adalah spesifikasi atau syarat yang memberikan memperbolehkan developer untuk mendeklarasikan fragment (potongan) markup yang mana diurai sebagai HTML, tidak dipakai saat loading halaman, tetapi dapat diinstansiasi nanti saat dijalankan (runtime).</p>
+<p>Membuat template semudah seperti membuat elemen DOM pada umumnya.</p>
+<p>Hal — hal yang harus diperhatikan:</p>
+<ul>
+<li>Isi dari template tidak aktif sampai diaktifkan.</li>
+<li>Tidak ada efek samping sampai template digunakan.</li>
+<li>Konten dianggap tidak berada di DOM.</li>
+<li>Template dapat ditempatkan di manapun.</li>
+<li>Tidak ada bentuk native data-binding. Jadi, anda masih memerlukan sebuah library untuk mengatasinya atau menulis beberapa logika bisnis sendiri untuk benar-benar mengisi template dengan konten yang bermanfaat.</li>
+</ul>
+<p><strong>Shadow DOM</strong><br>
+Shadow DOM hanyalah sebuah DOM yang normal dengan dua perbedaan: 1) bagaimana dia dibuat/digunakan dan 2) bagaimana berperilaku dalam kaitannya dengan sisa halaman. Biasanya, anda membuat sebuah DOM nodes dan menambahkan mereka sebagai anak di elemen lain. Dengan shadow DOM, anda dapat membuat sebuah ruang lingkup (scoped) DOM tree yang disisipkan ke dalam sebuah elemen, tetapi terpisah dari anak yang sebenarnya. Ruang lingkup subtree ini disebut dengan shadow tree. Elemen yang disisipkan disebut dengan shadow host. Semua yang anda tambahkan ke dalam shadow menjadi lokal ke elemen yang dihost, termasuk <code>&amp;lt;style&amp;gt;</code>. Seperti inilah bagaimana shadow DOM mencapai ruang lingkup style CSS.</p>
+<p>Anda mungkin telah menggunakan shadow DOM sebelumnya, bahkan ketika anda tidak menyadarinya. Browser menggunakan shadow DOM untuk beragam elemen HTML native seperti range input:</p>
+<p><img src="/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/images/2.png" alt="image"></p>
+<p>shadow-root user agent pada input type=”range”</p>
+<p>Anda belum bisa melihat shadow-root (user-agent) pada elemen HTML native. Yang perlu anda lakukan adalah klik kanan <code>inspect element</code> &gt; pilih opsi <code>Settings</code> &gt; pilih sesi <code>Elements</code> &gt; centang <code>Show user agent shadow DOM</code>. Jika anda mengalami kesulitan, anda bisa melihatnya di <a href="https://www.youtube.com/watch?v=7gDvFlvoZKQ">video ini</a>.</p>
+<blockquote>
+<p>Jika anda membuat style CSS dengan <code>id=&amp;#34;track&amp;#34;</code> atau <code>id=&amp;#34;thumb&amp;#34;</code> apakah akan berpengaruh terhadap shadow root di input type=&quot;range&quot;?</p>
+</blockquote>
+<p>API shadow DOM mengijinkan developer untuk membuat dan menyisipkan shadow DOM ke dalam elemen, yang mana sangat bagus jika digabungkan dengan Custom Elements.</p>
+<p>Hal — hal yang harus diperhatikan:</p>
+<ul>
+<li>Style yang menggunakan shadow DOM hanya akan berpengaruh pada ruang lingkup (scoped) elemen itu saja.</li>
+<li>Gunakan <code>:host</code> selector untuk style parent container.</li>
+<li><code>position: fixed</code> and posisi CSS lainnya digunakan untuk membatasi komponen sebagai &quot;viewport&quot;.</li>
+<li>Style CSS dari elemen di dalam shadow-root dapat ditimpa dari light-dom (“regular” / “parent” -dom).</li>
+</ul>
+<p><strong>HTML Imports</strong><br>
+Biasanya kita dapat mengimpor aset seperti CSS dengan tag <code>&amp;lt;link rel=&amp;#34;stylesheet&amp;#34;&amp;gt;</code> dan JavaScript dengan tag <code>&amp;lt;script src=&amp;#34;foobar.js&amp;#34;&amp;gt;</code> file ke dalam markup HTML. Pernahkah anda mencoba mengimpor sebuah dokumen HTML? Jika iya, maka HTML import sudah tidak asing bagi anda. Dengan HTML imports, anda dapat menyisipkan dokumen HTML. Anda bisa mengimpor satu dokumen yang isinya HTML, CSS dan JavaScript sesuai dengan kebutuhan anda.</p>
+<p>Mengimpor dokumen HTML sangat mirip dengan impor sebuah style CSS:</p>
+<p><code>&amp;lt;link rel=&amp;#34;import&amp;#34; href=&amp;#34;foobar.html&amp;#34; /&amp;gt;</code></p>
+<p>Dengan segera file yang dimpor akan diload, script yang disematkan akan berjalan dan kontennya dapat digunakan dengan mereferensikan properti <code>import</code> dari elemen:
+<code>const content = document.querySelector(&amp;#39;link[rel=&amp;#34;import&amp;#34;]&amp;#39;).import;</code></p>
+<p>API ini akan berguna ketika mengimpor custom elements lainnya.</p>
+<blockquote>
+<p><em>Salah satu catatan utama tentang dukungan browser terhadap HTML Import: Chrome telah menerapkan (implement) dan mengirimkannya (shipped), namun WebKit dan Firefox tidak akan menerapkannya sama sekali. WebKit menetapkan bahwa mereka ingin menyelidiki kombinasi dengan modul ES6.</em></p>
+</blockquote>
+<p>Hal — hal yang perlu diperhatikan:</p>
+<ul>
+<li><code>link rel=import</code> de-duplikat semua permintaan secara otomatis</li>
+<li>Dokumen yang diimpor tidak ditempatkan di DOM manapun, hanya dibuat tersedia untuk gunakan.</li>
+<li>Tag <code>&amp;lt;script&amp;gt;</code> di dalam dokumen impor akan berjalan pada HTML import.</li>
+<li>Statement import dibloking secara default, tetapi menerima atribut <code>async</code>.</li>
+<li>Ketika mengakses <code>document</code> dari dalam dokumen yang akan diimpor, sebenarnya anda mengakses parent document. <code>document.currentScript.ownerDocument</code> merujuk kepada &quot;child&quot;-document.</li>
+<li>HTML import yang bersarang akan mengencangkan (screw) dengan <code>document.currentScript.ownerDocument</code>. Untuk mencegah hal tersebut, bungkus script bersarang tersebut di dalam <a href="https://developer.mozilla.org/en-US/docs/Glossary/IIFE">IIFE</a> dengan <code>document.currentScript.ownerDocument</code> sebagai parameter.</li>
+</ul>
+<h4 id="bagaimana-cara-membuat-vanilla-web-components">Bagaimana cara membuat vanilla web components?</h4>
+<p>Sejauh ini, saya menemukan dua contoh yang bagus dan baik untuk membuat vanilla web components (tanpa framework dan library). Silahkan anda membaca di link <a href="https://www.codementor.io/ayushgupta/vanilla-js-web-components-chguq8goz">codementor.io (studi kasus user card)</a> dan <a href="https://github.com/rijkvanzanten/nasa-apod">github.com milik Rijk van Zanten (studi kasus NASA Apod)</a>. Jika anda menemukan contoh bagus lainnya silahkan beri komentar di artikel ini. 😉</p>
+<h4 id="bagaimana-status-web-components-saat-ini">Bagaimana status web components saat ini?</h4>
+<p>Berdasarkan situs caniuse.com, status web components sebagai gambar di bawah dan saya mengaksesnya pada tanggal 12 Januari 2018. Jadi, akan ada perubahan di waktu yang tidak ditentukan.</p>
+<p><img src="/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/images/3.png" alt="image"></p>
+<p>Dukungan Custom Elements via caniuse</p>
+<p><img src="/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/images/4.png" alt="image"></p>
+<p>Dukungan shadow DOM via caniuse</p>
+<p><img src="/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/images/5.png" alt="image"></p>
+<p>Dukungan HTML templates via caniuse</p>
+<p><img src="/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/images/6.png" alt="image"></p>
+<p>Dukungan HTML imports via caniuse</p>
+<p>Hal — hal yang perlu diperhatikan:</p>
+<ul>
+<li>Kita masih belum bisa mengextend elemen native HTML a.k.a. customized built-in elements (contoh: <code>HTMLButtonElement</code>) untuk membuat Custom Elements seperti yang dijelaskan pada gambar Custom Elements via caniuse.</li>
+<li>Firefox, WebKit tidak mempertimbangkan untuk membuat spesifikasi HTML Imports di browser mereka. Info terakhir yang saya dapatkan bahwa <a href="https://github.com/TakayoshiKochi/deprecate-style-in-html-imports">Chrome juga akan menghapus HTML Imports di browser mereka segera sekitar bulan Maret tahun 2018</a>. Sebagai gantinya para browser vendor akan menggantinya dengan HTML Module a.k.a. ES6 modules.</li>
+<li><a href="https://twitter.com/FirefoxNightly/status/951009715584225280">Custom Elements versi 1 telah dirilis pada Firefox Nightly</a>. 🎉</li>
+</ul>
+<p><strong>Mengapa belum disupport secara menyeluruh?</strong></p>
+<p>Perlu kita ketahui bahwa pekerjaan browser vendor tidak hanya mengurusi Web Components saja. Banyak fitur lain yang harus mereka prioritaskan sesuai dengan kebijakan para browser vendor. Contoh <a href="https://webkit.org/blog/8042/release-notes-for-safari-technology-preview-46/">Safari</a> dan <a href="https://twitter.com/MSEdgeDev/status/943181166554705920">Ms. Edge</a> meluncurkan Service Worker secara default di browser Tech Preview di bulan Desember 2017. Kemudian, kali ini Safari sedang mengembangkan web manifest, salah satu syarat untuk PWA berdasarkan <a href="https://twitter.com/firt/status/951216290991104000">tweet Maximiliano Firtman</a>. Lalu bagaimana solusi agar bisa disupport secara menyeluruh? Web Components telah menyediakan sebuah <a href="https://www.webcomponents.org/polyfills/">polyfills</a> untuk menanggulangi hal tersebut. Menurut perspektif saya, polyfill bersifat sementara hingga semua browser vendor mendukung Web Components dan para pengguna tidak menggunakan Internet Explorer seperti gambar yang saya dapatkan di situs <a href="https://www.w3schools.com/browsers/">w3schools.com (Browser Statistics)</a>.</p>
+<p><img src="/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/images/7.png" alt="image"></p>
+<p>browser statistics via w3schools</p>
+<p><strong>Apa yang harus saya lakukan selanjutnya?</strong></p>
+<p>Artikel ini hanyalah sebagian kecil dari dunia Web Components, berikut referensi dari saya jika anda ingin mengenal lebih dekat dengan Web Components:</p>
+<p>Indonesia</p>
+<ul>
+<li><a href="https://devmuslim.id/post/034-web-components-dengan-satya-kresna/?utm_campaign=crowdfire&amp;utm_content=crowdfire&amp;utm_medium=social&amp;utm_source=twitter#904897702894362625-tw#1515558989470">Podcast Web Components bersama Developer Muslim</a></li>
+<li><a href="https://github.com/satyakresna/try-web-components">Try Web Components</a></li>
+</ul>
+<p>Inggris</p>
+<ul>
+<li><a href="https://github.com/w3c/webcomponents">Web Components specification</a></li>
+<li><a href="http://webcomponents.org">Web Components website</a></li>
+<li><a href="https://www.slideshare.net/YevgeniyValeyev/brief-history-of-web-components-72452483">Brief history of Web Components</a></li>
+<li><a href="http://kaytcat.github.io/web-components/">Web Components -Kaitlin Rathwell</a></li>
+<li><a href="https://meowni.ca/posts/web-components-with-otters/">An intro to web components with otters</a></li>
+<li><a href="http://infoq.com/presentations/modular-design-web-components">Modular web design web components</a></li>
+<li><a href="https://hackernoon.com/the-wonderful-world-of-web-components-e4c1675c6901">Wonderful of Web Components</a></li>
+<li><a href="https://app.pluralsight.com/library/courses/vanilla-web-components-practical-guide/table-of-contents">A Practical Guide to Vanilla Web Components</a></li>
+<li><a href="https://medium.com/@gilfink/why-im-betting-on-web-components-and-you-should-think-about-using-them-too-8629396e27a">Why I’m Betting on Web Components (and You Should Think About Using Them Too)</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/web-components/">Building Components</a></li>
+<li><a href="https://github.com/GoogleChromeLabs/howto-components">How to components</a></li>
+</ul>
+<p>Terima kasih kepada anda yang telah membaca artikel saya tentang web components, semoga bermanfaat. Jika ada yang ingin disampaikan berupa kritik, saran dan pertanyaan silahkan berkomentar di artikel ini.</p>
+</div>
+  <footer class="post-footer">
+    <div class="post-share">
+        <amp-social-share type="twitter"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="facebook"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="email"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="pinterest"
+        width="45"
+        height="33"></amp-social-share>
+    </div>
+    
+    <p class="section-title">Klik kata kunci di bawah ini untuk melihat konten terkait lebih banyak</p>
+    <ul class="post-tags">
+      
+      <li><a href="https://wwwid.org/tags/webcomponents/">Webcomponents</a></li>
+      
+      <li><a href="https://wwwid.org/tags/web/">Web</a></li>
+      
+      <li><a href="https://wwwid.org/tags/shadow-dom/">Shadow Dom</a></li>
+      
+      <li><a href="https://wwwid.org/tags/custom-elements/">Custom Elements</a></li>
+      
+      <li><a href="https://wwwid.org/tags/html-templates/">Html Templates</a></li>
+      
+    </ul>
+    
+  </footer>
+  
+  
+  
+  
+</article>
+
+
+</main>
+<footer class="footer">
+  <span>&copy; 2020 <a href="https://wwwid.org/">Modern Web Community Indonesia</a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="https://wwwid.org/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
+

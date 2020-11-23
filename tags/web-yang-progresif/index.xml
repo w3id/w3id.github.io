@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Yang Progresif on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/web-yang-progresif/</link>
+    <description>Recent content in Web Yang Progresif on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Fri, 10 Aug 2018 13:28:02 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/web-yang-progresif/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Berbagi Pengalaman menggunakan Web yang Progresif</title>
+      <link>https://wwwid.org/posts/2018-08-10_berbagi-pengalaman-menggunakan-web-yang-progresif/</link>
+      <pubDate>Fri, 10 Aug 2018 13:28:02 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-08-10_berbagi-pengalaman-menggunakan-web-yang-progresif/</guid>
+      <description>Jika pengembang mobile harus mengupload ke Google Play / App Store (belum ditambah dengan pengujian atau persetujuan aplikasi dari mereka), pengembang web cukup memiliki yang namanya URL a.k.a link situs website kita dan kirimkan ke penggunanya. Bahkan jika ada pembaharuan mulai dari interface dan fungsionalitas maka web adalah pemenangnya dibandingkan mobile (native). Mungkin ini yang bisa katakan “Kekuatan URL yang sesungguhnya”.
+Saat ini, Progressive Web Apps (PWA) atau web yang progresif telah menjadi primadona bagi para web developer untuk menciptakan pengalaman web yang lebih baik kepada penggunanya sehingga bisa meminimalisir pembuatan aplikasi berbasis mobile (Android dan iOS).</description>
+    </item>
+    
+  </channel>
+</rss>

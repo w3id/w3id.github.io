@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tips on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/tips/</link>
+    <description>Recent content in Tips on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Fri, 09 Feb 2018 02:30:21 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>10 Tips Untuk Menjadi Seorang Developer Yang Lebih Baik</title>
+      <link>https://wwwid.org/posts/2018-02-09_10-tips-untuk-menjadi-seorang-developer-yang-lebih-baik/</link>
+      <pubDate>Fri, 09 Feb 2018 02:30:21 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-09_10-tips-untuk-menjadi-seorang-developer-yang-lebih-baik/</guid>
+      <description>Dalam 6 tahun terakhir saya bekerja sebagai developer relations, yaitu membangun jaringan dengan para developer serta mendukung mereka untuk dapat memberikan impact ke para pengguna karya mereka. Di mulai dari Blaast yang akhirnya dibeli oleh Facebook, lalu API Pemilu, The Asia Foundation, dan sekarang Google.
+Perjalanan selama lebih dari 10 tahun di dunia web memberikan banyak ilmu bagaimana sebenarnya kita bisa menjadi seorang developer yang lebih baik. Dan pengalaman itulah yang saya coba bagikan di artikel ini untuk bisa mendorong lebih banyak developers yang bisa lebih baik lagi.</description>
+    </item>
+    
+  </channel>
+</rss>

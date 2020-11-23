@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-ID">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Cara Mengecek dan Mengatur Versi Browser untuk Pengguna - Modern Web Community Indonesia</title>
+    
+    <meta name="description" content="User Agent berisikan informasi tentang nama browser, versi browser, sistem operasi, tipe perangkat dan banyak informasi yang berguna untuk dipakai. Dalam pekerjaan, saya menggunakan informasi berupa nama browser dan versinya untuk mengendalikan browser dan versi yang digunakan oleh pengguna ketika mengakses ke sistem saya.
+ Daripada membuat sebuah library untuk menampung user-agent dari awal lebih baik saya menggunakan yang sudah ada dan banyak penggunanya. Terima kasih Github. :)
+ Saya mengandalkan ua-parser-js untuk mengecek dan mengendalikan browser dan versi dari browser tersebut.">
+    <meta name="author" content="Satya Kresna Adi Pratama">
+    
+    <link href="https://wwwid.org/an-old-hope.min.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/style.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/featured.css" rel="stylesheet">
+    <meta name="color-scheme" content="dark light">
+    
+    <link rel="apple-touch-icon" href="https://wwwid.org/apple-touch-icon.png">
+    <link rel="icon" href="https://wwwid.org/favicon.ico">
+    
+    <meta name="generator" content="Hugo 0.62.2" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://wwwid.org/index.xml" title="Modern Web Community Indonesia">
+    
+    
+    
+    <meta property="og:title" content="Cara Mengecek dan Mengatur Versi Browser untuk Pengguna" />
+<meta property="og:description" content="User Agent berisikan informasi tentang nama browser, versi browser, sistem operasi, tipe perangkat dan banyak informasi yang berguna untuk dipakai. Dalam pekerjaan, saya menggunakan informasi berupa nama browser dan versinya untuk mengendalikan browser dan versi yang digunakan oleh pengguna ketika mengakses ke sistem saya.
+ Daripada membuat sebuah library untuk menampung user-agent dari awal lebih baik saya menggunakan yang sudah ada dan banyak penggunanya. Terima kasih Github. :)
+ Saya mengandalkan ua-parser-js untuk mengecek dan mengendalikan browser dan versi dari browser tersebut." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wwwid.org/posts/2019-03-06_cara-mengecek-dan-mengatur-versi-browser-untuk-pengguna/" />
+<meta property="og:image" content="https://wwwid.org/posts/2019-03-06_cara-mengecek-dan-mengatur-versi-browser-untuk-pengguna/images/1.jpeg" />
+<meta property="article:published_time" content="2019-03-06T00:13:10+00:00" />
+<meta property="article:modified_time" content="2019-05-21T18:03:34+08:00" />
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118693499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-118693499-2');
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MXRJCWB');</script>
+  
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  
+  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+  
+    
+        <script>
+    if("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/sw.js").then(swReg => {}).catch(err => {
+                console.error('Service Worker Error', err);
+            });
+        });
+    }
+  </script>
+    
+  </head>
+  <body class="single">
+    <header class="header">
+      <nav class="nav">
+        
+        <p class="logo"><a href="https://wwwid.org/">
+          <img class="logo light" 
+          srcset="https://wwwid.org/images/logo-light-bg@2x.png 2x,
+          https://wwwid.org/images/logo-light-bg.png"
+          src="https://wwwid.org/images/logo-light-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/> 
+          <img class="logo dark" 
+          srcset="https://wwwid.org/images/logo-dark-bg@2x.png 2x,
+          https://wwwid.org/images/logo-dark-bg.png"
+          src="https://wwwid.org/images/logo-dark-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/>
+        
+        </a></p>
+        
+        
+        <ul class="menu">
+          
+          <li>
+            <a href="/pages/tentang-kami/">Tentang Kami</a>
+          </li>
+          
+        </ul>
+        
+      </nav>
+    </header>
+    <main class="main">
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": "https:\/\/wwwid.org\/posts\/2019-03-06_cara-mengecek-dan-mengatur-versi-browser-untuk-pengguna\/",
+  "headline": "Cara Mengecek dan Mengatur Versi Browser untuk Pengguna",
+  "datePublished": "2019-03-06",
+  "dateModified": "2019-05-21",
+  "description": "User Agent berisikan informasi tentang nama browser, versi browser, sistem operasi, tipe perangkat dan banyak informasi yang berguna untuk dipakai. Dalam pekerjaan, saya menggunakan informasi berupa nama browser dan versinya untuk mengendalikan browser dan versi yang digunakan oleh pengguna ketika mengakses ke sistem saya.\n Daripada membuat sebuah library untuk menampung user-agent dari awal lebih baik saya menggunakan yang sudah ada dan banyak penggunanya. Terima kasih Github. :)\n Saya mengandalkan ua-parser-js untuk mengecek dan mengendalikan browser dan versi dari browser tersebut.","author": {
+    "@type": "Person",
+    "name": "Satya Kresna Adi Pratama"
+  },
+  
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "WWWID",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https:\/\/wwwid.org\//images/wwwid-logogram.png",
+      "width": 388,
+      "height": 388
+    }
+  },
+  
+  "image": {
+    "@type": "ImageObject",
+    "url": "\/posts\/2019-03-06_cara-mengecek-dan-mengatur-versi-browser-untuk-pengguna\/images\/1.jpeg"
+  }
+   
+  
+  }
+  </script>
+<article class="post-single">
+  <header class="post-header">
+   
+    <h1 class="post-title">Cara Mengecek dan Mengatur Versi Browser untuk Pengguna</h1>
+    
+    <div class="post-meta">Satya Kresna Adi Pratama · 6 Mar 2019</div>
+  </header><div class="post-featured-image">
+    <img src="/posts/2019-03-06_cara-mengecek-dan-mengatur-versi-browser-untuk-pengguna/images/1.jpeg" alt="feature image for Cara Mengecek dan Mengatur Versi Browser untuk Pengguna"/>
+  </div>
+  
+  <div class="post-content"><p>User Agent berisikan informasi tentang nama browser, versi browser, sistem operasi, tipe perangkat dan banyak informasi yang berguna untuk dipakai. Dalam pekerjaan, saya menggunakan informasi berupa nama browser dan versinya untuk mengendalikan browser dan versi yang digunakan oleh pengguna ketika mengakses ke sistem saya.</p>
+<blockquote>
+<p><em>Daripada membuat sebuah library untuk menampung user-agent dari awal lebih baik saya menggunakan yang sudah ada dan banyak penggunanya. Terima kasih Github. :)</em></p>
+</blockquote>
+<p>Saya mengandalkan ua-parser-js untuk mengecek dan mengendalikan browser dan versi dari browser tersebut. Berikut kepingan kode terlampir di bawah:</p>
+<p>Pertama, saya menambahkan ua-parser-js CDN ke dalam tag script. Kedua, saya melakukan instansiasi UAParser class. Ketiga, saya melakukan pengecekan untuk mengendalikan versi dari setiap browser.</p>
+<p>Salah satu alasan mengapa saya melakukan hal ini adalah karena saya menggunakan ES6 (modern JavaScript) dalam mengembangkan sistem yang saya buat. Fitur-fitur ES6 yang saya gunakan antara lain <code>const</code>, <code>let</code>, <code>fetch</code> (XHR replacement), <code>template string literals</code>, <code>includes()</code>.</p>
+<p>Kalangan pengguna sistem saya beragam umurnya dan tidak semua dari mereka melek dengan teknologi dan pernah beberapa kali mereka membuka website saya di ponsel pintar mereka namun data tidak tampil karena saya menggunakan ES6 dan yang bersangkutan tidak melakukan pembaharuan browser.</p>
+<blockquote>
+<p><em>Daripada saya melakukan transpile ke ES5 atau menggunakan bantuan polyfill lebih baik saya mengecek browser mereka dan memaksa mereka untuk melakukan pembaharuan browser. ✌️</em></p>
+</blockquote>
+<p>Menurut saya, semenjak kehadiran ES6 dan dorongan dari tim TC39, ketergantungan dengan JQuery sebagai pihak ketiga dapat kita kurangi. Sekarang saya lebih sering menggunakan <code>getElementById</code>, <code>getElementsByClassName</code>, <code>querySelector</code>, <code>querySelectorAll</code>, <code>addEventListener</code> dan perintah lainnya untuk memilih elemen yang saya butuhkan yang mana sudah disediakan oleh browser secara alami.</p>
+<blockquote>
+<p><em>Jika anda tertarik untuk berpindah dari JQuery ke JavaScript, silahkan Anda baca “You Might Don’t Need JQuery”. Hal ini akan membuat web Anda (sedikit) lebih cepat tanpa bantuan pihak ketiga.</em></p>
+</blockquote>
+<p>Dari kode di atas pula saya menetapkan versi standar browser yang harus user gunakan ketika berinteraksi di sistem yang saya buat dan jika user tidak menggunakan lima browser di atas maka saya akan meminta mereka untuk menginstall salah satu dari lima browser tersebut.</p>
+<p><img src="/posts/2019-03-06_cara-mengecek-dan-mengatur-versi-browser-untuk-pengguna/images/1.jpeg" alt="image"></p>
+<p>Menentukan versi standar setiap browser.</p>
+<p>Mengapa cuma lima? Karena menurut pengamatan saya pribadi rata-rata user browsing menggunakan browser berdasarkan sistem operasi yang mereka pakai:</p>
+<ul>
+<li>Windows: Chrome, Firefox, Opera, Edge</li>
+<li>MacOS: Chrome, Firefox, Opera, Safari</li>
+<li>Linux: Chrome, Firefox, Opera</li>
+<li>Android: Chrome</li>
+<li>iOS: Safari</li>
+</ul>
+<p>Terima kasih telah membaca tulisan ini dan semoga bermanfaat.</p>
+<h4 id="referensi">Referensi</h4>
+<ul>
+<li><a href="https://github.com/faisalman/ua-parser-js">UA Parser JS</a></li>
+<li><a href="https://github.com/nefe/You-Dont-Need-jQuery">You Might Don’t Need JQuery</a></li>
+<li><a href="https://caniuse.com/#search=es6">Can I Use ES6?</a></li>
+<li><a href="https://github.com/tc39">TC39</a><em>Originally published at</em> <a href="https://www.satyakresna.io/posts/cara-mengecek-dan-mengatur-versi-browser-untuk-pengguna/"><em>www.satyakresna.io</em></a> <em>on March 6, 2019.</em></li>
+</ul>
+</div>
+  <footer class="post-footer">
+    <div class="post-share">
+        <amp-social-share type="twitter"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="facebook"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="email"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="pinterest"
+        width="45"
+        height="33"></amp-social-share>
+    </div>
+    
+    <p class="section-title">Klik kata kunci di bawah ini untuk melihat konten terkait lebih banyak</p>
+    <ul class="post-tags">
+      
+      <li><a href="https://wwwid.org/tags/user-agent/">User Agent</a></li>
+      
+      <li><a href="https://wwwid.org/tags/browsers/">Browsers</a></li>
+      
+      <li><a href="https://wwwid.org/tags/browser-standard/">Browser Standard</a></li>
+      
+    </ul>
+    
+  </footer>
+  
+  
+  
+  
+</article>
+
+
+</main>
+<footer class="footer">
+  <span>&copy; 2020 <a href="https://wwwid.org/">Modern Web Community Indonesia</a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="https://wwwid.org/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
+

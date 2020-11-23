@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Custom Elements on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/custom-elements/</link>
+    <description>Recent content in Custom Elements on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Sat, 13 Jan 2018 00:38:26 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/custom-elements/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Web Components — Apa, Mengapa dan Bagaimana</title>
+      <link>https://wwwid.org/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/</link>
+      <pubDate>Sat, 13 Jan 2018 00:38:26 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/</guid>
+      <description>Web Components — Apa, Mengapa dan Bagaimana?
+Pendahuluan Sebagai web developer, wajib hukumnya untuk up to date terhadap teknologi web mulai dari dengerin podcast, lihat forum, follow para developer dan engineer di Twitter dan baca artikel di WWWID tentunya. 😉
+Pernahkah anda membuka sebuah website dan iseng meng-inspect elemen atau view page source dan menemukan tag HTML yang tak lazim (contoh: &amp;amp;lt;foo-bar&amp;amp;gt; atau &amp;amp;lt;custom-tag&amp;amp;gt;)? Mungkin anda akan berpikir jika tag HTML tersebut tidak tersedia di tag HTML pada umumnya.</description>
+    </item>
+    
+  </channel>
+</rss>

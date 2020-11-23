@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Newsletter on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/newsletter/</link>
+    <description>Recent content in Newsletter on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Tue, 20 Mar 2018 04:33:32 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/newsletter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu #7</title>
+      <link>https://wwwid.org/posts/2018-03-20_yang-web-developers-harus-tahu-sharp7/</link>
+      <pubDate>Tue, 20 Mar 2018 04:33:32 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-03-20_yang-web-developers-harus-tahu-sharp7/</guid>
+      <description>Edisi minggu pertama bulan Maret ini terlewat berhubung terlalu banyak hal lain yang harus dibereskan. Tapi semoga kalian tidak kelewat beberapa konten menarik seputar web development. Untuk melengkapi bacaan kalian, silakan dinikmati pilihan konten dalam 2 minggu terakhir.
+Berita Terbaru Stack Overflow 2018 Developer Survey
+Kapan developers bangun pagi?
+Stack Overflow sebagai sumber jawaban segala masalah programmer merilis hasil survey mereka terhadap developer, dan insight menarik bisa kalian temukan di sini terkait bagaimana tren, kondisi, dan gambaran developer global.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu #6</title>
+      <link>https://wwwid.org/posts/2018-02-15_yang-web-developers-harus-tahu-sharp6/</link>
+      <pubDate>Thu, 15 Feb 2018 10:31:55 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-15_yang-web-developers-harus-tahu-sharp6/</guid>
+      <description>Mendekati Imlek, dan libur panjang saatnya kalian punya bacaan untuk long weekend. Di tengah kesibukan beberapa dari kalian yang lagi mengulik tantangan untuk membuat webapp bisa digunakan dalam 5 detik, mungkin beberapa update dan artikel menarik di bawah ini bisa jadi pengisi waktu luang kalian. Gong xi fa cai!
+Berita Terbaru Chrome akan menampilkan tanda sebuah web tidak aman tanpa HTTPS
+Tampilan website tanpa HTTPS per July 2018
+Inisiatif yang sebenarnya cukup lama untuk membuat web bisa lebih aman dengan protokol yang terenkripsi menggunakan HTTPS akan diperketat lagi.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu #4</title>
+      <link>https://wwwid.org/posts/2018-01-16_yang-web-developers-harus-tahu-sharp4/</link>
+      <pubDate>Tue, 16 Jan 2018 04:28:26 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-01-16_yang-web-developers-harus-tahu-sharp4/</guid>
+      <description>Memulai 2018 biasanya dengan merencanakan kira-kira apa yang akan dilakukan selama setahun ke depan. Termasuk kira-kira akan belajar library atau framework apa, atau akan membuat sesuatu dan merilisnya ke publik dalam setahun ke depan. Apapun itu rencana kalian mudah-mudahan pilihan artikel ini bisa membantu mempermudah rencana kalian.
+Berita Terbaru Autofill Di Browsers Bisa Mencuri Data Kalian
+Demo auto fill mengisi data fields tersembunyi
+Fitur auto fill form di browser terkadang memudahkan tapi bisa juga dimanfaatkan untuk mencuri data credentials pengguna seperti password atau kartu kredit.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu #3</title>
+      <link>https://wwwid.org/posts/2018-01-01_yang-web-developers-harus-tahu-sharp3/</link>
+      <pubDate>Mon, 01 Jan 2018 23:55:13 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-01-01_yang-web-developers-harus-tahu-sharp3/</guid>
+      <description>Edisi ke 3 ini menutup 2017 dan menyambut 2018. Beberapa artikel adalah rangkuman atau kilas balik dari 2017. Sudah siapkah kalian #MakeTheWebGreatAgain di 2018? Silakan memulai dengan membaca artikel pilihan berikut.
+Berita Terbaru Web Advent Today
+Rangkuman 10 tulisan oleh praktisi web untuk menghitung mundur ke 2018 sangat menarik diikuti untuk melihat perspektif mereka akan perkembangan web di 2017 dan apa yang mereka harapkan di 2018. Di tiap artikel ada link ke blog post dari masing-masing author yang menurut saya sangat menarik untuk dibaca untuk penutup 2017 dan pembuka 2018.</description>
+    </item>
+    
+  </channel>
+</rss>

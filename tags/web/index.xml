@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/web/</link>
+    <description>Recent content in Web on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Sat, 22 Dec 2018 11:56:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pengalaman Pertama Menghadiri Chrome Dev Summit</title>
+      <link>https://wwwid.org/posts/2018-12-22_pengalaman-pertama-menghadiri-chrome-dev-summit/</link>
+      <pubDate>Sat, 22 Dec 2018 11:56:00 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-12-22_pengalaman-pertama-menghadiri-chrome-dev-summit/</guid>
+      <description>Berikut cerita pengalaman pertama saya menghadiri Chrome Dev Summit 2018 atas undangan Google untuk para Google Developers Expert yang fokus di Web Technologies. Setelah sehari sebelumnya, di tanggal 10–11 November 2018 juga ada perhelatan akbar Developers Experts Summit dimana GDE atau Google Developers Experts seluruh dunia berkumpul dan ber-summit-ria.
+Sebelum mengulas acara yang diselenggarakan di Yerba Buena Center for the Arts, San Francisco pada tanggal 12–13 November 2018 saya ingin menceritakan bagaimana saya bisa menjadi Google Developers Experts terlebih dahulu agar konteksnya sesuai.</description>
+    </item>
+    
+    <item>
+      <title>Bagaimana Kulina Bisa Mendapatkan 41.000 Lebih Pelanggan Melalui Web</title>
+      <link>https://wwwid.org/posts/2018-04-06_bagaimana-kulina-bisa-mendapatkan-41.000-lebih-pelanggan-melalui-web/</link>
+      <pubDate>Fri, 06 Apr 2018 06:18:26 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-04-06_bagaimana-kulina-bisa-mendapatkan-41.000-lebih-pelanggan-melalui-web/</guid>
+      <description>Website Kulina
+Pemilihan platform untuk produk startup merupakan hal krusial karena sumber daya startup yang sangat terbatas. Sehingga pemilihan platform haruslah yang bisa memberikan dampak baik kepada startup itu sendiri. Dan untuk Kulina, menawarkan layanan pengantaran makanan bukanlah hal yang mudah apalagi dengan adanya layanan serupa seperti Go-Food, walaupun secara model bisnis cukup berbeda. Go-Food adalah layanan on-demand, sedangkan Kulina berbasis langganan, dan hanya melayani makan siang saja dengan fokus konsumen orang kantoran.</description>
+    </item>
+    
+    <item>
+      <title>Peluang dan Tantangan Web Developer</title>
+      <link>https://wwwid.org/posts/2018-02-16_peluang-dan-tantangan-web-developer/</link>
+      <pubDate>Fri, 16 Feb 2018 04:13:04 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-16_peluang-dan-tantangan-web-developer/</guid>
+      <description>Selamat datang di tahun 2018, dimana website telah memasuki era baru. Kita akan memanggilnya dengan sebutan webapps (aplikasi web) dan bukan website lagi. Setiap developer berlomba untuk memberikan byte pertama tercepat. Forbes dengan situs mobile terbarunya merender dalam waktu 2.5 detik, konversi web BookMyShow’s naik sebesar 80% dan OLX telah melihat lebih dari 250% keterlibatan kembali dengan pengguna (re-engagement user) di situs mereka. Apa yang sebenarnya terjadi di dunia web? Dengan grafik JavaScript-CPU-Profiler yang menyeramkan seperti kardiogram monster lochness, semua hal dilakukan untuk mengoptimalkan setiap bit yang kita kirimkan dari sebuah kabel.</description>
+    </item>
+    
+    <item>
+      <title>Studi Kasus Accessibility — Web Form</title>
+      <link>https://wwwid.org/posts/2018-01-24_studi-kasus-accessibility-web-form/</link>
+      <pubDate>Wed, 24 Jan 2018 14:57:26 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-01-24_studi-kasus-accessibility-web-form/</guid>
+      <description>Di artikel sebelumnya, kita telah belajar bahwa Accessibility adalah sebuah hal yang wajib ada dan memudahkan para pengguna disabilitas untuk mengakses produk kita seperti website layaknya orang normal. Pada bagian ini, saya akan menjelaskan studi kasus Accesibility pada sebuah form website dan menggunakan Lighthouse pada browser Chrome versi 63.0.3239.132 sebagai audit.
+Form web yang kita rancang sebagai berikut:
+ Nama dan username menggunakan &amp;amp;lt;input type=&amp;amp;#34;text&amp;amp;#34;&amp;amp;gt; Alamat menggunakan &amp;amp;lt;textarea&amp;amp;gt; Email menggunakan &amp;amp;lt;input type=&amp;amp;#34;email&amp;amp;#34;&amp;amp;gt; Password menggunakan &amp;amp;lt;input type=&amp;amp;#34;password&amp;amp;#34;&amp;amp;gt; dan menambahkan atribut **required** Jenis kelamin menggunakan &amp;amp;lt;input type=&amp;amp;#34;radio&amp;amp;#34;&amp;amp;gt; Hobi menggunakan &amp;amp;lt;input type=&amp;amp;#34;checkbox&amp;amp;#34;&amp;amp;gt; Asal kota menggunakan &amp;amp;lt;select&amp;amp;gt;  Saya telah membuatkan file no-a11y-form.</description>
+    </item>
+    
+    <item>
+      <title>Web Components — Apa, Mengapa dan Bagaimana</title>
+      <link>https://wwwid.org/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/</link>
+      <pubDate>Sat, 13 Jan 2018 00:38:26 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/</guid>
+      <description>Web Components — Apa, Mengapa dan Bagaimana?
+Pendahuluan Sebagai web developer, wajib hukumnya untuk up to date terhadap teknologi web mulai dari dengerin podcast, lihat forum, follow para developer dan engineer di Twitter dan baca artikel di WWWID tentunya. 😉
+Pernahkah anda membuka sebuah website dan iseng meng-inspect elemen atau view page source dan menemukan tag HTML yang tak lazim (contoh: &amp;amp;lt;foo-bar&amp;amp;gt; atau &amp;amp;lt;custom-tag&amp;amp;gt;)? Mungkin anda akan berpikir jika tag HTML tersebut tidak tersedia di tag HTML pada umumnya.</description>
+    </item>
+    
+  </channel>
+</rss>

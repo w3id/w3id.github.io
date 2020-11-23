@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web App Manifest on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/web-app-manifest/</link>
+    <description>Recent content in Web App Manifest on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Fri, 13 Jul 2018 09:11:55 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/web-app-manifest/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Progressive Web App — Aplikasi Web Yang Bisa Di-Install — Bagian 2</title>
+      <link>https://wwwid.org/posts/2018-07-13_progressive-web-app-aplikasi-web-yang-bisa-diinstall-bagian-2/</link>
+      <pubDate>Fri, 13 Jul 2018 09:11:55 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-07-13_progressive-web-app-aplikasi-web-yang-bisa-diinstall-bagian-2/</guid>
+      <description>Melanjutkan tulisan sebelumnya terkait bagaimana sebuah Progressive Web App(PWA) bisa di-install, di tulisan ini kita ingin membahas bagaimana sebenarnya untuk implementasi di aplikasi web kita dan kira-kira hal seperti apa saja yang bisa kita lakukan.
+Sebelum implementasi kita harus memastikan terlebih dahulu apakah memang kita membutuhkan implementasi A2HS(Add To Home Screen) ini. Beberapa pertanyaan yang mungkin perlu kita jawab adalah:
+Native atau PWA? Bila kita sudah memiliki aplikasi native di platform yang sama, baik Android atau iOS, apakah kita lebih ingin pengguna memasang PWA kita atau aplikasi native kita?</description>
+    </item>
+    
+    <item>
+      <title>Progressive Web App — Aplikasi Web Yang Bisa Di Install — Bagian 1</title>
+      <link>https://wwwid.org/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/</link>
+      <pubDate>Fri, 20 Apr 2018 08:49:47 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/</guid>
+      <description>Salah satu pengalaman yang sangat memudahkan pengguna aplikasi native dalam mengakses aplikasi yang mereka ingin gunakan adalah kemudahannya dalam men-launch aplikasi tersebut dengan semudah men-tap icon aplikasi di layar home smart phone mereka dan aplikasi langsung siap digunakan. Bandingkan dengan aplikasi web yang harus melakukan tap beberapa kali karena selain men-tap icon browser di layar home, tentu juga harus mengetikkan alamat URL dari aplikasi web tersebut. Ini yang membuat retention dan tingkat interaktifitas aplikasi web terkadang lebih kecil dibandingkan aplikasi native.</description>
+    </item>
+    
+  </channel>
+</rss>

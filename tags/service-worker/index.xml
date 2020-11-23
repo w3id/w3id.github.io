@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Service Worker on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/service-worker/</link>
+    <description>Recent content in Service Worker on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Thu, 21 Sep 2017 04:18:28 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/service-worker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Service Worker Tanpa Application Shell Untuk Mempercepat Navigasi Antar Halaman Web</title>
+      <link>https://wwwid.org/posts/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web/</link>
+      <pubDate>Thu, 21 Sep 2017 04:18:28 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web/</guid>
+      <description>Seminggu lalu saya disibukkan oleh 2 Google events yaitu Progressive Web App Road Show Indonesia yang diadakan di 2 kota yaitu Jakarta dan Yogyakarta. Dan salah satu yang ingin saya highlight adalah kata progressive. Bahwa dalam Progressive Web App, kita bisa meningkatkan experience dari sebuah web app secara bertahap, tidak harus langsung sekaligus. Bahkan tidak perlu menulis ulang aplikasi web kita untuk menjadikannya Progressive Web App.
+Sebagian besar developer yang saya kenal adalah backend developer yang berawal dari server side script seperti PHP, Ruby, Python, dan lainnya.</description>
+    </item>
+    
+  </channel>
+</rss>

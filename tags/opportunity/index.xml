@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Opportunity on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/opportunity/</link>
+    <description>Recent content in Opportunity on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Fri, 16 Feb 2018 04:13:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/opportunity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Peluang dan Tantangan Web Developer</title>
+      <link>https://wwwid.org/posts/2018-02-16_peluang-dan-tantangan-web-developer/</link>
+      <pubDate>Fri, 16 Feb 2018 04:13:04 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-16_peluang-dan-tantangan-web-developer/</guid>
+      <description>Selamat datang di tahun 2018, dimana website telah memasuki era baru. Kita akan memanggilnya dengan sebutan webapps (aplikasi web) dan bukan website lagi. Setiap developer berlomba untuk memberikan byte pertama tercepat. Forbes dengan situs mobile terbarunya merender dalam waktu 2.5 detik, konversi web BookMyShow’s naik sebesar 80% dan OLX telah melihat lebih dari 250% keterlibatan kembali dengan pengguna (re-engagement user) di situs mereka. Apa yang sebenarnya terjadi di dunia web? Dengan grafik JavaScript-CPU-Profiler yang menyeramkan seperti kardiogram monster lochness, semua hal dilakukan untuk mengoptimalkan setiap bit yang kita kirimkan dari sebuah kabel.</description>
+    </item>
+    
+  </channel>
+</rss>

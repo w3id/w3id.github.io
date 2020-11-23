@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-ID">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>LighthouseBOT Untuk Auto Audit Web di Github Repositori - Modern Web Community Indonesia</title>
+    
+    <meta name="description" content="LighthouseBOT — merupakan sebuah akun “bot” yang bekerja untuk “Audit Web” dengan menggunakan Lighthouse dan melaporkan hasil audit tersebut pada repositori kita di Github. Dengan menggunakan LighthouseBOT maka kita tidak perlu lagi untuk melakukan audit secara manual dengan menggunakan https://web.dev, Lighthouse pada Chrome DevTools, Lighthouse Extension pada browser, Lighthouse-cli, &amp; cara-cara lain yang menggunakan Lighthouse.
+Hal — hal yang bisa dilakukan LighthouseBOT hanyalah menampilkan laporan mengenai Performance, Accessibility, SEO, &amp; Best Practices.">
+    <meta name="author" content="R AdySurya A">
+    
+    <link href="https://wwwid.org/an-old-hope.min.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/style.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/featured.css" rel="stylesheet">
+    <meta name="color-scheme" content="dark light">
+    
+    <link rel="apple-touch-icon" href="https://wwwid.org/apple-touch-icon.png">
+    <link rel="icon" href="https://wwwid.org/favicon.ico">
+    
+    <meta name="generator" content="Hugo 0.62.2" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://wwwid.org/index.xml" title="Modern Web Community Indonesia">
+    
+    
+    
+    <meta property="og:title" content="LighthouseBOT Untuk Auto Audit Web di Github Repositori" />
+<meta property="og:description" content="LighthouseBOT — merupakan sebuah akun “bot” yang bekerja untuk “Audit Web” dengan menggunakan Lighthouse dan melaporkan hasil audit tersebut pada repositori kita di Github. Dengan menggunakan LighthouseBOT maka kita tidak perlu lagi untuk melakukan audit secara manual dengan menggunakan https://web.dev, Lighthouse pada Chrome DevTools, Lighthouse Extension pada browser, Lighthouse-cli, &amp; cara-cara lain yang menggunakan Lighthouse.
+Hal — hal yang bisa dilakukan LighthouseBOT hanyalah menampilkan laporan mengenai Performance, Accessibility, SEO, &amp; Best Practices." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wwwid.org/posts/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori/" />
+<meta property="og:image" content="https://wwwid.org/posts/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori/images/1.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori/images/2.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori/images/3.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori/images/4.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori/images/5.png" />
+<meta property="article:published_time" content="2019-02-26T01:58:04+00:00" />
+<meta property="article:modified_time" content="2019-05-24T10:15:07+07:00" />
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118693499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-118693499-2');
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MXRJCWB');</script>
+  
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  
+  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+  
+    
+        <script>
+    if("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/sw.js").then(swReg => {}).catch(err => {
+                console.error('Service Worker Error', err);
+            });
+        });
+    }
+  </script>
+    
+  </head>
+  <body class="single">
+    <header class="header">
+      <nav class="nav">
+        
+        <p class="logo"><a href="https://wwwid.org/">
+          <img class="logo light" 
+          srcset="https://wwwid.org/images/logo-light-bg@2x.png 2x,
+          https://wwwid.org/images/logo-light-bg.png"
+          src="https://wwwid.org/images/logo-light-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/> 
+          <img class="logo dark" 
+          srcset="https://wwwid.org/images/logo-dark-bg@2x.png 2x,
+          https://wwwid.org/images/logo-dark-bg.png"
+          src="https://wwwid.org/images/logo-dark-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/>
+        
+        </a></p>
+        
+        
+        <ul class="menu">
+          
+          <li>
+            <a href="/pages/tentang-kami/">Tentang Kami</a>
+          </li>
+          
+        </ul>
+        
+      </nav>
+    </header>
+    <main class="main">
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": "https:\/\/wwwid.org\/posts\/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori\/",
+  "headline": "LighthouseBOT Untuk Auto Audit Web di Github Repositori",
+  "datePublished": "2019-02-26",
+  "dateModified": "2019-05-24",
+  "description": "LighthouseBOT — merupakan sebuah akun “bot” yang bekerja untuk “Audit Web” dengan menggunakan Lighthouse dan melaporkan hasil audit tersebut pada repositori kita di Github. Dengan menggunakan LighthouseBOT maka kita tidak perlu lagi untuk melakukan audit secara manual dengan menggunakan https:\/\/web.dev, Lighthouse pada Chrome DevTools, Lighthouse Extension pada browser, Lighthouse-cli, \x26 cara-cara lain yang menggunakan Lighthouse.\nHal — hal yang bisa dilakukan LighthouseBOT hanyalah menampilkan laporan mengenai Performance, Accessibility, SEO, \x26 Best Practices.","author": {
+    "@type": "Person",
+    "name": "R AdySurya A"
+  },
+  
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "WWWID",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https:\/\/wwwid.org\//images/wwwid-logogram.png",
+      "width": 388,
+      "height": 388
+    }
+  },
+  
+  "image": {
+    "@type": "ImageObject",
+    "url": "\/posts\/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori\/images\/1.png"
+  }
+   
+  
+  }
+  </script>
+<article class="post-single">
+  <header class="post-header">
+   
+    <h1 class="post-title">LighthouseBOT Untuk Auto Audit Web di Github Repositori</h1>
+    
+    <div class="post-meta">R AdySurya A · 26 Feb 2019</div>
+  </header><div class="post-featured-image">
+    <img src="/posts/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori/images/1.png" alt="feature image for LighthouseBOT Untuk Auto Audit Web di Github Repositori"/>
+  </div>
+  
+  <div class="post-content"><p><img src="/posts/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori/images/1.png" alt="image">
+LighthouseBOT — merupakan sebuah akun “bot” yang bekerja untuk “Audit Web” dengan menggunakan Lighthouse dan melaporkan hasil audit tersebut pada repositori kita di Github. Dengan menggunakan LighthouseBOT maka kita tidak perlu lagi untuk melakukan audit secara manual dengan menggunakan <a href="https://web.dev,">https://web.dev,</a> Lighthouse pada Chrome DevTools, Lighthouse Extension pada browser, Lighthouse-cli, &amp; cara-cara lain yang menggunakan Lighthouse.</p>
+<p>Hal — hal yang bisa dilakukan LighthouseBOT hanyalah menampilkan laporan mengenai Performance, Accessibility, SEO, &amp; Best Practices.</p>
+<p><strong>Yang dibutuhkan</strong></p>
+<ul>
+<li><a href="https://github.com">Github</a></li>
+<li><a href="https://travis.org">Travis</a></li>
+</ul>
+<h2 id="cara-integrasi">Cara integrasi</h2>
+<ul>
+<li>Menambahkan <a href="https://github.com/lighthousebot">LighthouseBOT</a> sebagai kolaborator pada repositori di Github.</li>
+<li>Mengajukan permintaan <code>API_KEY</code> untuk Lighthouse CI.</li>
+<li>Menambahkan Script dan Konfigurasi Travis untuk Lighthouse CI.</li>
+<li>Tes dengan Pull-Request.</li>
+<li>Menambahkan LighthouseBOT sebagai kolaborator di Github Repository</li>
+<li>Menambahkan LighthouseBOT sebagai kolaborator pada repositori project kamu di Github.</li>
+</ul>
+<h3 id="menambahkan-lighthousebot-sebagai-kolaborator-di-github-repository">Menambahkan LighthouseBOT sebagai kolaborator di Github Repository</h3>
+<p>Menambahkan  <code>LighthouseBOT</code> sebagai kolaborator pada repositori project kamu di Github.</p>
+<p><img src="/posts/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori/images/2.png" alt="image">
+Silahkan follow <a href="https://github.com/lighthousebot">https://github.com/lighthousebot</a> 😇 .</p>
+<p>Setelah ditambah, status <code>LighthouseBOT</code> default-nya pending atau menunggu sampai permintaan teman-teman diterima. Sambil menunggu, silahkan isi formulir di bawah ini untuk mendapatkan <code>LIGHTHOUSE_API_KEY</code> yang digunakan (saya mendapatkan <code>LIGHTHOUSE_API_KEY</code> dalam waktu kurang lebih 1x24 jam).    <code>LIGHTHOUSE_API_KEY</code> nanti di tambahkan pada <code>environment variable</code> di Travis-ci.com.</p>
+<h3 id="mengajukan-permintaan-api_key-untuk-lighthouse-ci">Mengajukan Permintaan API_KEY untuk Lighthouse CI</h3>
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdIc3QNIMn7bBMgl2cfxmmo6wGBlUpdLGxjB_ml464t9eCg_A/viewform">Isi Formulir Disini</a></p>
+<h3 id="menambahkan-script-dan-konfigurasi-travis-untuk-lighthouse-ci">Menambahkan Script dan Konfigurasi Travis untuk Lighthouse CI</h3>
+<p>Jika <code>LIGHTHOUSE_API_KEY</code> telah didapatkan melalui email yang kamu gunakan pada saat proses pengajuan maka yang kamu perlukan adalah menambahkan <code>LIGHTHOUSE_API_KEY</code> pada <code>Travis-ci</code> yang sudah integrasi dengan repositori di Github.</p>
+<p><img src="/posts/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori/images/3.png" alt="image"></p>
+<p>Jika telah mendapatkan Environment Variable, silahkan tambahkan package <code>LighthouseBot</code> pada project kamu.</p>
+<p><code>yarn add https://github.com/GoogleChromeLabs/lighthousebot --dev</code>
+Perintahnya seperti ini,</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">// dasar | basic usage
+lighthousebot &lt;alamat_web&gt;
+// Perfomance budgeting
+lighthousebot --perf<span style="color:#f92672">=</span><span style="color:#ae81ff">95</span> --seo<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span> --pwa<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span> --a11y<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span> --bp<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span> &lt;alamat_web&gt;
+</code></pre></div><ul>
+<li><strong>perf</strong> — Performance</li>
+<li><strong>seo</strong> — Search Engine Optimization</li>
+<li><strong>pwa</strong> — Progressive Web Application</li>
+<li><strong>a11y</strong> — Accessibility</li>
+<li><strong>bp</strong> — Best Practices</li>
+</ul>
+<p>Jangan lupa tambahkan perintah lighthousebot pada <code>.travis.yml</code> dibagian <code>after_success</code></p>
+<p>after_success:</p>
+<ul>
+<li><code>lighthousebot --perf=95 --seo=100 --pwa=100 --a11y=100 --bp=100 &lt;alamat_web&gt;</code> .</li>
+</ul>
+<h2 id="kesimpulan">Kesimpulan</h2>
+<p>Jika menggunakan opsi seperti contoh perfomance budgeting, artinya kita telah mengatur minimum pencapaian setiap web kita di audit. Jika kurang dari nilai yang sudah di tentukan maka di anggap error atau gagal dalam tes audit.</p>
+<p><img src="/posts/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori/images/4.png" alt="image"></p>
+<p>Terakhir, kamu bisa tes dengan mengirimkan <code>commit</code> atau <code>pull-request</code> ke repository kamu.</p>
+<p><img src="/posts/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori/images/5.png" alt="image"></p>
+<p>Log Travis dan data tersebut akan di gunakan oleh LighthouseBOT sebagai komentar di Repository Github kamu.
+Kesimpulan
+Jika kamu memiliki project open source atau private project dan tetap peduli pada performa website, kamu bisa menggunakan LigthouseBOT, agar kamu dapat dibantu dan mengurangi hal — hal manual. Selain itu, kamu akan lebih peduli terhadap code yang kamu tulis dikarenakan ada pencapaian yang sudah di tetapkan.</p>
+<p>Contoh project yang menerapkan LighthouseBOT.</p>
+</div>
+  <footer class="post-footer">
+    <div class="post-share">
+        <amp-social-share type="twitter"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="facebook"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="email"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="pinterest"
+        width="45"
+        height="33"></amp-social-share>
+    </div>
+    
+    <p class="section-title">Klik kata kunci di bawah ini untuk melihat konten terkait lebih banyak</p>
+    <ul class="post-tags">
+      
+      <li><a href="https://wwwid.org/tags/javascript/">JavaScript</a></li>
+      
+      <li><a href="https://wwwid.org/tags/lighthouse/">Lighthouse</a></li>
+      
+      <li><a href="https://wwwid.org/tags/webperformance/">WebPerformance</a></li>
+      
+      <li><a href="https://wwwid.org/tags/webaccessibility/">WebAccessibility</a></li>
+      
+      <li><a href="https://wwwid.org/tags/webtest/">WebTest</a></li>
+      
+      <li><a href="https://wwwid.org/tags/webaudit/">WebAudit</a></li>
+      
+      <li><a href="https://wwwid.org/tags/w3id/">w3id</a></li>
+      
+    </ul>
+    
+  </footer>
+  
+  
+  
+  
+</article>
+
+
+<h3 class="section-title">Related Contents</h3>
+<amp-carousel class="featured-block" height="200"
+  layout="fixed-height"
+  type="carousel">
+  
+  <div class="featured-post">
+        <a class="entry-link" href="https://wwwid.org/posts/2019-02-01_visualisasi-arsitektur-aplikasi-dengan-madge/">
+        
+            <img src="/posts/2019-02-01_visualisasi-arsitektur-aplikasi-dengan-madge/images/1.png" alt="featured image">
+            <div class="overlay"></div>
+        
+        <h4>Visualisasi Arsitektur Aplikasi Dengan Madge</h4>
+        </a>
+        </div>
+    
+  <div class="featured-post">
+        <a class="entry-link" href="https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-2/">
+        
+            <img src="/posts/2017-07-05_progressive-web-app-bagian-2/images/1.png" alt="featured image">
+            <div class="overlay"></div>
+        
+        <h4>Progressive Web App — Bagian 2</h4>
+        </a>
+        </div>
+    
+  <div class="featured-post">
+        <a class="entry-link" href="https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-1/">
+        
+            <img src="/posts/2017-07-05_progressive-web-app-bagian-1/images/4.jpeg" alt="featured image">
+            <div class="overlay"></div>
+        
+        <h4>Progressive Web App — Bagian 1</h4>
+        </a>
+        </div>
+    
+</amp-carousel>
+
+</main>
+<footer class="footer">
+  <span>&copy; 2020 <a href="https://wwwid.org/">Modern Web Community Indonesia</a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="https://wwwid.org/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
+

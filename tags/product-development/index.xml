@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Product Development on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/product-development/</link>
+    <description>Recent content in Product Development on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Fri, 02 Feb 2018 05:17:43 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/product-development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Progressive Web Apps, mulai dari mana?</title>
+      <link>https://wwwid.org/posts/2018-02-02_progressive-web-apps-mulai-dari-mana/</link>
+      <pubDate>Fri, 02 Feb 2018 05:17:43 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-02_progressive-web-apps-mulai-dari-mana/</guid>
+      <description>Banyak orang salah kaprah pada saat berbicara tentang Progressive Web App(PWA), bahwa untuk bisa memiliki PWA harus Single Page Application(SPA), atau harus menggunakan framework modern seperti React, Angular, Polymer, dan lainnya. Sehingga banyak developer yang merasa bahwa mereka tidak bisa menerapkan PWA karena mereka masih menggunakan server rendered framework seperti PHP atau Ruby Framework. Padahal berbicara PWA, tentunya yang utama adalah kata progressive di mana maksud sebenarnya adalah peningkatan pengalaman user secara progresif atau bertahap.</description>
+    </item>
+    
+  </channel>
+</rss>

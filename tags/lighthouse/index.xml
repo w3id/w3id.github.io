@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lighthouse on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/lighthouse/</link>
+    <description>Recent content in Lighthouse on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Tue, 26 Feb 2019 01:58:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/lighthouse/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LighthouseBOT Untuk Auto Audit Web di Github Repositori</title>
+      <link>https://wwwid.org/posts/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori/</link>
+      <pubDate>Tue, 26 Feb 2019 01:58:04 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori/</guid>
+      <description>LighthouseBOT — merupakan sebuah akun “bot” yang bekerja untuk “Audit Web” dengan menggunakan Lighthouse dan melaporkan hasil audit tersebut pada repositori kita di Github. Dengan menggunakan LighthouseBOT maka kita tidak perlu lagi untuk melakukan audit secara manual dengan menggunakan https://web.dev, Lighthouse pada Chrome DevTools, Lighthouse Extension pada browser, Lighthouse-cli, &amp;amp; cara-cara lain yang menggunakan Lighthouse.
+Hal — hal yang bisa dilakukan LighthouseBOT hanyalah menampilkan laporan mengenai Performance, Accessibility, SEO, &amp;amp; Best Practices.</description>
+    </item>
+    
+  </channel>
+</rss>

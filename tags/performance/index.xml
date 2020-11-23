@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>performance on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/performance/</link>
+    <description>Recent content in performance on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Sun, 24 May 2020 11:16:22 +0700</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Perjalanan menuju gambar responsif: CSS width, media query, sampai img srcset</title>
+      <link>https://wwwid.org/posts/2020-05-26_gambar-responsif-img-srcset-css-media-query/</link>
+      <pubDate>Sun, 24 May 2020 11:16:22 +0700</pubDate>
+      
+      <guid>https://wwwid.org/posts/2020-05-26_gambar-responsif-img-srcset-css-media-query/</guid>
+      <description>Artikel ini membahas teknik-teknik memuat dan menampilkan gambar responsif yang sesuai dengan ukuran viewport.
+Daftar Isi
+ Non-responsif Teknik 0: CSS width dan height Teknik 1: CSS media query dan background-image  File mana yang di-download? Media query untuk layar dengan kepadatan pixel tinggi (“retina”) Gabungan media query width dan resolution Uji coba CSS background-image dengan media query   Teknik 2: img dengan atribut srcset  Uji coba img srcset   Perbandingan performa Penutup  Extra credits   Referensi   Perangkat (device) yang digunakan untuk mengakses web makin bervariasi—makin besar, makin kecil, makin tajam.</description>
+    </item>
+    
+    <item>
+      <title>Memastikan webmu selalu tersedia</title>
+      <link>https://wwwid.org/posts/2020-05-04_memastikan-webmu-selalu-tersedia/</link>
+      <pubDate>Thu, 30 Apr 2020 19:18:15 +0700</pubDate>
+      
+      <guid>https://wwwid.org/posts/2020-05-04_memastikan-webmu-selalu-tersedia/</guid>
+      <description>Di situasi seperti pandemic seperti sekarang ini, informasi online merupakan cara paling efektif untuk mengetahui perkembangan terakhir dari situasi COVID-19. Website mudah di-update, cukup melakukan update di server, pengunjung langsung mendapatkan informasi terkini pada saat mengakses website tersebut. Namun tidak jarang beberapa website tidak siap menerima lonjakan pengunjung yang lebih banyak dari biasanya sehingga membuat pengunjung tidak mendapatkan informasi yang mereka inginkan. Kita sebagai pengembang website harusnya bisa memberikan layanan yang lebih optimal agar website kita tetap bisa memberikan informasi yang dibutuhkan oleh pengguna.</description>
+    </item>
+    
+  </channel>
+</rss>

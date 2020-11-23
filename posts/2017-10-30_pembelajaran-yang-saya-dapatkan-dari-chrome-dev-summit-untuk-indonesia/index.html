@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-ID">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Pembelajaran yang saya dapatkan dari Chrome Dev Summit untuk Indonesia - Modern Web Community Indonesia</title>
+    
+    <meta name="description" content="Saya baru balik dari Chrome Dev Summit dan tulisan ini ingin merangkum beberapa hal yang saya dapatkan dari event tahunan team Chrome untuk para pengembang web. Dari semua yang disampaikan di-event ini, ada beberapa hal yang saya rasa sangat berguna bagi pengembang web Indonesia terutama dalam meningkatkan standar pengalaman web yang dikembangkan.
+Bagaimana Pengguna Mengakses Web Untuk membuka tulisan ini saya rasa yang menarik untuk disimak adalah The Web for the Entire World oleh Tal Oppenheimer ini.">
+    <meta name="author" content="Yohan Totting">
+    
+    <link href="https://wwwid.org/an-old-hope.min.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/style.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/featured.css" rel="stylesheet">
+    <meta name="color-scheme" content="dark light">
+    
+    <link rel="apple-touch-icon" href="https://wwwid.org/apple-touch-icon.png">
+    <link rel="icon" href="https://wwwid.org/favicon.ico">
+    
+    <meta name="generator" content="Hugo 0.62.2" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://wwwid.org/index.xml" title="Modern Web Community Indonesia">
+    
+    
+    
+    <meta property="og:title" content="Pembelajaran yang saya dapatkan dari Chrome Dev Summit untuk Indonesia" />
+<meta property="og:description" content="Saya baru balik dari Chrome Dev Summit dan tulisan ini ingin merangkum beberapa hal yang saya dapatkan dari event tahunan team Chrome untuk para pengembang web. Dari semua yang disampaikan di-event ini, ada beberapa hal yang saya rasa sangat berguna bagi pengembang web Indonesia terutama dalam meningkatkan standar pengalaman web yang dikembangkan.
+Bagaimana Pengguna Mengakses Web Untuk membuka tulisan ini saya rasa yang menarik untuk disimak adalah The Web for the Entire World oleh Tal Oppenheimer ini." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wwwid.org/posts/2017-10-30_pembelajaran-yang-saya-dapatkan-dari-chrome-dev-summit-untuk-indonesia/" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-10-30_pembelajaran-yang-saya-dapatkan-dari-chrome-dev-summit-untuk-indonesia/images/1.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-10-30_pembelajaran-yang-saya-dapatkan-dari-chrome-dev-summit-untuk-indonesia/images/2.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-10-30_pembelajaran-yang-saya-dapatkan-dari-chrome-dev-summit-untuk-indonesia/images/3.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-10-30_pembelajaran-yang-saya-dapatkan-dari-chrome-dev-summit-untuk-indonesia/images/4.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2017-10-30_pembelajaran-yang-saya-dapatkan-dari-chrome-dev-summit-untuk-indonesia/images/5.png" />
+<meta property="article:published_time" content="2017-10-30T02:26:01+00:00" />
+<meta property="article:modified_time" content="2019-05-21T11:21:49+07:00" />
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118693499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-118693499-2');
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MXRJCWB');</script>
+  
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  
+  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+  
+    
+        <script>
+    if("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/sw.js").then(swReg => {}).catch(err => {
+                console.error('Service Worker Error', err);
+            });
+        });
+    }
+  </script>
+    
+  </head>
+  <body class="single">
+    <header class="header">
+      <nav class="nav">
+        
+        <p class="logo"><a href="https://wwwid.org/">
+          <img class="logo light" 
+          srcset="https://wwwid.org/images/logo-light-bg@2x.png 2x,
+          https://wwwid.org/images/logo-light-bg.png"
+          src="https://wwwid.org/images/logo-light-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/> 
+          <img class="logo dark" 
+          srcset="https://wwwid.org/images/logo-dark-bg@2x.png 2x,
+          https://wwwid.org/images/logo-dark-bg.png"
+          src="https://wwwid.org/images/logo-dark-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/>
+        
+        </a></p>
+        
+        
+        <ul class="menu">
+          
+          <li>
+            <a href="/pages/tentang-kami/">Tentang Kami</a>
+          </li>
+          
+        </ul>
+        
+      </nav>
+    </header>
+    <main class="main">
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": "https:\/\/wwwid.org\/posts\/2017-10-30_pembelajaran-yang-saya-dapatkan-dari-chrome-dev-summit-untuk-indonesia\/",
+  "headline": "Pembelajaran yang saya dapatkan dari Chrome Dev Summit untuk Indonesia",
+  "datePublished": "2017-10-30",
+  "dateModified": "2019-05-21",
+  "description": "Saya baru balik dari Chrome Dev Summit dan tulisan ini ingin merangkum beberapa hal yang saya dapatkan dari event tahunan team Chrome untuk para pengembang web. Dari semua yang disampaikan di-event ini, ada beberapa hal yang saya rasa sangat berguna bagi pengembang web Indonesia terutama dalam meningkatkan standar pengalaman web yang dikembangkan.\nBagaimana Pengguna Mengakses Web Untuk membuka tulisan ini saya rasa yang menarik untuk disimak adalah The Web for the Entire World oleh Tal Oppenheimer ini.","author": {
+    "@type": "Person",
+    "name": "Yohan Totting"
+  },
+  
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "WWWID",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https:\/\/wwwid.org\//images/wwwid-logogram.png",
+      "width": 388,
+      "height": 388
+    }
+  },
+  
+  "image": {
+    "@type": "ImageObject",
+    "url": "\/posts\/2017-10-30_pembelajaran-yang-saya-dapatkan-dari-chrome-dev-summit-untuk-indonesia\/images\/4.png"
+  }
+   
+  
+  }
+  </script>
+<article class="post-single">
+  <header class="post-header">
+   
+    <h1 class="post-title">Pembelajaran yang saya dapatkan dari Chrome Dev Summit untuk Indonesia</h1>
+    
+    <div class="post-meta">Yohan Totting · 30 Oct 2017</div>
+  </header><div class="post-featured-image">
+    <img src="/posts/2017-10-30_pembelajaran-yang-saya-dapatkan-dari-chrome-dev-summit-untuk-indonesia/images/4.png" alt="feature image for Pembelajaran yang saya dapatkan dari Chrome Dev Summit untuk Indonesia"/>
+  </div>
+  
+  <div class="post-content"><p><img src="/posts/2017-10-30_pembelajaran-yang-saya-dapatkan-dari-chrome-dev-summit-untuk-indonesia/images/1.png" alt="image"></p>
+<p>Saya baru balik dari <a href="https://developer.chrome.com/devsummit/">Chrome Dev Summit</a> dan tulisan ini ingin merangkum beberapa hal yang saya dapatkan dari event tahunan team Chrome untuk para pengembang web. Dari semua yang disampaikan di-event ini, ada beberapa hal yang saya rasa sangat berguna bagi pengembang web Indonesia terutama dalam meningkatkan standar pengalaman web yang dikembangkan.</p>
+<h4 id="bagaimana-pengguna-mengakses-web">Bagaimana Pengguna Mengakses Web</h4>
+<p>Untuk membuka tulisan ini saya rasa yang menarik untuk disimak adalah <em>The Web for the Entire World</em> oleh Tal Oppenheimer ini.</p>
+<p>The Web for The Entire World — Tal Oppenheimer</p>
+<p>Di presentasi ini Tal menunjukkan bagaimana kondisi sebenarnya pengguna mobile phone dalam mengakses web. Saya yakin sebagian besar pembaca tulisan ini berada dalam kondisi ideal dalam mengakses web. Yaitu mobile phone dengan ruang penyimpanan dan memori yang cukup besar, serta di jaringan yang cukup cepat. Tapi berbeda dengan kenyataan sebagian besar pengguna web di Indonesia yang menggunakan mobile phone dengan ruang penyimpanan dan memori terbatas, serta jaringan yang tidak stabil ataupun paket data yang cukup mahal buat mereka.</p>
+<p><img src="/posts/2017-10-30_pembelajaran-yang-saya-dapatkan-dari-chrome-dev-summit-untuk-indonesia/images/2.png" alt="image"></p>
+<p>Kondisi jaringan Indonesia yang sebagian besar masih 2G di 2016</p>
+<p>Di presentasi tersebut dijelaskan bahwa bukan cuma kondisi jaringan yang tidak reliable, tapi sebagian pengguna handphone juga kehabisan ruang penyimpanan, dan sebagian besar masih menganggap bahwa paket data yang ada masih sangat mahal, sehingga dalam mengakses internet mereka sangat peduli dengan jumlah data yang mereka konsumsi.</p>
+<p>Presentasi Tal tersebut memberikan alasan baik bagi pengembang untuk bisa mengembangkan aplikasi web mereka yang cukup memberi perhatian pada hal-hal di bawah ini.</p>
+<p><img src="/posts/2017-10-30_pembelajaran-yang-saya-dapatkan-dari-chrome-dev-summit-untuk-indonesia/images/3.png" alt="image"></p>
+<p>Hal-hal yang perlu diperhatikan oleh pengembang web</p>
+<h4 id="pengalaman-yang-baik-bagi-pengguna">Pengalaman Yang Baik Bagi Pengguna</h4>
+<p>Dan untuk bisa merancang aplikasi yang memperhatikan hal di atas, saya rasa yang cocok untuk dilihat adalah presentasi dari Addy Osmani yang akan memberikan informasi bagaimana best practice dalam mengembangkan web yang bisa loading dengan cepat dan instant.</p>
+<p>Salah satu yang menarik adalah bagaimana resep sebuah aplikasi web modern yang baik adalah aplikasi yang memiliki 3 kriteria berikut</p>
+<p><img src="/posts/2017-10-30_pembelajaran-yang-saya-dapatkan-dari-chrome-dev-summit-untuk-indonesia/images/4.png" alt="image"></p>
+<p>Recipe for building good web sites</p>
+<p>Dalam membangun sebuah website dengan performance yang baik, salah satu komponen di web yang sangat penting adalah <a href="https://developers.google.com/web/fundamentals/getting-started/primers/service-workers">service workers</a>. Di mana service workers bisa memberikan pengembang kontrol terhadap caches dan jaringan. Sehingga pengembang bisa memberikan pengalaman akses cepat dalam kondisi jaringan apapun.</p>
+<p>Karena pentingnya <a href="https://developers.google.com/web/fundamentals/getting-started/primers/service-workers">service workers</a>, Google mengembangkan <a href="https://workboxjs.org/">Workbox</a>, sebuah tool yang memudahkan pengembang untuk menggunakan <a href="https://developers.google.com/web/fundamentals/getting-started/primers/service-workers">service workers</a> dalam aplikasi mereka. Jeff Posnick berbagi di presentasi berikut bagaimana <a href="https://workboxjs.org/">Workbox</a> bisa digunakan.</p>
+<p>Dan tentunya performance cuma salah satu dari experiences yang diharapkan oleh user dari sebuah aplikasi. Experiences yang sebelumnya mereka rasakan di aplikasi native, saat ini sudah bisa juga dinikmati di web. <a href="https://developers.google.com/web/progressive-web-apps/">Progressive Web Apps</a> adalah aplikasi web yang bisa ditingkatkan secara progressive dengan memberikan experiences yang sama dengan aplikasi native.</p>
+<p>Salah satu experiences yang cukup penting juga adalah integrasi dengan sistem operasi. Hal ini yang selama ini dimiliki oleh aplikasi native yang memberikan kemudahan bagi pengguna dalam mengakses konten, atau berinteraksi dengan aplikasi. Owen menceritakan bagaimana aplikasi web bisa memberikan integrasi yang sama seperti aplikasi native.</p>
+<p>Integration web and operating systems</p>
+<h4 id="wordpress-cms-yang-paling-populer">WordPress, CMS Yang Paling Populer</h4>
+<p><a href="https://wordpress.org/">WordPress</a> memegang peran penting dalam publikasi konten di web. Bisa dibilang 28% web dibuat menggunakan CMS <a href="https://wordpress.org/">WordPress</a>. Angka ini bahkan bisa lebih besar lagi di Indonesia. Di event terakhir AMP Roadshow di Jakarta, lebih dari 50% publishers yang hadir menggunakan <a href="https://wordpress.org/">WordPress</a>. Sehingga bisa dibayangkan dengan membuat WordPress bisa memberikan pengalaman yang baik seperti diceritakan di atas maka impact-nya bisa dirasakan oleh sebagian besar pengakses web.</p>
+<p><img src="/posts/2017-10-30_pembelajaran-yang-saya-dapatkan-dari-chrome-dev-summit-untuk-indonesia/images/5.png" alt="image"></p>
+<p>WordPress adalah CMS terpopuler di dunia</p>
+<p>Surma dari Google bekerja sama dengan team <a href="https://automattic.com/">Automattic</a>, pengembang dibalik <a href="https://wordpress.org/">WordPress</a> untuk memberikan dukungan [Progressive Web Apps] (<a href="https://developers.google.com/web/progressive-web-apps/)di">https://developers.google.com/web/progressive-web-apps/)di</a> WordPress. Dukungan tersebut berupa <a href="https://github.com/Automattic/jetpack/pull/7963">plugin</a> yang akan bisa digunakan oleh semua pemilik <a href="https://wordpress.org/">WordPress</a> sites, dan <a href="https://github.com/GoogleChromeLabs/ProgressiveWordPress">theme PWA</a> sebagai referensi untuk pengembang themes <a href="https://wordpress.org/">WordPress</a>.</p>
+<p>WordPress &amp; PWA</p>
+<h4 id="web-dengan-standar-yang-lebih-baik">Web Dengan Standar Yang Lebih Baik</h4>
+<p>Merangkum tulisan ini, semua konten yang saya bahas diatas pada dasarnya untuk memberikan pengguna web sebuah pengalaman yang lebih baik. Dan dari sisi pengembang web juga bisa menaikkan standar pengembanganya sehingga web yang dikembangkan memiliki kualitas pengalaman yang sama dengan aplikasi native. Untuk memberikan gambaran bagaimana seharusnya standar web yang lebih baik, mungkin kalian bisa menonton video presentasi dari Thao Tran dan Chris Wilson ini yang menceritakan best practice dalam pengembangan web untuk standar yang lebih baik.</p>
+<p>Rekapan di atas hanya sebagian dari konten yang ada di Chrome Dev Summit. Ada banyak konten lainnya yang patut disimak seperti Polymer, LitHTML, tooling, framworks panels, dan lainnya. Silakan cek di <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcICUD5nBfRdAR6Fveosnqa5m">Youtube channel Chrome Developers</a> untuk keseluruhan konten. Dan semoga kalian bisa ikut menaikkan standar kualitas pengalaman web Indonesia.</p>
+</div>
+  <footer class="post-footer">
+    <div class="post-share">
+        <amp-social-share type="twitter"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="facebook"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="email"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="pinterest"
+        width="45"
+        height="33"></amp-social-share>
+    </div>
+    
+    <p class="section-title">Klik kata kunci di bawah ini untuk melihat konten terkait lebih banyak</p>
+    <ul class="post-tags">
+      
+      <li><a href="https://wwwid.org/tags/web-development/">Web Development</a></li>
+      
+      <li><a href="https://wwwid.org/tags/chrome-dev-summit/">Chrome Dev Summit</a></li>
+      
+      <li><a href="https://wwwid.org/tags/progressive-web-app/">Progressive Web App</a></li>
+      
+    </ul>
+    
+  </footer>
+  
+  
+  
+  
+</article>
+
+
+<h3 class="section-title">Related Contents</h3>
+<amp-carousel class="featured-block" height="200"
+  layout="fixed-height"
+  type="carousel">
+  
+  <div class="featured-post">
+        <a class="entry-link" href="https://wwwid.org/posts/2017-10-09_web-payment-request-api-dan-kemungkinan-adopsinya-di-indonesia/">
+        
+            <img src="/posts/2017-10-09_web-payment-request-api-dan-kemungkinan-adopsinya-di-indonesia/images/1.png" alt="featured image">
+            <div class="overlay"></div>
+        
+        <h4>Web Payment Request API dan Kemungkinan Adopsinya di Indonesia</h4>
+        </a>
+        </div>
+    
+  <div class="featured-post">
+        <a class="entry-link" href="https://wwwid.org/posts/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web/">
+        
+            <img src="/posts/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web/images/1.png" alt="featured image">
+            <div class="overlay"></div>
+        
+        <h4>Service Worker Tanpa Application Shell Untuk Mempercepat Navigasi Antar Halaman Web</h4>
+        </a>
+        </div>
+    
+</amp-carousel>
+
+</main>
+<footer class="footer">
+  <span>&copy; 2020 <a href="https://wwwid.org/">Modern Web Community Indonesia</a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="https://wwwid.org/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
+

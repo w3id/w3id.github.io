@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network Information Api on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/network-information-api/</link>
+    <description>Recent content in Network Information Api on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Wed, 08 Aug 2018 06:35:21 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/network-information-api/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Web Pintar Yang Beradaptasi Sesuai Perangkat dan Jaringan</title>
+      <link>https://wwwid.org/posts/2018-08-08_web-pintar-yang-beradaptasi-sesuai-perangkat-dan-jaringan/</link>
+      <pubDate>Wed, 08 Aug 2018 06:35:21 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-08-08_web-pintar-yang-beradaptasi-sesuai-perangkat-dan-jaringan/</guid>
+      <description>Para pengguna internet mengakses web saat ini dengan perangkat yang beragam walaupun bisa dibilang bahwa perangkat tersebut didominasi oleh mobile. Namun ragam perangkat mobile ini sendiri sebenarnya cukup beragam dan bisa kita klasifikasikan dalam perangkat tingkat atas, seperti iPhone 8/X, Samsung S9, LG G6 dan lain-lain. Lalu perangkat tingkat menengah seperti Oppo, Xiaomi, dan Vivo. Serta perangkat low end di bawah 1 juta seperti Samsung seri J.
+Beradaptasi dengan perangkat Dengan beragamnya perangkat dari pengakses web, maka sudah seharusnya kita sebagai pengembang wajib mengoptimalkan website kita untuk perangkat yang paling banyak mengakses website kita.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WordPress on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/wordpress/</link>
+    <description>Recent content in WordPress on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Tue, 14 Nov 2017 11:34:40 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Membuat WordPress Tampil dan Bisa Digunakan Dalam 5 Detik</title>
+      <link>https://wwwid.org/posts/2017-11-14_membuat-wordpress-tampil-dan-bisa-digunakan-dalam-5-detik/</link>
+      <pubDate>Tue, 14 Nov 2017 11:34:40 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-11-14_membuat-wordpress-tampil-dan-bisa-digunakan-dalam-5-detik/</guid>
+      <description>TwentySeventeen — WordPress Default Theme
+Web yang modern saat ini mencoba menaikkan standar kecepatan tampil di layar yang rata-rata 19 detik di 3G menjadi 5 detik atau kurang. Dengan demikian potensi kehilangan user yang tidak ingin menunggu lebih dari 3 detik bisa dihindari.
+WordPress adalah CMS paling populer di dunia dengan angka penggunaan sekitar 24% dari semua website yang ada di internet. Dan karena WordPress dikembangkan sejak lama, maka metode pengembangan web dengan WordPress secara default belum cukup optimal untuk kondisi jaringan cellular yang masih sebagian besar di 2G dan spesifikasi rendah dari sebagian besar smart phone yang digunakan.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Accessibility on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/accessibility/</link>
+    <description>Recent content in Accessibility on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Wed, 24 Jan 2018 14:57:26 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/accessibility/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Studi Kasus Accessibility — Web Form</title>
+      <link>https://wwwid.org/posts/2018-01-24_studi-kasus-accessibility-web-form/</link>
+      <pubDate>Wed, 24 Jan 2018 14:57:26 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-01-24_studi-kasus-accessibility-web-form/</guid>
+      <description>Di artikel sebelumnya, kita telah belajar bahwa Accessibility adalah sebuah hal yang wajib ada dan memudahkan para pengguna disabilitas untuk mengakses produk kita seperti website layaknya orang normal. Pada bagian ini, saya akan menjelaskan studi kasus Accesibility pada sebuah form website dan menggunakan Lighthouse pada browser Chrome versi 63.0.3239.132 sebagai audit.
+Form web yang kita rancang sebagai berikut:
+ Nama dan username menggunakan &amp;amp;lt;input type=&amp;amp;#34;text&amp;amp;#34;&amp;amp;gt; Alamat menggunakan &amp;amp;lt;textarea&amp;amp;gt; Email menggunakan &amp;amp;lt;input type=&amp;amp;#34;email&amp;amp;#34;&amp;amp;gt; Password menggunakan &amp;amp;lt;input type=&amp;amp;#34;password&amp;amp;#34;&amp;amp;gt; dan menambahkan atribut **required** Jenis kelamin menggunakan &amp;amp;lt;input type=&amp;amp;#34;radio&amp;amp;#34;&amp;amp;gt; Hobi menggunakan &amp;amp;lt;input type=&amp;amp;#34;checkbox&amp;amp;#34;&amp;amp;gt; Asal kota menggunakan &amp;amp;lt;select&amp;amp;gt;  Saya telah membuatkan file no-a11y-form.</description>
+    </item>
+    
+    <item>
+      <title>Perkenalan Accessibility</title>
+      <link>https://wwwid.org/posts/2017-10-31_perkenalan-accessibility/</link>
+      <pubDate>Tue, 31 Oct 2017 00:11:45 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-10-31_perkenalan-accessibility/</guid>
+      <description>Sebagai seorang web developer, selain urusan performance dan interface pada website yang dibuat, kita perlu memperhatikan siapa user kita. Apakah user kita lahir tidak ada kekurangan fisik atau sebaliknya (disabilitas). Jika user yang mengakses website kita adalah kalangan disabiilitas maka kita perlu memberikan perhatian ekstra terhadap website kita. Lalu bagaimana caranya? Accessibility adalah jawaban dari hal tersebut.
+Definisi Accessibility secara garis besar adalah bagaimana user yang disabilitas bisa mengakses aplikasi kita layaknya orang normal (making disability users able to access our website).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Houdini on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/houdini/</link>
+    <description>Recent content in Houdini on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Sat, 22 Dec 2018 11:56:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/houdini/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pengalaman Pertama Menghadiri Chrome Dev Summit</title>
+      <link>https://wwwid.org/posts/2018-12-22_pengalaman-pertama-menghadiri-chrome-dev-summit/</link>
+      <pubDate>Sat, 22 Dec 2018 11:56:00 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-12-22_pengalaman-pertama-menghadiri-chrome-dev-summit/</guid>
+      <description>Berikut cerita pengalaman pertama saya menghadiri Chrome Dev Summit 2018 atas undangan Google untuk para Google Developers Expert yang fokus di Web Technologies. Setelah sehari sebelumnya, di tanggal 10–11 November 2018 juga ada perhelatan akbar Developers Experts Summit dimana GDE atau Google Developers Experts seluruh dunia berkumpul dan ber-summit-ria.
+Sebelum mengulas acara yang diselenggarakan di Yerba Buena Center for the Arts, San Francisco pada tanggal 12–13 November 2018 saya ingin menceritakan bagaimana saya bisa menjadi Google Developers Experts terlebih dahulu agar konteksnya sesuai.</description>
+    </item>
+    
+  </channel>
+</rss>

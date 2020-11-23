@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloudfront on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/cloudfront/</link>
+    <description>Recent content in Cloudfront on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Fri, 19 Oct 2018 10:10:54 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/cloudfront/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Progressive Web-Application di AWS</title>
+      <link>https://wwwid.org/posts/2018-10-19_progressive-webapplication-di-aws/</link>
+      <pubDate>Fri, 19 Oct 2018 10:10:54 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-10-19_progressive-webapplication-di-aws/</guid>
+      <description>PWA+S3+Cloudfront = ❤️
+Sumber: Pexels
+Membangun PWA sepertinya sedang tren. Kita tidak akan membahas tips membangun PWA, jika ingin update tulisan yang berkaitan dengan pengembangan website di Indonesia bisa ikuti tautan ini https://medium.com/wwwid
+Create React App Saya akan mencontohkan menggunakan React tapi sebenarnya seluruh website statis bisa juga (VueJS, Angular, Vanilla, dsb). Statis disini maksudnya adalah hanya HTML, JavaScript, dan CSS. Bukan server-side rendering.
+CRA ini sudah PWA-enabled, jadi bisa kita jadikan contoh.</description>
+    </item>
+    
+  </channel>
+</rss>

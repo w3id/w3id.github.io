@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Io18 on Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/tags/io18/</link>
+    <description>Recent content in Io18 on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Tue, 15 May 2018 10:31:19 +0000</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/tags/io18/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu Di #IO18</title>
+      <link>https://wwwid.org/posts/2018-05-15_yang-web-developers-harus-tahu-di-sharpio18/</link>
+      <pubDate>Tue, 15 May 2018 10:31:19 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-05-15_yang-web-developers-harus-tahu-di-sharpio18/</guid>
+      <description>Google I/O 2018
+Selesai sudah hajat tahunan Google Developers, Google IO 2018 di Mountain View yang menjadi ajang tahunan untuk mengundang para developers dari seluruh dunia untuk bisa mendapatkan update terkini terkait platform teknologi yang dimiliki Google dan berinteraksi dengan orang-orang di belakangnya sehingga para developers bisa membangun aplikasi atau fungsi di atas platform tersebut. Dan tulisan ini akan memberikan rekapan apa saja yang perlu kalian tahu terkait web platform dan bagaimana kalian sebagai pengembang bisa mengadopsi perkembangan tersebut.</description>
+    </item>
+    
+  </channel>
+</rss>

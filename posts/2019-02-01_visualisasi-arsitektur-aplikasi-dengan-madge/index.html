@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-ID">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Visualisasi Arsitektur Aplikasi Dengan Madge - Modern Web Community Indonesia</title>
+    
+    <meta name="description" content="Madge merupakan Aplikasi pengembang yang menghasilkan Grafik Visual mengenai struktur sebuah aplikasi, modul-modul yang digunakan (dependencies Modul), &amp; Lingkaran Dependensi atau “Keterkaitan” satu atau lebih penggunaan sebuah modul (Circular Dependency).
+Circular dependency - Wikipedia
+Sebelumnya, saya sedang mempelajari Lighthouse, tepatnya Arsitektur dari Lighthouse kemudian mendapatkan sebuah informasi menarik “yah , tentang Madge ini” dari **** tautan ini.
+GoogleChrome/lighthouse
+Pada tautan tersebut saya menemukan gambar atau visual grafik dari arsitektur lighthouse.">
+    <meta name="author" content="R AdySurya A">
+    
+    <link href="https://wwwid.org/an-old-hope.min.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/style.css" rel="stylesheet">
+    <link href="https://wwwid.org/css/featured.css" rel="stylesheet">
+    <meta name="color-scheme" content="dark light">
+    
+    <link rel="apple-touch-icon" href="https://wwwid.org/apple-touch-icon.png">
+    <link rel="icon" href="https://wwwid.org/favicon.ico">
+    
+    <meta name="generator" content="Hugo 0.62.2" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://wwwid.org/index.xml" title="Modern Web Community Indonesia">
+    
+    
+    
+    <meta property="og:title" content="Visualisasi Arsitektur Aplikasi Dengan Madge" />
+<meta property="og:description" content="Madge merupakan Aplikasi pengembang yang menghasilkan Grafik Visual mengenai struktur sebuah aplikasi, modul-modul yang digunakan (dependencies Modul), &amp; Lingkaran Dependensi atau “Keterkaitan” satu atau lebih penggunaan sebuah modul (Circular Dependency).
+Circular dependency - Wikipedia
+Sebelumnya, saya sedang mempelajari Lighthouse, tepatnya Arsitektur dari Lighthouse kemudian mendapatkan sebuah informasi menarik “yah , tentang Madge ini” dari **** tautan ini.
+GoogleChrome/lighthouse
+Pada tautan tersebut saya menemukan gambar atau visual grafik dari arsitektur lighthouse." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wwwid.org/posts/2019-02-01_visualisasi-arsitektur-aplikasi-dengan-madge/" />
+<meta property="og:image" content="https://wwwid.org/posts/2019-02-01_visualisasi-arsitektur-aplikasi-dengan-madge/images/1.png" />
+<meta property="og:image" content="https://wwwid.org/posts/2019-02-01_visualisasi-arsitektur-aplikasi-dengan-madge/images/2.png" />
+<meta property="article:published_time" content="2019-02-01T01:58:04+00:00" />
+<meta property="article:modified_time" content="2019-05-21T11:21:49+07:00" />
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118693499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-118693499-2');
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MXRJCWB');</script>
+  
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  
+  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+  
+    
+        <script>
+    if("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/sw.js").then(swReg => {}).catch(err => {
+                console.error('Service Worker Error', err);
+            });
+        });
+    }
+  </script>
+    
+  </head>
+  <body class="single">
+    <header class="header">
+      <nav class="nav">
+        
+        <p class="logo"><a href="https://wwwid.org/">
+          <img class="logo light" 
+          srcset="https://wwwid.org/images/logo-light-bg@2x.png 2x,
+          https://wwwid.org/images/logo-light-bg.png"
+          src="https://wwwid.org/images/logo-light-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/> 
+          <img class="logo dark" 
+          srcset="https://wwwid.org/images/logo-dark-bg@2x.png 2x,
+          https://wwwid.org/images/logo-dark-bg.png"
+          src="https://wwwid.org/images/logo-dark-bg@2x.png" alt="Modern Web Community Indonesia" height="40"/>
+        
+        </a></p>
+        
+        
+        <ul class="menu">
+          
+          <li>
+            <a href="/pages/tentang-kami/">Tentang Kami</a>
+          </li>
+          
+        </ul>
+        
+      </nav>
+    </header>
+    <main class="main">
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": "https:\/\/wwwid.org\/posts\/2019-02-01_visualisasi-arsitektur-aplikasi-dengan-madge\/",
+  "headline": "Visualisasi Arsitektur Aplikasi Dengan Madge",
+  "datePublished": "2019-02-01",
+  "dateModified": "2019-05-21",
+  "description": "Madge merupakan Aplikasi pengembang yang menghasilkan Grafik Visual mengenai struktur sebuah aplikasi, modul-modul yang digunakan (dependencies Modul), \x26 Lingkaran Dependensi atau “Keterkaitan” satu atau lebih penggunaan sebuah modul (Circular Dependency).\nCircular dependency - Wikipedia\nSebelumnya, saya sedang mempelajari Lighthouse, tepatnya Arsitektur dari Lighthouse kemudian mendapatkan sebuah informasi menarik “yah , tentang Madge ini” dari **** tautan ini.\nGoogleChrome\/lighthouse\nPada tautan tersebut saya menemukan gambar atau visual grafik dari arsitektur lighthouse.","author": {
+    "@type": "Person",
+    "name": "R AdySurya A"
+  },
+  
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "WWWID",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https:\/\/wwwid.org\//images/wwwid-logogram.png",
+      "width": 388,
+      "height": 388
+    }
+  },
+  
+  "image": {
+    "@type": "ImageObject",
+    "url": "\/posts\/2019-02-01_visualisasi-arsitektur-aplikasi-dengan-madge\/images\/1.png"
+  }
+   
+  
+  }
+  </script>
+<article class="post-single">
+  <header class="post-header">
+   
+    <h1 class="post-title">Visualisasi Arsitektur Aplikasi Dengan Madge</h1>
+    
+    <div class="post-meta">R AdySurya A · 1 Feb 2019</div>
+  </header><div class="post-featured-image">
+    <img src="/posts/2019-02-01_visualisasi-arsitektur-aplikasi-dengan-madge/images/1.png" alt="feature image for Visualisasi Arsitektur Aplikasi Dengan Madge"/>
+  </div>
+  
+  <div class="post-content"><p>Madge merupakan Aplikasi pengembang yang menghasilkan Grafik Visual mengenai struktur sebuah aplikasi, modul-modul yang digunakan (dependencies Modul), &amp; Lingkaran Dependensi atau “Keterkaitan” satu atau lebih penggunaan sebuah modul (Circular Dependency).</p>
+<p><a href="https://en.wikipedia.org/wiki/Circular_dependency">Circular dependency - Wikipedia</a></p>
+<p>Sebelumnya, saya sedang mempelajari <strong>Lighthouse</strong>, tepatnya Arsitektur dari <strong>Lighthouse</strong> kemudian mendapatkan sebuah informasi menarik “yah , tentang Madge ini” dari **** <a href="https://github.com/GoogleChrome/lighthouse/blob/master/docs/architecture.md"><strong>tautan ini</strong></a>.</p>
+<p><a href="https://github.com/GoogleChrome/lighthouse/blob/master/docs/architecture.md">GoogleChrome/lighthouse</a></p>
+<p>Pada tautan tersebut saya menemukan gambar atau visual grafik dari arsitektur lighthouse.</p>
+<p><img src="/posts/2019-02-01_visualisasi-arsitektur-aplikasi-dengan-madge/images/1.png" alt="image"></p>
+<p>Lighthouse Architecture: Read More -<a href="https://github.com/GoogleChrome/lighthouse/blob/master/docs/architecture.md">https://github.com/GoogleChrome/lighthouse/blob/master/docs/architecture.md</a></p>
+<p>Kemudian, menemukan perintah (command) yang digunakan lighthouse untuk menghasilkan grafik visual diatas yakni
+<code>$ madge lighthouse-core/index.js --image arch.png --layout dot --backgroundColor &amp;#34;#fafafa&amp;#34; --nodeColor &amp;#34;#4d4afc&amp;#34; --noDependencyColor &amp;#34;#48ad00&amp;#34;``# madge &amp;lt;directory&amp;gt;or&amp;lt;file&amp;gt; [options]</code></p>
+<ul>
+<li><strong>madge</strong> : bin file dari madge jika sudah di install</li>
+<li><strong>lighthouse-core/index.js</strong> : file index.js dari lighthouse didalam folder lighthouse-core</li>
+<li><strong>image</strong> : opsi untuk nama file gambar “output” setelah madge dijalankan</li>
+<li><strong>layout</strong> : opsi untuk mengatur layout dari “output”</li>
+<li>untuk opsi lainnya bisa dilihat <a href="https://www.npmjs.com/package/madge"><strong>disini.</strong></a></li>
+</ul>
+<p>setelah menjalankan perintah seperti gambar diatas, silahkan buka “directory” atau “folder” tepat dimana kamu menjalankan perintah tersebut.</p>
+<blockquote>
+<p>Catatan: Madge membutuhkan sebuah dependensi juga, yakni <strong>graphvis (required)</strong> dan menggunakan <a href="https://github.com/dependents/node-dependency-tree"><strong>node-dependency-tree</strong></a> **** (tak perlu install karena sudah jadi bagian utama dari madge)
+<a href="https://www.graphviz.org/">Graphviz - Graph Visualization Software</a></p>
+</blockquote>
+<p>Jadi, harus menginstall <strong>graphvis</strong> agar <strong>madge</strong> dapat berjalan.</p>
+<p>contoh instalasi dan penggunaan:
+<code>// Install graphvis using brew for mac user   $ **brew install -v graphviz**``// Install graphvis using apt-port for ubuntu   $ **sudo apt-get install graphviz**``// Install madge using yarn   $ **yarn global add madge**``// goto project directory   $ **cd your_project**``// generate app architecture using madge   $ **madge index.js --image your_project_arc.png** </code></p>
+<p>Contoh hasil generate pada project Simple Todo yang saya buat menggunakan ReactJs (create-react-app)</p>
+<p><img src="/posts/2019-02-01_visualisasi-arsitektur-aplikasi-dengan-madge/images/2.png" alt="image"></p>
+<p>MedicineTodo — <a href="https://github.com/ri7nz/medicine">https://github.com/ri7nz/medicine</a></p>
+<h3 id="kesimpulan">Kesimpulan</h3>
+<p>Dengan menggunakan <strong>Madge</strong> atau tepatnya dengan mendapatkan informasi mengenai rancangan, arsitektur, dan dependesi yang digunakan pada sebuah project atau aplikasi kita dapat jadi lebih mudah untuk meningkatkan kualitas atau performa, Contohnya pada pengembangan <strong>web jaman now</strong> yang memiliki bundle file yang harus dijaga, dengan mengetahui apa yg tidak digunakan maka kita dapat menghapus atau tidak menggunakannya, serta untuk kebutuhan analisa.</p>
+<p>Sekian, dan terima kasih semoga bermanfaat. 😀 (Mohon maaf jika ada yang salah).</p>
+<p><a href="https://medium.com/u/4bafb556834e">R AdySurya A</a></p>
+<p>Follow Me On</p>
+<ul>
+<li>Github : <a href="https://github.com/ri7nz">https://github.com/ri7nz</a></li>
+<li>Twitter : <a href="https://twitter.com/ri7nz">https://twitter.com/ri7nz</a></li>
+</ul>
+</div>
+  <footer class="post-footer">
+    <div class="post-share">
+        <amp-social-share type="twitter"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="facebook"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="email"
+        width="45"
+        height="33"></amp-social-share>
+      <amp-social-share type="pinterest"
+        width="45"
+        height="33"></amp-social-share>
+    </div>
+    
+    <p class="section-title">Klik kata kunci di bawah ini untuk melihat konten terkait lebih banyak</p>
+    <ul class="post-tags">
+      
+      <li><a href="https://wwwid.org/tags/javascript/">JavaScript</a></li>
+      
+      <li><a href="https://wwwid.org/tags/architecture/">Architecture</a></li>
+      
+      <li><a href="https://wwwid.org/tags/software-development/">Software Development</a></li>
+      
+      <li><a href="https://wwwid.org/tags/dependencies/">Dependencies</a></li>
+      
+      <li><a href="https://wwwid.org/tags/tools/">Tools</a></li>
+      
+    </ul>
+    
+  </footer>
+  
+  
+  
+  
+</article>
+
+
+<h3 class="section-title">Related Contents</h3>
+<amp-carousel class="featured-block" height="200"
+  layout="fixed-height"
+  type="carousel">
+  
+  <div class="featured-post">
+        <a class="entry-link" href="https://wwwid.org/posts/2018-08-23_yang-sering-developer-lupakan-soal-pwa/">
+        
+            <img src="/posts/2018-08-23_yang-sering-developer-lupakan-soal-pwa/images/2.png" alt="featured image">
+            <div class="overlay"></div>
+        
+        <h4>Yang sering developer lupakan soal PWA</h4>
+        </a>
+        </div>
+    
+  <div class="featured-post">
+        <a class="entry-link" href="https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-2/">
+        
+            <img src="/posts/2017-07-05_progressive-web-app-bagian-2/images/1.png" alt="featured image">
+            <div class="overlay"></div>
+        
+        <h4>Progressive Web App — Bagian 2</h4>
+        </a>
+        </div>
+    
+  <div class="featured-post">
+        <a class="entry-link" href="https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-1/">
+        
+            <img src="/posts/2017-07-05_progressive-web-app-bagian-1/images/4.jpeg" alt="featured image">
+            <div class="overlay"></div>
+        
+        <h4>Progressive Web App — Bagian 1</h4>
+        </a>
+        </div>
+    
+</amp-carousel>
+
+</main>
+<footer class="footer">
+  <span>&copy; 2020 <a href="https://wwwid.org/">Modern Web Community Indonesia</a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="https://wwwid.org/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
+

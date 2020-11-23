@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modern Web Community Indonesia</title>
+    <link>https://wwwid.org/</link>
+    <description>Recent content on Modern Web Community Indonesia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ID</language>
+    <lastBuildDate>Sat, 30 May 2020 11:16:22 +0700</lastBuildDate>
+    
+	<atom:link href="https://wwwid.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Panduan Melakukan Presentasi Online</title>
+      <link>https://wwwid.org/posts/2020-05-30_panduan-melakukan-presentasi-online/</link>
+      <pubDate>Sat, 30 May 2020 11:16:22 +0700</pubDate>
+      
+      <guid>https://wwwid.org/posts/2020-05-30_panduan-melakukan-presentasi-online/</guid>
+      <description>Berikut ini adalah panduan untuk melakukan presentasi secara online baik untuk online meetup ataupun ajang yang lebih besar seperti konferensi online seperti acara yang akan diadakan oleh wwwid yaitu Live Camp 2020 .
+Panduan ini ditujukan untuk narasumber pengisi acara untuk mempersiapkan segala hal sebelum melakukan presentasi secara online mulai dari mempersiapkan slide presentasi, latihan, gladi resik hingga persiapan diri.
+Mempersiapkan Slide Presentasi Hal pertama yang harus dilakukan adalah mempersiapkan slide presentasi.</description>
+    </item>
+    
+    <item>
+      <title>Perjalanan menuju gambar responsif: CSS width, media query, sampai img srcset</title>
+      <link>https://wwwid.org/posts/2020-05-26_gambar-responsif-img-srcset-css-media-query/</link>
+      <pubDate>Sun, 24 May 2020 11:16:22 +0700</pubDate>
+      
+      <guid>https://wwwid.org/posts/2020-05-26_gambar-responsif-img-srcset-css-media-query/</guid>
+      <description>Artikel ini membahas teknik-teknik memuat dan menampilkan gambar responsif yang sesuai dengan ukuran viewport.
+Daftar Isi
+ Non-responsif Teknik 0: CSS width dan height Teknik 1: CSS media query dan background-image  File mana yang di-download? Media query untuk layar dengan kepadatan pixel tinggi (“retina”) Gabungan media query width dan resolution Uji coba CSS background-image dengan media query   Teknik 2: img dengan atribut srcset  Uji coba img srcset   Perbandingan performa Penutup  Extra credits   Referensi   Perangkat (device) yang digunakan untuk mengakses web makin bervariasi—makin besar, makin kecil, makin tajam.</description>
+    </item>
+    
+    <item>
+      <title>Memastikan webmu selalu tersedia</title>
+      <link>https://wwwid.org/posts/2020-05-04_memastikan-webmu-selalu-tersedia/</link>
+      <pubDate>Thu, 30 Apr 2020 19:18:15 +0700</pubDate>
+      
+      <guid>https://wwwid.org/posts/2020-05-04_memastikan-webmu-selalu-tersedia/</guid>
+      <description>Di situasi seperti pandemic seperti sekarang ini, informasi online merupakan cara paling efektif untuk mengetahui perkembangan terakhir dari situasi COVID-19. Website mudah di-update, cukup melakukan update di server, pengunjung langsung mendapatkan informasi terkini pada saat mengakses website tersebut. Namun tidak jarang beberapa website tidak siap menerima lonjakan pengunjung yang lebih banyak dari biasanya sehingga membuat pengunjung tidak mendapatkan informasi yang mereka inginkan. Kita sebagai pengembang website harusnya bisa memberikan layanan yang lebih optimal agar website kita tetap bisa memberikan informasi yang dibutuhkan oleh pengguna.</description>
+    </item>
+    
+    <item>
+      <title>Mengoptimasi Gambar Pada Halaman Situs</title>
+      <link>https://wwwid.org/posts/2019-09-04_mengoptimasi-gambar-pada-halaman-situs/</link>
+      <pubDate>Wed, 04 Sep 2019 15:55:08 +0700</pubDate>
+      
+      <guid>https://wwwid.org/posts/2019-09-04_mengoptimasi-gambar-pada-halaman-situs/</guid>
+      <description>Mengaudit situs yang perlu dioptimasi dengan Lighthouse Untuk mencari tahu apa yang bisa kita lakukan untuk mengoptimasi situs kita makan kita perlu melakukan audit terlebih dahulu menggunakan Lighthouse, sebuat perangkat dari Google untuk web developer dapat mengoptimalkan situs yang mereka buat. Cara paling mudah adalah menggunakan Lighthouse yang sudah terintegrasi dengan Chrome Dev Tools.
+Untuk melakukan audit dengan Chrome DevTools lakukan langkah berikut:
+ Buka halaman website yang ingin dioptimasi Buka Chrome DevTools Buka panel audit Jalankan audit pada situs yang ingin dioptimasi.</description>
+    </item>
+    
+    <item>
+      <title>Tentang Kami</title>
+      <link>https://wwwid.org/pages/tentang-kami/</link>
+      <pubDate>Wed, 22 May 2019 10:09:50 +0700</pubDate>
+      
+      <guid>https://wwwid.org/pages/tentang-kami/</guid>
+      <description>Apa Itu WWWID? Kami melihat bahwa web adalah medium masa depan untuk menghubungkan pengguna dengan informasi dan layanan online. Namun pengembang web di Indonesia sebagian besar masih tidak fokus mengembangkan web yang ditujukan untuk kenyamanan pengguna. Pengembang web Indonesia masih sekedar membuat web mereka bisa diakses tanpa peduli apakah web tersebut bisa memberikan layanan yang baik bagi penggunanya.
+Untuk itu kami komunitas pengembang web modern Indonesia mencoba memberikan edukasi bagi para pengembang web Indonesia melalui pengembangan konten, diskusi online, serta meetup offline.</description>
+    </item>
+    
+    <item>
+      <title>Cara Mengecek dan Mengatur Versi Browser untuk Pengguna</title>
+      <link>https://wwwid.org/posts/2019-03-06_cara-mengecek-dan-mengatur-versi-browser-untuk-pengguna/</link>
+      <pubDate>Wed, 06 Mar 2019 00:13:10 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2019-03-06_cara-mengecek-dan-mengatur-versi-browser-untuk-pengguna/</guid>
+      <description>User Agent berisikan informasi tentang nama browser, versi browser, sistem operasi, tipe perangkat dan banyak informasi yang berguna untuk dipakai. Dalam pekerjaan, saya menggunakan informasi berupa nama browser dan versinya untuk mengendalikan browser dan versi yang digunakan oleh pengguna ketika mengakses ke sistem saya.
+ Daripada membuat sebuah library untuk menampung user-agent dari awal lebih baik saya menggunakan yang sudah ada dan banyak penggunanya. Terima kasih Github. :)
+ Saya mengandalkan ua-parser-js untuk mengecek dan mengendalikan browser dan versi dari browser tersebut.</description>
+    </item>
+    
+    <item>
+      <title>LighthouseBOT Untuk Auto Audit Web di Github Repositori</title>
+      <link>https://wwwid.org/posts/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori/</link>
+      <pubDate>Tue, 26 Feb 2019 01:58:04 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2019-02-26_lighthousebot_untuk_auto_audit_web_di_github_repositori/</guid>
+      <description>LighthouseBOT — merupakan sebuah akun “bot” yang bekerja untuk “Audit Web” dengan menggunakan Lighthouse dan melaporkan hasil audit tersebut pada repositori kita di Github. Dengan menggunakan LighthouseBOT maka kita tidak perlu lagi untuk melakukan audit secara manual dengan menggunakan https://web.dev, Lighthouse pada Chrome DevTools, Lighthouse Extension pada browser, Lighthouse-cli, &amp;amp; cara-cara lain yang menggunakan Lighthouse.
+Hal — hal yang bisa dilakukan LighthouseBOT hanyalah menampilkan laporan mengenai Performance, Accessibility, SEO, &amp;amp; Best Practices.</description>
+    </item>
+    
+    <item>
+      <title>Visualisasi Arsitektur Aplikasi Dengan Madge</title>
+      <link>https://wwwid.org/posts/2019-02-01_visualisasi-arsitektur-aplikasi-dengan-madge/</link>
+      <pubDate>Fri, 01 Feb 2019 01:58:04 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2019-02-01_visualisasi-arsitektur-aplikasi-dengan-madge/</guid>
+      <description>Madge merupakan Aplikasi pengembang yang menghasilkan Grafik Visual mengenai struktur sebuah aplikasi, modul-modul yang digunakan (dependencies Modul), &amp;amp; Lingkaran Dependensi atau “Keterkaitan” satu atau lebih penggunaan sebuah modul (Circular Dependency).
+Circular dependency - Wikipedia
+Sebelumnya, saya sedang mempelajari Lighthouse, tepatnya Arsitektur dari Lighthouse kemudian mendapatkan sebuah informasi menarik “yah , tentang Madge ini” dari **** tautan ini.
+GoogleChrome/lighthouse
+Pada tautan tersebut saya menemukan gambar atau visual grafik dari arsitektur lighthouse.</description>
+    </item>
+    
+    <item>
+      <title>Pengalaman Pertama Menghadiri Chrome Dev Summit</title>
+      <link>https://wwwid.org/posts/2018-12-22_pengalaman-pertama-menghadiri-chrome-dev-summit/</link>
+      <pubDate>Sat, 22 Dec 2018 11:56:00 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-12-22_pengalaman-pertama-menghadiri-chrome-dev-summit/</guid>
+      <description>Berikut cerita pengalaman pertama saya menghadiri Chrome Dev Summit 2018 atas undangan Google untuk para Google Developers Expert yang fokus di Web Technologies. Setelah sehari sebelumnya, di tanggal 10–11 November 2018 juga ada perhelatan akbar Developers Experts Summit dimana GDE atau Google Developers Experts seluruh dunia berkumpul dan ber-summit-ria.
+Sebelum mengulas acara yang diselenggarakan di Yerba Buena Center for the Arts, San Francisco pada tanggal 12–13 November 2018 saya ingin menceritakan bagaimana saya bisa menjadi Google Developers Experts terlebih dahulu agar konteksnya sesuai.</description>
+    </item>
+    
+    <item>
+      <title>Chrome Dev Summit 2018, mana yang kalian harus coba implementasikan? ( 1 dari 2)</title>
+      <link>https://wwwid.org/posts/2018-11-30_chrome-dev-summit-2018-mana-yang-kalian-harus-coba-implementasikan-1-dari-2/</link>
+      <pubDate>Fri, 30 Nov 2018 10:30:16 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-11-30_chrome-dev-summit-2018-mana-yang-kalian-harus-coba-implementasikan-1-dari-2/</guid>
+      <description>Google Developer Experts Web di CDS 2018
+Chrome Dev Summit(CDS) 2018 yang merupakan ajang tahunan Google Chrome untuk bertatap muka dengan para pengembang web baru saja diselenggarakan beberapa minggu lalu di mana event selama 2 hari tersebut memberikan insights seputar kondisi web saat ini, dan apa yang akan hadir di web platform ke depannya. Terlalu banyak konten yang kadang malah membuat bingung pengembang web, mana yang harus saya coba gunakan terlebih dahulu.</description>
+    </item>
+    
+    <item>
+      <title>Progressive Web-Application di AWS</title>
+      <link>https://wwwid.org/posts/2018-10-19_progressive-webapplication-di-aws/</link>
+      <pubDate>Fri, 19 Oct 2018 10:10:54 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-10-19_progressive-webapplication-di-aws/</guid>
+      <description>PWA+S3+Cloudfront = ❤️
+Sumber: Pexels
+Membangun PWA sepertinya sedang tren. Kita tidak akan membahas tips membangun PWA, jika ingin update tulisan yang berkaitan dengan pengembangan website di Indonesia bisa ikuti tautan ini https://medium.com/wwwid
+Create React App Saya akan mencontohkan menggunakan React tapi sebenarnya seluruh website statis bisa juga (VueJS, Angular, Vanilla, dsb). Statis disini maksudnya adalah hanya HTML, JavaScript, dan CSS. Bukan server-side rendering.
+CRA ini sudah PWA-enabled, jadi bisa kita jadikan contoh.</description>
+    </item>
+    
+    <item>
+      <title>5 kelemahan web apps yang sering hacker abuse</title>
+      <link>https://wwwid.org/posts/2018-09-23_5-kelemahan-web-apps-yang-sering-hacker-abuse/</link>
+      <pubDate>Sun, 23 Sep 2018 16:03:34 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-09-23_5-kelemahan-web-apps-yang-sering-hacker-abuse/</guid>
+      <description>S ering kali web developer baru menyadari betapa pentingnya keamanan setelah web atau aplikasinya sudah diretas atau mendapat ancaman dari hacker berupa email. Kesulitan dari pengembangan pun mulai meningkat karena yang harus di tangkis adalah lubang keamanan, dua hal yang berbeda antara lubang yang biasa disebut bug **** dimana sebuah kesalahan teknikal ataupun bisnis yang menyebabkan munculnya error pada aplikasi yang biasanya muncul dengan ukuran seperti High, Medium, Low dan keamanan yang diukur dari tingkat resiko yang muncul dibagi seperti Confidential (kerahasiaan), Integrity(keutuhan) dan Availability (ketersediaan).</description>
+    </item>
+    
+    <item>
+      <title>Panduan Memulai Pengembangan Web Modern (PWA)</title>
+      <link>https://wwwid.org/posts/2018-08-27_panduan-memulai-pengembangan-web-modern-pwa/</link>
+      <pubDate>Mon, 27 Aug 2018 08:29:02 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-08-27_panduan-memulai-pengembangan-web-modern-pwa/</guid>
+      <description>Panduan ini akan menjadi dasar bagaimana sebuah web modern atau biasa disebut Progressive Web App(PWA) dikembangkan. Karena sebagian besar permasalahan web pada saat sudah berjalan adalah arsitektur yang kurang baik serta perancangan awal yang tidak disesuaikan dengan kebutuhan pengguna. Panduan ini akan memberikan gambaran bagaimana arsitektur dan perancangan sebuah aplikasi modern web tanpa menggunakan framework apapun, namun tetap bisa diterapkan di framework apapun.
+Kriteria Modern Web Untuk kebutuhan website modern yang fokus pada kebutuhan pengguna, makan kita mendefinisikan modern web sebagai berikut:</description>
+    </item>
+    
+    <item>
+      <title>Yang sering developer lupakan soal PWA</title>
+      <link>https://wwwid.org/posts/2018-08-23_yang-sering-developer-lupakan-soal-pwa/</link>
+      <pubDate>Thu, 23 Aug 2018 07:03:41 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-08-23_yang-sering-developer-lupakan-soal-pwa/</guid>
+      <description>PWA (Progressive Web Apps) memang sepertinya menjadi satu hal yang sering terjadi simpang siur antar satu developer dengan developer lain pun antar satu perusahaan dengan perusahaan lain baik dalam hal implementasi maupun dalam hal pemahamannya sendiri.
+Gambar dari motivasinews.com
+ Disclaimer: saya pribadi menulis ini bukan berarti apa yang saya pahami adalah mutlak yang terbenar dan yang lain salah, melainkan mencoba menyampaikan apa yang saya pahami agar sama-sama berpikir ulang untuk memahami kembali apa yang selama ini sudah kita yakini benarnya.</description>
+    </item>
+    
+    <item>
+      <title>Berbagi Pengalaman menggunakan Web yang Progresif</title>
+      <link>https://wwwid.org/posts/2018-08-10_berbagi-pengalaman-menggunakan-web-yang-progresif/</link>
+      <pubDate>Fri, 10 Aug 2018 13:28:02 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-08-10_berbagi-pengalaman-menggunakan-web-yang-progresif/</guid>
+      <description>Jika pengembang mobile harus mengupload ke Google Play / App Store (belum ditambah dengan pengujian atau persetujuan aplikasi dari mereka), pengembang web cukup memiliki yang namanya URL a.k.a link situs website kita dan kirimkan ke penggunanya. Bahkan jika ada pembaharuan mulai dari interface dan fungsionalitas maka web adalah pemenangnya dibandingkan mobile (native). Mungkin ini yang bisa katakan “Kekuatan URL yang sesungguhnya”.
+Saat ini, Progressive Web Apps (PWA) atau web yang progresif telah menjadi primadona bagi para web developer untuk menciptakan pengalaman web yang lebih baik kepada penggunanya sehingga bisa meminimalisir pembuatan aplikasi berbasis mobile (Android dan iOS).</description>
+    </item>
+    
+    <item>
+      <title>Web Pintar Yang Beradaptasi Sesuai Perangkat dan Jaringan</title>
+      <link>https://wwwid.org/posts/2018-08-08_web-pintar-yang-beradaptasi-sesuai-perangkat-dan-jaringan/</link>
+      <pubDate>Wed, 08 Aug 2018 06:35:21 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-08-08_web-pintar-yang-beradaptasi-sesuai-perangkat-dan-jaringan/</guid>
+      <description>Para pengguna internet mengakses web saat ini dengan perangkat yang beragam walaupun bisa dibilang bahwa perangkat tersebut didominasi oleh mobile. Namun ragam perangkat mobile ini sendiri sebenarnya cukup beragam dan bisa kita klasifikasikan dalam perangkat tingkat atas, seperti iPhone 8/X, Samsung S9, LG G6 dan lain-lain. Lalu perangkat tingkat menengah seperti Oppo, Xiaomi, dan Vivo. Serta perangkat low end di bawah 1 juta seperti Samsung seri J.
+Beradaptasi dengan perangkat Dengan beragamnya perangkat dari pengakses web, maka sudah seharusnya kita sebagai pengembang wajib mengoptimalkan website kita untuk perangkat yang paling banyak mengakses website kita.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript, Sosial Media, dan SEO</title>
+      <link>https://wwwid.org/posts/2018-07-20_javascript-sosial-media-dan-seo/</link>
+      <pubDate>Fri, 20 Jul 2018 19:37:23 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-07-20_javascript-sosial-media-dan-seo/</guid>
+      <description>Tren membangun website menggunakan framework dan library JavaScript saat ini sedang tinggi-tingginya. Bahkan perkembangan framework dan library JavaScript sangat cepat sekali. Periode 2000an awal website menggunakan JavaScript paling sering untuk validasi form atau hal yang fancy. Kemudian JavaScript digunakan untuk membuat seluruh halaman website karena kemudahan dari framework dan library yang tersedia.
+Kalau melihat grafik dibawah ini terlihat framework dan library apa yang popular di frontend engineers.
+diambil dari https://hackernoon.com/the-status-of-javascript-libraries-frameworks-2018-beyond-3a5a7cae7513</description>
+    </item>
+    
+    <item>
+      <title>5 Nilai Dasar Pancasila Web Performance</title>
+      <link>https://wwwid.org/posts/2018-07-19_5-nilai-dasar-pancasila-web-performance/</link>
+      <pubDate>Thu, 19 Jul 2018 08:03:23 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-07-19_5-nilai-dasar-pancasila-web-performance/</guid>
+      <description>S alah satu alasan utama munculnya user bounce adalah turunnya performance dari web, terdapat dua faktor penyebab web performance menurun, penurunan web performance atau jaringan usernya memang lambat, tapi hal yang paling mudah untuk di tingkatkan adalah websitenya, tapi ada masalah lain jika kita berbicara tentang websitenya, disaat developer atau sys engineer sudah melakukan segala hal untuk meningkatkan web performance kadang masih saja kebingungan “what else to do” supaya performance ini naik.</description>
+    </item>
+    
+    <item>
+      <title>Progressive Web App — Aplikasi Web Yang Bisa Di-Install — Bagian 2</title>
+      <link>https://wwwid.org/posts/2018-07-13_progressive-web-app-aplikasi-web-yang-bisa-diinstall-bagian-2/</link>
+      <pubDate>Fri, 13 Jul 2018 09:11:55 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-07-13_progressive-web-app-aplikasi-web-yang-bisa-diinstall-bagian-2/</guid>
+      <description>Melanjutkan tulisan sebelumnya terkait bagaimana sebuah Progressive Web App(PWA) bisa di-install, di tulisan ini kita ingin membahas bagaimana sebenarnya untuk implementasi di aplikasi web kita dan kira-kira hal seperti apa saja yang bisa kita lakukan.
+Sebelum implementasi kita harus memastikan terlebih dahulu apakah memang kita membutuhkan implementasi A2HS(Add To Home Screen) ini. Beberapa pertanyaan yang mungkin perlu kita jawab adalah:
+Native atau PWA? Bila kita sudah memiliki aplikasi native di platform yang sama, baik Android atau iOS, apakah kita lebih ingin pengguna memasang PWA kita atau aplikasi native kita?</description>
+    </item>
+    
+    <item>
+      <title>Berbagai best practice dalam memuat halaman website</title>
+      <link>https://wwwid.org/posts/2018-07-09_berbagai-best-practice-dalam-memuat-halaman-website/</link>
+      <pubDate>Mon, 09 Jul 2018 08:45:57 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-07-09_berbagai-best-practice-dalam-memuat-halaman-website/</guid>
+      <description>Berbagai best practice yang bisa kita pelajari dan optimalkan dalam memuat halaman website.
+Image source: https://developers.google.com/web/tools/chrome-devtools/network-performance/reference
+Pernahkah kita merasa frustasi dengan bagaimana browser memuat website yang sudah kita buat dengan susah payah? Pernahkah kita merasa sudah melakukan berbagai optimasi di website kita namun hasilnya tetap saja tidak memuaskan? Nah, untuk mengetahui apakah hal yang sudah kita lakukan berada pada jalan yang benar maka pada tulisan ini kita akan sama-sama belajar memahami bagaimana browser memuat sebuah halaman website serta berbagai hal yang bisa kita optimasi dari website kita untuk memperbaiki performa rendering website kita di browser.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu Di #IO18</title>
+      <link>https://wwwid.org/posts/2018-05-15_yang-web-developers-harus-tahu-di-sharpio18/</link>
+      <pubDate>Tue, 15 May 2018 10:31:19 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-05-15_yang-web-developers-harus-tahu-di-sharpio18/</guid>
+      <description>Google I/O 2018
+Selesai sudah hajat tahunan Google Developers, Google IO 2018 di Mountain View yang menjadi ajang tahunan untuk mengundang para developers dari seluruh dunia untuk bisa mendapatkan update terkini terkait platform teknologi yang dimiliki Google dan berinteraksi dengan orang-orang di belakangnya sehingga para developers bisa membangun aplikasi atau fungsi di atas platform tersebut. Dan tulisan ini akan memberikan rekapan apa saja yang perlu kalian tahu terkait web platform dan bagaimana kalian sebagai pengembang bisa mengadopsi perkembangan tersebut.</description>
+    </item>
+    
+    <item>
+      <title>Progressive Web App — Aplikasi Web Yang Bisa Di Install — Bagian 1</title>
+      <link>https://wwwid.org/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/</link>
+      <pubDate>Fri, 20 Apr 2018 08:49:47 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-04-20_progressive-web-app-aplikasi-web-yang-bisa-di-install-bagian-1/</guid>
+      <description>Salah satu pengalaman yang sangat memudahkan pengguna aplikasi native dalam mengakses aplikasi yang mereka ingin gunakan adalah kemudahannya dalam men-launch aplikasi tersebut dengan semudah men-tap icon aplikasi di layar home smart phone mereka dan aplikasi langsung siap digunakan. Bandingkan dengan aplikasi web yang harus melakukan tap beberapa kali karena selain men-tap icon browser di layar home, tentu juga harus mengetikkan alamat URL dari aplikasi web tersebut. Ini yang membuat retention dan tingkat interaktifitas aplikasi web terkadang lebih kecil dibandingkan aplikasi native.</description>
+    </item>
+    
+    <item>
+      <title>Bagaimana Kulina Bisa Mendapatkan 41.000 Lebih Pelanggan Melalui Web</title>
+      <link>https://wwwid.org/posts/2018-04-06_bagaimana-kulina-bisa-mendapatkan-41.000-lebih-pelanggan-melalui-web/</link>
+      <pubDate>Fri, 06 Apr 2018 06:18:26 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-04-06_bagaimana-kulina-bisa-mendapatkan-41.000-lebih-pelanggan-melalui-web/</guid>
+      <description>Website Kulina
+Pemilihan platform untuk produk startup merupakan hal krusial karena sumber daya startup yang sangat terbatas. Sehingga pemilihan platform haruslah yang bisa memberikan dampak baik kepada startup itu sendiri. Dan untuk Kulina, menawarkan layanan pengantaran makanan bukanlah hal yang mudah apalagi dengan adanya layanan serupa seperti Go-Food, walaupun secara model bisnis cukup berbeda. Go-Food adalah layanan on-demand, sedangkan Kulina berbasis langganan, dan hanya melayani makan siang saja dengan fokus konsumen orang kantoran.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu #7</title>
+      <link>https://wwwid.org/posts/2018-03-20_yang-web-developers-harus-tahu-sharp7/</link>
+      <pubDate>Tue, 20 Mar 2018 04:33:32 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-03-20_yang-web-developers-harus-tahu-sharp7/</guid>
+      <description>Edisi minggu pertama bulan Maret ini terlewat berhubung terlalu banyak hal lain yang harus dibereskan. Tapi semoga kalian tidak kelewat beberapa konten menarik seputar web development. Untuk melengkapi bacaan kalian, silakan dinikmati pilihan konten dalam 2 minggu terakhir.
+Berita Terbaru Stack Overflow 2018 Developer Survey
+Kapan developers bangun pagi?
+Stack Overflow sebagai sumber jawaban segala masalah programmer merilis hasil survey mereka terhadap developer, dan insight menarik bisa kalian temukan di sini terkait bagaimana tren, kondisi, dan gambaran developer global.</description>
+    </item>
+    
+    <item>
+      <title>Peluang dan Tantangan Web Developer</title>
+      <link>https://wwwid.org/posts/2018-02-16_peluang-dan-tantangan-web-developer/</link>
+      <pubDate>Fri, 16 Feb 2018 04:13:04 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-16_peluang-dan-tantangan-web-developer/</guid>
+      <description>Selamat datang di tahun 2018, dimana website telah memasuki era baru. Kita akan memanggilnya dengan sebutan webapps (aplikasi web) dan bukan website lagi. Setiap developer berlomba untuk memberikan byte pertama tercepat. Forbes dengan situs mobile terbarunya merender dalam waktu 2.5 detik, konversi web BookMyShow’s naik sebesar 80% dan OLX telah melihat lebih dari 250% keterlibatan kembali dengan pengguna (re-engagement user) di situs mereka. Apa yang sebenarnya terjadi di dunia web? Dengan grafik JavaScript-CPU-Profiler yang menyeramkan seperti kardiogram monster lochness, semua hal dilakukan untuk mengoptimalkan setiap bit yang kita kirimkan dari sebuah kabel.</description>
+    </item>
+    
+    <item>
+      <title>Testing untuk Frontend Web Developer/UI Engineer</title>
+      <link>https://wwwid.org/posts/2018-02-16_testing-untuk-frontend-web-developerui-engineer/</link>
+      <pubDate>Fri, 16 Feb 2018 00:28:22 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-16_testing-untuk-frontend-web-developerui-engineer/</guid>
+      <description>“Long colorful lines of code on a computer screen” by Markus Spiske on Unsplash
+Karena Frontend Developer tidak hanya mengconvert design menjadi halaman Latar Belakang Sudah 9 bulan lebih saya bekerja menjadi seorang Frontend Developer di sebuah startup yang bergerak di bidang edukasi. Karena produk kami merupakan produk digital — salah satu nya berbentuk website — dan kebetulan saya merupakan penanggung jawab di hasil akhir untuk pengguna langsung di website.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu #6</title>
+      <link>https://wwwid.org/posts/2018-02-15_yang-web-developers-harus-tahu-sharp6/</link>
+      <pubDate>Thu, 15 Feb 2018 10:31:55 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-15_yang-web-developers-harus-tahu-sharp6/</guid>
+      <description>Mendekati Imlek, dan libur panjang saatnya kalian punya bacaan untuk long weekend. Di tengah kesibukan beberapa dari kalian yang lagi mengulik tantangan untuk membuat webapp bisa digunakan dalam 5 detik, mungkin beberapa update dan artikel menarik di bawah ini bisa jadi pengisi waktu luang kalian. Gong xi fa cai!
+Berita Terbaru Chrome akan menampilkan tanda sebuah web tidak aman tanpa HTTPS
+Tampilan website tanpa HTTPS per July 2018
+Inisiatif yang sebenarnya cukup lama untuk membuat web bisa lebih aman dengan protokol yang terenkripsi menggunakan HTTPS akan diperketat lagi.</description>
+    </item>
+    
+    <item>
+      <title>Tantangan Web Developer Untuk Membuat Aplikasi Web Bisa Digunakan Kurang Dari 5 Detik</title>
+      <link>https://wwwid.org/posts/2018-02-13_tantangan-web-developer-untuk-membuat-aplikasi-web-bisa-digunakan-kurang-dari-5-detik/</link>
+      <pubDate>Tue, 13 Feb 2018 07:45:58 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-13_tantangan-web-developer-untuk-membuat-aplikasi-web-bisa-digunakan-kurang-dari-5-detik/</guid>
+      <description>Ada banyak jalan menuju Roma, sama dengan ada banyak cara membuat sebuah aplikasi web dan banyak teknik untuk mengoptimalkan sebuah aplikasi web. Cara membuat saat ini sudah cukup banyak tutorialnya, tapi bagaimana dengan teknik mengoptimalkannya?
+Tantangan ini ingin mengajak teman-teman web developer Indonesia untuk mencoba membuat sebuah aplikasi RSS reader sederhana dengan goal membuat time to interactive dibawah 5 detik di kondisi jaringan 3G yang lambat dan mobile phone dengan spesifikasi menengah rata-rata.</description>
+    </item>
+    
+    <item>
+      <title>10 Tips Untuk Menjadi Seorang Developer Yang Lebih Baik</title>
+      <link>https://wwwid.org/posts/2018-02-09_10-tips-untuk-menjadi-seorang-developer-yang-lebih-baik/</link>
+      <pubDate>Fri, 09 Feb 2018 02:30:21 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-09_10-tips-untuk-menjadi-seorang-developer-yang-lebih-baik/</guid>
+      <description>Dalam 6 tahun terakhir saya bekerja sebagai developer relations, yaitu membangun jaringan dengan para developer serta mendukung mereka untuk dapat memberikan impact ke para pengguna karya mereka. Di mulai dari Blaast yang akhirnya dibeli oleh Facebook, lalu API Pemilu, The Asia Foundation, dan sekarang Google.
+Perjalanan selama lebih dari 10 tahun di dunia web memberikan banyak ilmu bagaimana sebenarnya kita bisa menjadi seorang developer yang lebih baik. Dan pengalaman itulah yang saya coba bagikan di artikel ini untuk bisa mendorong lebih banyak developers yang bisa lebih baik lagi.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu #5</title>
+      <link>https://wwwid.org/posts/2018-02-05_yang-web-developers-harus-tahu-sharp5/</link>
+      <pubDate>Mon, 05 Feb 2018 02:51:56 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-05_yang-web-developers-harus-tahu-sharp5/</guid>
+      <description>Who love Monday?? Nah sudah memasuki Februari dan saatnya untuk update terbaru untuk kalian biar tetap tahu perkembangan di dunia web. Kali ini bagian artikel menarik kami ubah menjadi konten menarik karena beberapa konten bukan cuma berupa tulisan tapi juga berupa video. Dan ini dia yang kalian harus tahu sebagai web developers. Have an amazing week guys!
+Berita Terbaru Ranking Google Search akan terpengaruh oleh page speed**
+**Sebelumnya page speed sudah berpengaruh pada ranking hasil pencarian Google Search, tapi hanya di desktop.</description>
+    </item>
+    
+    <item>
+      <title>Progressive Web Apps, mulai dari mana?</title>
+      <link>https://wwwid.org/posts/2018-02-02_progressive-web-apps-mulai-dari-mana/</link>
+      <pubDate>Fri, 02 Feb 2018 05:17:43 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-02-02_progressive-web-apps-mulai-dari-mana/</guid>
+      <description>Banyak orang salah kaprah pada saat berbicara tentang Progressive Web App(PWA), bahwa untuk bisa memiliki PWA harus Single Page Application(SPA), atau harus menggunakan framework modern seperti React, Angular, Polymer, dan lainnya. Sehingga banyak developer yang merasa bahwa mereka tidak bisa menerapkan PWA karena mereka masih menggunakan server rendered framework seperti PHP atau Ruby Framework. Padahal berbicara PWA, tentunya yang utama adalah kata progressive di mana maksud sebenarnya adalah peningkatan pengalaman user secara progresif atau bertahap.</description>
+    </item>
+    
+    <item>
+      <title>Studi Kasus Accessibility — Web Form</title>
+      <link>https://wwwid.org/posts/2018-01-24_studi-kasus-accessibility-web-form/</link>
+      <pubDate>Wed, 24 Jan 2018 14:57:26 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-01-24_studi-kasus-accessibility-web-form/</guid>
+      <description>Di artikel sebelumnya, kita telah belajar bahwa Accessibility adalah sebuah hal yang wajib ada dan memudahkan para pengguna disabilitas untuk mengakses produk kita seperti website layaknya orang normal. Pada bagian ini, saya akan menjelaskan studi kasus Accesibility pada sebuah form website dan menggunakan Lighthouse pada browser Chrome versi 63.0.3239.132 sebagai audit.
+Form web yang kita rancang sebagai berikut:
+ Nama dan username menggunakan &amp;amp;lt;input type=&amp;amp;#34;text&amp;amp;#34;&amp;amp;gt; Alamat menggunakan &amp;amp;lt;textarea&amp;amp;gt; Email menggunakan &amp;amp;lt;input type=&amp;amp;#34;email&amp;amp;#34;&amp;amp;gt; Password menggunakan &amp;amp;lt;input type=&amp;amp;#34;password&amp;amp;#34;&amp;amp;gt; dan menambahkan atribut **required** Jenis kelamin menggunakan &amp;amp;lt;input type=&amp;amp;#34;radio&amp;amp;#34;&amp;amp;gt; Hobi menggunakan &amp;amp;lt;input type=&amp;amp;#34;checkbox&amp;amp;#34;&amp;amp;gt; Asal kota menggunakan &amp;amp;lt;select&amp;amp;gt;  Saya telah membuatkan file no-a11y-form.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu #4</title>
+      <link>https://wwwid.org/posts/2018-01-16_yang-web-developers-harus-tahu-sharp4/</link>
+      <pubDate>Tue, 16 Jan 2018 04:28:26 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-01-16_yang-web-developers-harus-tahu-sharp4/</guid>
+      <description>Memulai 2018 biasanya dengan merencanakan kira-kira apa yang akan dilakukan selama setahun ke depan. Termasuk kira-kira akan belajar library atau framework apa, atau akan membuat sesuatu dan merilisnya ke publik dalam setahun ke depan. Apapun itu rencana kalian mudah-mudahan pilihan artikel ini bisa membantu mempermudah rencana kalian.
+Berita Terbaru Autofill Di Browsers Bisa Mencuri Data Kalian
+Demo auto fill mengisi data fields tersembunyi
+Fitur auto fill form di browser terkadang memudahkan tapi bisa juga dimanfaatkan untuk mencuri data credentials pengguna seperti password atau kartu kredit.</description>
+    </item>
+    
+    <item>
+      <title>Web Components — Apa, Mengapa dan Bagaimana</title>
+      <link>https://wwwid.org/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/</link>
+      <pubDate>Sat, 13 Jan 2018 00:38:26 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-01-13_web-components-apa-mengapa-dan-bagaimana/</guid>
+      <description>Web Components — Apa, Mengapa dan Bagaimana?
+Pendahuluan Sebagai web developer, wajib hukumnya untuk up to date terhadap teknologi web mulai dari dengerin podcast, lihat forum, follow para developer dan engineer di Twitter dan baca artikel di WWWID tentunya. 😉
+Pernahkah anda membuka sebuah website dan iseng meng-inspect elemen atau view page source dan menemukan tag HTML yang tak lazim (contoh: &amp;amp;lt;foo-bar&amp;amp;gt; atau &amp;amp;lt;custom-tag&amp;amp;gt;)? Mungkin anda akan berpikir jika tag HTML tersebut tidak tersedia di tag HTML pada umumnya.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu #3</title>
+      <link>https://wwwid.org/posts/2018-01-01_yang-web-developers-harus-tahu-sharp3/</link>
+      <pubDate>Mon, 01 Jan 2018 23:55:13 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2018-01-01_yang-web-developers-harus-tahu-sharp3/</guid>
+      <description>Edisi ke 3 ini menutup 2017 dan menyambut 2018. Beberapa artikel adalah rangkuman atau kilas balik dari 2017. Sudah siapkah kalian #MakeTheWebGreatAgain di 2018? Silakan memulai dengan membaca artikel pilihan berikut.
+Berita Terbaru Web Advent Today
+Rangkuman 10 tulisan oleh praktisi web untuk menghitung mundur ke 2018 sangat menarik diikuti untuk melihat perspektif mereka akan perkembangan web di 2017 dan apa yang mereka harapkan di 2018. Di tiap artikel ada link ke blog post dari masing-masing author yang menurut saya sangat menarik untuk dibaca untuk penutup 2017 dan pembuka 2018.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developers Harus Tahu #2</title>
+      <link>https://wwwid.org/posts/2017-12-20_yang-web-developers-harus-tahu-sharp2/</link>
+      <pubDate>Wed, 20 Dec 2017 02:15:04 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-12-20_yang-web-developers-harus-tahu-sharp2/</guid>
+      <description>Sebagai newsletter kedua dan menjelang tutup tahun 2017 beberapa konten menarik yang dimasukkan adalah gambaran perjalanan komunitas web developers dan karyanya selama 2017. Dan ini dia yang kalian harus tahun di pertengahan Desember 2017 ini.
+Berita Terbaru The State of JavaScript 2017
+Laporan trend dan perkembangan JavaScript di 2017
+Sebuah survey ke 20.000 web developers untuk mencari tahu bagaimana perkembangan JavaScript selama 1 tahun ini. Laporan ini bisa memberi gambaran buat web developers terkait trend akan penggunaan JavaScript beserta tools, libraries, dan frameworks yang populer di komunitas web developers.</description>
+    </item>
+    
+    <item>
+      <title>Yang Web Developer Harus Tahu #1</title>
+      <link>https://wwwid.org/posts/2017-12-04_yang-web-developer-harus-tahu-sharp1/</link>
+      <pubDate>Mon, 04 Dec 2017 01:34:55 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-12-04_yang-web-developer-harus-tahu-sharp1/</guid>
+      <description>Ini adalah newsletter pertama dari WWWID untuk secara rutin memberikan update terkini untuk para web developer agar tahu perkembangan dan tren pengembangan web seperti teknik, tools, libraries, dan frameworks. Berikut adalah apa yang web developer harus tahu edisi pertama.
+Berita Terbaru Firefox Developers 58 Release Notes
+Firefox DevTool Terbaru
+Rilis terbaru Firefox Developers yang berbasis Quantum Engine ini datang dengan beragam tool terbaru untuk web developers seperti devtool terbaru, dukungan font display di CSS, serta dukungan WebVR secara default.</description>
+    </item>
+    
+    <item>
+      <title>15 Hal di Chrome Dev Tools yang Mungkin Kamu Belum Tau</title>
+      <link>https://wwwid.org/posts/2017-11-18_15-hal-di-chrome-dev-tools-yang-mungkin-kamu-belum-tau/</link>
+      <pubDate>Sat, 18 Nov 2017 12:26:11 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-11-18_15-hal-di-chrome-dev-tools-yang-mungkin-kamu-belum-tau/</guid>
+      <description>Chrome Developer Tools
+No 8 bikin netizen geleng-geleng kepala. K etika mengembangkan sebuah aplikasi web, tentunya kita tak jauh dari yang namanya debugging. Chrome Dev Tools adalah salah satu tools debugging yang sering digunakan. Setelah sekian lama menggunakammya, akhirnya saya menemukan beberapa hidden-gems yang ada di Chrome Dev Tools, dan beberapa saya selalu gunakan dalam kehidupan saya sebagai engineer sehari-hari. 😹
+Berikut ini adalah list fitur dan tips nya:
+1. Throttle Network &amp;amp; CPU Throttling juga dapat diakses melalui Tab Network.</description>
+    </item>
+    
+    <item>
+      <title>Membuat WordPress Tampil dan Bisa Digunakan Dalam 5 Detik</title>
+      <link>https://wwwid.org/posts/2017-11-14_membuat-wordpress-tampil-dan-bisa-digunakan-dalam-5-detik/</link>
+      <pubDate>Tue, 14 Nov 2017 11:34:40 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-11-14_membuat-wordpress-tampil-dan-bisa-digunakan-dalam-5-detik/</guid>
+      <description>TwentySeventeen — WordPress Default Theme
+Web yang modern saat ini mencoba menaikkan standar kecepatan tampil di layar yang rata-rata 19 detik di 3G menjadi 5 detik atau kurang. Dengan demikian potensi kehilangan user yang tidak ingin menunggu lebih dari 3 detik bisa dihindari.
+WordPress adalah CMS paling populer di dunia dengan angka penggunaan sekitar 24% dari semua website yang ada di internet. Dan karena WordPress dikembangkan sejak lama, maka metode pengembangan web dengan WordPress secara default belum cukup optimal untuk kondisi jaringan cellular yang masih sebagian besar di 2G dan spesifikasi rendah dari sebagian besar smart phone yang digunakan.</description>
+    </item>
+    
+    <item>
+      <title>Perkenalan Accessibility</title>
+      <link>https://wwwid.org/posts/2017-10-31_perkenalan-accessibility/</link>
+      <pubDate>Tue, 31 Oct 2017 00:11:45 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-10-31_perkenalan-accessibility/</guid>
+      <description>Sebagai seorang web developer, selain urusan performance dan interface pada website yang dibuat, kita perlu memperhatikan siapa user kita. Apakah user kita lahir tidak ada kekurangan fisik atau sebaliknya (disabilitas). Jika user yang mengakses website kita adalah kalangan disabiilitas maka kita perlu memberikan perhatian ekstra terhadap website kita. Lalu bagaimana caranya? Accessibility adalah jawaban dari hal tersebut.
+Definisi Accessibility secara garis besar adalah bagaimana user yang disabilitas bisa mengakses aplikasi kita layaknya orang normal (making disability users able to access our website).</description>
+    </item>
+    
+    <item>
+      <title>Pembelajaran yang saya dapatkan dari Chrome Dev Summit untuk Indonesia</title>
+      <link>https://wwwid.org/posts/2017-10-30_pembelajaran-yang-saya-dapatkan-dari-chrome-dev-summit-untuk-indonesia/</link>
+      <pubDate>Mon, 30 Oct 2017 02:26:01 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-10-30_pembelajaran-yang-saya-dapatkan-dari-chrome-dev-summit-untuk-indonesia/</guid>
+      <description>Saya baru balik dari Chrome Dev Summit dan tulisan ini ingin merangkum beberapa hal yang saya dapatkan dari event tahunan team Chrome untuk para pengembang web. Dari semua yang disampaikan di-event ini, ada beberapa hal yang saya rasa sangat berguna bagi pengembang web Indonesia terutama dalam meningkatkan standar pengalaman web yang dikembangkan.
+Bagaimana Pengguna Mengakses Web Untuk membuka tulisan ini saya rasa yang menarik untuk disimak adalah The Web for the Entire World oleh Tal Oppenheimer ini.</description>
+    </item>
+    
+    <item>
+      <title>Web Payment Request API dan Kemungkinan Adopsinya di Indonesia</title>
+      <link>https://wwwid.org/posts/2017-10-09_web-payment-request-api-dan-kemungkinan-adopsinya-di-indonesia/</link>
+      <pubDate>Mon, 09 Oct 2017 06:42:43 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-10-09_web-payment-request-api-dan-kemungkinan-adopsinya-di-indonesia/</guid>
+      <description>Lanjutan dari tulisan sebelumnya terkait topik yang dibahas di Progressive Web App Roadshow Indonesia tentang service workers, kali ini saya ingin menulis salah satu topik yang dipresentasikan di sesi integration, yaitu Payment Request API.
+Kenapa perlu adanya Payment Request API? Seperti yang kalian tahu kalau melihat ekosistem startup Indonesia, e-commerce merupakan salah satu area yang mendominasi. Dan di e-commerce, pembayaran adalah metrics yang paling penting. Sales conversion menjadi goal utama dari startup e-commerce.</description>
+    </item>
+    
+    <item>
+      <title>Service Worker Tanpa Application Shell Untuk Mempercepat Navigasi Antar Halaman Web</title>
+      <link>https://wwwid.org/posts/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web/</link>
+      <pubDate>Thu, 21 Sep 2017 04:18:28 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-09-21_service-worker-tanpa-application-shell-untuk-mempercepat-navigasi-antar-halaman-web/</guid>
+      <description>Seminggu lalu saya disibukkan oleh 2 Google events yaitu Progressive Web App Road Show Indonesia yang diadakan di 2 kota yaitu Jakarta dan Yogyakarta. Dan salah satu yang ingin saya highlight adalah kata progressive. Bahwa dalam Progressive Web App, kita bisa meningkatkan experience dari sebuah web app secara bertahap, tidak harus langsung sekaligus. Bahkan tidak perlu menulis ulang aplikasi web kita untuk menjadikannya Progressive Web App.
+Sebagian besar developer yang saya kenal adalah backend developer yang berawal dari server side script seperti PHP, Ruby, Python, dan lainnya.</description>
+    </item>
+    
+    <item>
+      <title>Progressive Web App — Bagian 2</title>
+      <link>https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-2/</link>
+      <pubDate>Wed, 05 Jul 2017 17:15:44 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-2/</guid>
+      <description>Hijack Request, Cache Storage, App Manifest, App Shell, Notify Updates Untuk membuat Web App kita menjadi sebuah Progressive Web App ada beberapa checklist yang harus dipenuhi, teman-teman bisa melihat checklist nya pada link ini.
+Saatnya kita mulai dengan membuat project sederhana. Teman-teman bisa clone project ini dari github. Kita akan fokus pada service worker saja. Jadi kita tidak akan membahas hal diluar SW dulu ya. git clone [https://github.com/alfrcr/tutorial-pwa-bahasa-indonesia.git](https://github.com/alfrcr/tutorial-pwa-bahasa-indonesia.git)
+ catatan: teman-teman perlu menginstall NodeJS untuk menjalankan project diatas.</description>
+    </item>
+    
+    <item>
+      <title>Progressive Web App — Bagian 1</title>
+      <link>https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-1/</link>
+      <pubDate>Wed, 05 Jul 2017 17:15:21 +0000</pubDate>
+      
+      <guid>https://wwwid.org/posts/2017-07-05_progressive-web-app-bagian-1/</guid>
+      <description>Benefit web app offline-first, and intro service worker. Belakangan ini Google sedang gencar mengenalkan teknologi PWA ke perusahan-perusahaan teknologi di Asia Tenggara, khususnya di Indonesia. Pada awal bulan kemarin salah seorang staff di Google menghubungi kami dan menyarankan kami untuk menerapkan teknologi ini ke salah satu situs kami.
+Pertanyaannya kenapa kita harus menerapkan PWA?
+Sebelumnya kita harus tahu dulu apa itu PWA.
+ PWA adalah sebuah aplikasi web yang menggunakan beberapa teknologi modern yang membuat user experience seperti menggunakan Native App (Android/iOS)</description>
+    </item>
+    
+  </channel>
+</rss>
